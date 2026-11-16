@@ -10,7 +10,7 @@ This repository hosts the interactive character dossier and build guide for **Vl
   - `background.html` — Background (backstory prose, personality traits, Thayan ritual tattoo mechanics, Rashemi ethnicity & roleplay details)
   - `tactics.html` — Tactics & Leveling Guide (combat/social synergies with the Red Wizard + Level 1–12 progression)
   - `lore.html` — Known Lore (expandable, filterable & searchable lore database starting with Thayan deities)
-  - `dm.html` — Open Points for DM (5.5e compliance summary, Session 0 alignment questions, DM campaign hooks)
+  - `dm.html` — Open Points for DM (5.5 compliance summary, Session 0 alignment questions, DM campaign hooks)
 - **Navigation Sync:** Whenever adding, renaming, or reordering pages, update the shared header/drawer navigation and bottom Prev/Next links consistently across all `.html` files.
 
 ## 2. Responsive Target Viewports
@@ -26,17 +26,17 @@ All layouts, tables, cards, and interactive controls must look and behave cleanl
 - **Typography:** Classical serif headings (`Georgia` stack) + clean sans-serif body (`Inter` / system UI stack) + crisp monospace (`ui-monospace`, `SFMono-Regular`, `JetBrains Mono`, `Menlo`) for stat scores, modifiers, AC, level tags, and rule badges.
 - **No Print Button:** Do not include a print/PDF button in the UI.
 
-## 4. D&D 5.5e Rules & Character Canon Constraints
-- **100% D&D 5.5e (2024+) Compliance:** Use only 2024+ rules (*Player's Handbook 2024*, *Dungeon Master's Guide 2024*, *Forgotten Realms: Heroes of Faerûn*, *Arcana Unleashed*). Zero 2014 legacy mechanics.
+## 4. D&D 5.5 Rules & Character Canon Constraints
+- **100% D&D 5.5 (2024+) Compliance:** Use only 2024+ rules (*Player's Handbook 2024*, *Dungeon Master's Guide 2024*, *Forgotten Realms: Heroes of Faerûn*, *Arcana Unleashed*). Zero 2014 legacy mechanics.
 - **Stealth-Only Armor:** Do **not** include an armor mode switcher or heavy/noisy medium armor (*Scale Mail* / *Half Plate*). Assume the stealth medium armor setup exclusively: **Breastplate + Shield (`AC 18`, `23` with *Shield*)**, with a brief note for Level 1 starting gold (**Chain Shirt + Shield `AC 17 / 22`** until upgraded for 400 GP).
 - **Iconic Weapons (No Melee Attacking):** Because *Divine Order: Thaumaturge* grants proficiency only in **Simple Weapons** (`STR 8`, `DEX 14`), Vladislak carries:
   1. **Iron-Shod Pilgrim's Quarterstaff of Azuth (*Quarterstaff / Arcane Staff*)** — Azuth's canonical favored weapon, *dajemma* pilgrim disguise in Waterdeep, physical doorway blocker for his Red Wizard, and Arcane Focus.
   2. **Concealed Thayan Ritual Kris Dagger (*Dagger*, Finesse `DEX +2`)** — worn under his cloak for *Warding Bond* blood rituals, scraping/testing poisons (*Poisoner's Kit*), and silent utility in the shadows.
 
 ## 5. Language, Links & Documentation Sync
-- **Language:** Write all character dossier prose, UI navigation, and lore entries in **Czech**, preserving standard English D&D 5.5e mechanical terms (*Shield*, *Warding Bond*, *War Caster*, *Stealth*, *Advantage*, etc.) for rule clarity.
+- **Language:** Write all character dossier prose, UI navigation, and lore entries in **Czech**, preserving standard English D&D 5.5 mechanical terms (*Shield*, *Warding Bond*, *War Caster*, *Stealth*, *Advantage*, etc.) for rule clarity.
 - **Semantic Hyperlinks:** Style external reference links using semantic classes with `target="_blank" rel="noopener noreferrer"`:
-  - `a.spell` — Spells and Feats (e.g., AideDD 5.5e cards)
+  - `a.spell` — Spells and Feats (e.g., AideDD 5.5 cards)
   - `a.lore` — Forgotten Realms lore (Forgotten Realms Wiki)
-  - `a.rule` — D&D 5.5e rules and optimization guides (D&D Beyond Free Rules, RPGBOT 2024)
+  - `a.rule` — D&D 5.5 rules and optimization guides (D&D Beyond Free Rules, RPGBOT 2024)
 - **Keep Markdown Docs Synced:** Whenever updating character mechanics, gear, or structure in the HTML pages, keep `README.md` and `thayan_knight_cleric.md` aligned.

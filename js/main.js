@@ -31,7 +31,7 @@
       if (theme === 'dark') {
         btn.innerHTML =
           '<span aria-hidden="true">☀️</span>' +
-          '<span>Ayu<span class="theme-label-full"> Light</span></span>';
+          '';
         btn.setAttribute('aria-label', 'Přepnout na světlé téma Ayu Light');
         btn.setAttribute('title', 'Aktivní: Srcery Dark — kliknutím přepneš na Ayu Light');
       } else {

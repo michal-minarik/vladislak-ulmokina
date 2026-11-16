@@ -57,10 +57,10 @@ Podle kánonu Forgotten Realms procházejí Thayan Knights bolestivým rituálem
    * **Kouzlo 1. úrovně – Shield:** 1× za Long Rest zdarma a **dále kdykoliv za tvé běžné Cleric spell sloty**! Jako reakci na zásah tetování rudě vzplane a zvedne ti AC o **+5** až do tvého příštího tahu (s *Chain Shirt* a štítem **AC 22**, s *Breastplate* **AC 23** bez postihu na *Stealth*; navíc jsi imunní vůči *Magic Missile*).
    * **2 Wizard cantripy (od 1. úrovně):**
      * **Message** – tichá telepatická/šeptaná komunikace přímo s tvým Rudým čarodějem uprostřed jednání ve Waterdeepu nebo při hlídce.
-     * **Blade Ward** *(v 5.5e se sesílá jako Akce před bojem a dává útočníkům postih `-1d4` k útokům proti tobě na 1 minutu)* nebo **Ray of Frost** *(zpomalení nepřítele běžícího k tvému čaroději o 10 stop!)*.
+     * **Blade Ward** *(v 5.5 se sesílá jako Akce před bojem a dává útočníkům postih `-1d4` k útokům proti tobě na 1 minutu)* nebo **Ray of Frost** *(zpomalení nepřítele běžícího k tvému čaroději o 10 stop!)*.
 2. **Od 3. úrovně – Krvavé pouto s čarodějem (*Warding Bond*):**
    * Klerické kouzlo 2. úrovně **Warding Bond** (trvání 1 hodina, **bez koncentrace!**) je doslovným přepisem lore thayského tetování do pravidel: svážeš se se svým Rudým čarodějem (do 60 stop), dáš mu **+1 k AC, +1 ke všem záchranným hodům a Resistance na VŠECHNA zranění**, přičemž druhou polovinu zranění přebíráš skrze tetování do vlastního těla!
-3. **Tip pro spolupráci s DM (*Forgotten Realms: Heroes of Faerûn* / *FRAiF*):** V oficiálních 5.5e příručkách pro Forgotten Realms existuje magický předmět **Thayan Spell Tattoo** (Uncommon wondrous item vázaný na frakci Red Wizards of Thay). Až budete koncept s DM dotahovat, může ti ho DM časem odemknout jako odměnu z úkolu nebo probuzení další vrstvy tvého tetování.
+3. **Tip pro spolupráci s DM (*Forgotten Realms: Heroes of Faerûn* / *FRAiF*):** V oficiálních 5.5 příručkách pro Forgotten Realms existuje magický předmět **Thayan Spell Tattoo** (Uncommon wondrous item vázaný na frakci Red Wizards of Thay). Až budete koncept s DM dotahovat, může ti ho DM časem odemknout jako odměnu z úkolu nebo probuzení další vrstvy tvého tetování.
 
 ---
 
@@ -80,7 +80,7 @@ Tohle kombo dělá z tvého klerika nejlepšího myslitelného parťáka pro ča
    * Přes **Modify Magic: Fortifying Spell** (Channel Divinity bez akce) můžeš při seslání kouzla (např. *Healing Word*, *Bless* nebo *Shield of Faith*) rovnou hodit na čaroděje **`2d8 + Cleric level` dočasných životů**.
 4. **Anti-mág a okamžité čištění (*Counterspell* na 5. úr. + *Dispelling Recovery* na 6. úr.):**
    * Na 5. úrovni získáš trvale připravený **Counterspell** a **Dispel Magic** – šetříš tím spell sloty i reakci svému Rudému čaroději.
-   * Na 6. úrovni (**Dispelling Recovery**): Jakmile sešleš kouzlo za slot, které léčí nebo ruší stav (např. *Cure Wounds* nebo *Lesser Restoration* na tvého čaroděje), můžeš na něj jako **Bonus Action zdarma bez utracení spell slotu** seslat **Dispel Magic**! Protože neutrácíš druhý spell slot, je to 100% legální v jednom tahu podle pravidel 5.5e.
+   * Na 6. úrovni (**Dispelling Recovery**): Jakmile sešleš kouzlo za slot, které léčí nebo ruší stav (např. *Cure Wounds* nebo *Lesser Restoration* na tvého čaroděje), můžeš na něj jako **Bonus Action zdarma bez utracení spell slotu** seslat **Dispel Magic**! Protože neutrácíš druhý spell slot, je to 100% legální v jednom tahu podle pravidel 5.5.
 
 ---
 
@@ -96,12 +96,12 @@ Tohle kombo dělá z tvého klerika nejlepšího myslitelného parťáka pro ča
   2. **Sacred Flame** *(Radiant cantrip ignorující kryt)*
   3. **Guidance** *(+1d4 k dovednostem mimo boj)*
   4. **Thaumaturgy** *(zvučný hlas a autorita strážce Thaye)*
-* **Doporučená připravená kouzla 1. úrovně:** *Bless* (top buff v 5.5e), *Healing Word* (záchrana čaroděje Bonus Akcí na dálku), *Command* (vynucení *Flee* nebo *Grovel* na nepřítele u čaroděje), *Shield of Faith* (+2 AC na čaroděje, pokud nedržíš *Bless*).
+* **Doporučená připravená kouzla 1. úrovně:** *Bless* (top buff v 5.5), *Healing Word* (záchrana čaroděje Bonus Akcí na dálku), *Command* (vynucení *Flee* nebo *Grovel* na nepřítele u čaroděje), *Shield of Faith* (+2 AC na čaroděje, pokud nedržíš *Bless*).
 
 ### 2. úroveň
 * **Channel Divinity (2 použití; 1 se vrací za Short Rest, všechna za Long Rest):**
   * *Divine Spark* (solidní léčení nebo zranění na 30 stop bez utrácení spell slotů).
-  * *Turn Undead* (v 5.5e cílí jen *„undead of your choice“*, takže **nikdy nezasáhne případné nemrtvé sluhy tvého Rudého čaroděje!**).
+  * *Turn Undead* (v 5.5 cílí jen *„undead of your choice“*, takže **nikdy nezasáhne případné nemrtvé sluhy tvého Rudého čaroděje!**).
 
 ### 3. úroveň – Subclassa: Arcana Domain (*Arcana Unleashed*)
 * **Domain Spells (vždy připravená):** *Detect Magic*, *Magic Missile*, *Magic Weapon*, *Nystul's Magic Aura*.
@@ -116,7 +116,7 @@ Tohle kombo dělá z tvého klerika nejlepšího myslitelného parťáka pro ča
   * Zvyšuje **Wisdom z 17 na 18 (+4)**.
   * **Advantage** na Constitution záchrany pro udržení koncentrace.
   * Umožňuje sesílat somatická kouzla (*Shield*, *Counterspell*) i s plnýma rukama (štít + fokus/zbraň).
-  * **Reactive Spell:** Když nepřítel utíká od tebe k čaroději, místo útoku z příležitosti na něj hodíš *Command*, *Hold Person* nebo *Mind Sliver* (v 5.5e můžeš teoreticky hodit i buff/léčení na probíhajícího spojence!).
+  * **Reactive Spell:** Když nepřítel utíká od tebe k čaroději, místo útoku z příležitosti na něj hodíš *Command*, *Hold Person* nebo *Mind Sliver* (v 5.5 můžeš teoreticky hodit i buff/léčení na probíhajícího spojence!).
 
 ### 5. úroveň – Velký skok v síle
 * **Domain Spells:** *Counterspell*, *Dispel Magic*.
