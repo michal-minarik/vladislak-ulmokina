@@ -9,7 +9,7 @@ This repository hosts the interactive character dossier and build guide for **Vl
   - `index.html` — General Information (overview, core stats, skills, stealth armor, iconic weapons)
   - `background.html` — Background (backstory prose, personality traits, Thayan ritual tattoo mechanics, Rashemi ethnicity & roleplay details)
   - `tactics.html` — Tactics & Leveling Guide (combat/social synergies with the Red Wizard + Level 1–12 progression)
-  - `lore.html` — Known Lore (expandable, filterable & searchable lore database starting with Thayan deities)
+  - `lore.html` — Known Lore (expandable, filterable & searchable lore chapters: Thayan deities + 5.5 Poison Vademecum)
   - `dm.html` — Open Points for DM (5.5 compliance summary, Session 0 alignment questions, DM campaign hooks)
 - **Navigation Sync:** Whenever adding, renaming, or reordering pages, update the shared header/drawer navigation and bottom Prev/Next links consistently across all `.html` files.
 

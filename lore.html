@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Vladislak Ulmokina — 04. Znalosti světa &amp; Božstva Thaye (DnD 5.5 Dossier)</title>
+  <title>Vladislak Ulmokina — 04. Znalosti světa: Božstva Thaye &amp; Vademecum jedů (DnD 5.5 Dossier)</title>
   <script>
     (function () {
       try {
@@ -79,7 +79,7 @@
       </a>
       <a href="lore.html" aria-current="page">
         <span class="drawer-link-top"><span class="drawer-link-idx">04</span> Znalosti světa (Lore)</span>
-        <span class="drawer-link-desc">Božstva a náboženství v Thay očima klerika Azutha</span>
+        <span class="drawer-link-desc">Božstva Thaye a alchymistické vademecum jedů</span>
       </a>
       <a href="dm.html">
         <span class="drawer-link-top"><span class="drawer-link-idx">05</span> Otevřené body pro DM</span>
@@ -93,10 +93,14 @@
 
     <!-- Compact Subpage Banner -->
     <div class="page-header">
-      <h1>Zápisník znalostí: Božstva a víra v Thay</h1>
+      <h1>Zápisník znalostí: Božstva Thaye &amp; Vademecum jedů</h1>
       <p>
-        Živá databáze reálií, které Vladislak zná ze služby v chrámu v <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Eltabbar" target="_blank" rel="noopener noreferrer">Eltabbaru</a> a z výcviku <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thayan_knight" target="_blank" rel="noopener noreferrer">Thayan Knighta</a>. První kapitola mapuje náboženskou krajinu <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thay" target="_blank" rel="noopener noreferrer">Thaye</a> a její přesah do <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Waterdeep" target="_blank" rel="noopener noreferrer">Waterdeepu</a>.
+        Živá databáze reálií, které Vladislak ovládá ze služby vyšetřovatele v chrámu v <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Eltabbar" target="_blank" rel="noopener noreferrer">Eltabbaru</a> a z výcviku <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thayan_knight" target="_blank" rel="noopener noreferrer">Thayan Knighta</a>: od náboženské krajiny <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thay" target="_blank" rel="noopener noreferrer">Thaye</a> až po katalog běžných, neobvyklých i nejvzácnějších jedů Faerûnu.
       </p>
+      <div class="chapter-jumps" role="navigation" aria-label="Kapitoly znalostí">
+        <a class="jump-pill" href="#vira-v-thay">🔥 Kapitola I: Božstva Thaye (8)</a>
+        <a class="jump-pill" href="#vademecum-jedu">🧪 Kapitola II: Vademecum jedů (17)</a>
+      </div>
     </div>
 
     <!-- SECTION 4.1: Overview of Religion in Thay -->
@@ -115,8 +119,8 @@
       </div>
     </section>
 
-    <!-- Interactive Filter & Search Controls -->
-    <section id="bozstva-databaze" aria-label="Databáze božstev v Thay">
+    <!-- Interactive Filter & Search Controls (Deities) -->
+    <section id="bozstva-databaze" data-lore-section data-count-noun="božstev" aria-label="Databáze božstev v Thay">
       <div class="lore-controls">
         <div class="lore-search-row">
           <div class="search-input-wrap">
@@ -124,12 +128,13 @@
             <input
               type="search"
               id="loreSearch"
+              data-lore-search
               class="lore-search-input"
               placeholder="Hledat božstvo, sféru nebo klíčové slovo (např. Azuth, oheň, nekromancie, Waterdeep)..."
-              aria-label="Hledat v databázi lore"
+              aria-label="Hledat v databázi božstev"
             />
           </div>
-          <span class="lore-count" id="loreCount">Zobrazeno 8 z 8 záznamů</span>
+          <span class="lore-count" id="loreCount" data-lore-count>Zobrazeno 8 z 8 božstev</span>
         </div>
 
         <div class="filter-chips" role="group" aria-label="Filtrovat podle kategorie božstev">
@@ -289,22 +294,465 @@
 
       </div>
 
-      <div class="lore-empty" id="loreEmpty" hidden>
-        Žádný záznam v databázi neodpovídá zadanému hledání. Zkus upravit klíčové slovo nebo přepnout kategorii výše.
+      <div class="lore-empty" id="loreEmpty" data-lore-empty hidden>
+        Žádný záznam v databázi božstev neodpovídá zadanému hledání. Zkus upravit klíčové slovo nebo přepnout kategorii výše.
       </div>
     </section>
 
-    <!-- SECTION 4.2: Future Lore Expansion Roadmap -->
+    <!-- SECTION 4.2: Poison Lore & Bodyguard Protocol -->
+    <section id="vademecum-jedu" style="margin-top:2.25rem;">
+      <div class="card">
+        <h2 class="section-title">
+          <span><span class="section-num">4.2</span> Alchymistické vademecum jedů &amp; Ochranný protokol</span>
+          <span class="badge-book">Kapitola II: Travičství &amp; Obrana (DnD 5.5)</span>
+        </h2>
+        <p style="margin-top:0;">
+          V <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Eltabbar" target="_blank" rel="noopener noreferrer">Eltabbaru</a>, kde je otevřený magický duel mezi učedníky přísně svázán protokolem <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Zulkir" target="_blank" rel="noopener noreferrer">Zulkirů</a>, jsou <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Poison" target="_blank" rel="noopener noreferrer">jedy</a> tichým jazykem politiky. Ve službě chrámového vyšetřovatele <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Azuth" target="_blank" rel="noopener noreferrer">Azutha</a> si Vladislak vštípil katalog běžných, neobvyklých i nejvzácnějších toxinů Faerûnu – aby podle olejovitého lomu světla na okraji poháru, pachu hořkých mandlí či prvního záškubu víček okamžitě poznal, čím se nepřítel snaží vyřadit jeho Rudého čaroděje.
+        </p>
+
+        <div class="grid-2">
+          <div class="subcard">
+            <h3>🧪 4 způsoby podání jedů (<a class="rule" href="https://www.dndbeyond.com/sources/dnd/br-2024/dms-toolbox#Poison" target="_blank" rel="noopener noreferrer">DMG 2024</a>)</h3>
+            <ul>
+              <li><strong>Pozřený (<em>Ingested</em>):</strong> V jídle či nápoji; cíl musí polknout celou dávku (částečná dávka dle DM dává <em>Advantage</em> na záchranu či poloviční zranění). Hlavní zbraň thayských hostin i salonů ve Waterdeepu.</li>
+              <li><strong>Kontaktní (<em>Contact</em>):</strong> Natřený na okraj poháru, pečeť svitku, brk či kliku; působí okamžitě při doteku holou kůží. Proto Vladislak bere cizí dary v rukavicích nebo od 3. úr. přes <a class="spell" href="https://www.aidedd.org/spell/mage-hand" target="_blank" rel="noopener noreferrer">Mage Hand</a>.</li>
+              <li><strong>Vdechovaný (<em>Inhaled</em>):</strong> Prášek či plyn v <strong>5-ft krychli (<em>Cube</em>)</strong>. <strong>Zadržení dechu nepomáhá</strong> – proniká přes nosní sliznice a slzné kanálky!</li>
+              <li><strong>Zraňující (<em>Injury</em>):</strong> V DnD 5.5 se nanáší jako <strong>Bonus Action</strong> na 1 zbraň nebo až 3 kusy střeliva; spustí se při způsobení <em>Piercing</em> nebo <em>Slashing</em> zranění.</li>
+            </ul>
+          </div>
+
+          <div class="subcard">
+            <h3>🛡️ Ochranný protokol strážce (PHB &amp; DMG 2024)</h3>
+            <ul>
+              <li><strong>Kontrola s Advantage:</strong> Prohlídka poháru či předmětu přes <a class="rule" href="https://www.dndbeyond.com/sources/dnd/br-2024/equipment#PoisonersKit50GP" target="_blank" rel="noopener noreferrer">Poisoner's Kit</a> (<em>Utilize</em>: <code>DC 10 INT</code>). Díky souběhu zdatnosti v dovednosti (<em>Investigation / Perception</em>) a nástroji hází Vladislak v 5.5 vždy s <strong>Advantage</strong>!</li>
+              <li><strong>Alchymie &amp; Sběr:</strong> <a class="rule" href="https://www.dndbeyond.com/sources/dnd/br-2024/equipment#Antitoxin50GP" target="_blank" rel="noopener noreferrer">Antitoxin</a> (50 GP) se v 5.5 pije jako <strong>Bonus Action</strong> (1 h <em>Advantage</em> proti stavu <em>Poisoned</em>). <a class="rule" href="https://www.dndbeyond.com/sources/dnd/br-2024/dms-toolbox#HarvestingPoison" target="_blank" rel="noopener noreferrer">Sběr jedu z nestvůr</a> zabere <code>1d6</code> min (<code>DC 20 INT [Nature]</code> s <em>Poisoner's Kitem</em>).</li>
+              <li><strong>Klerická záchrana čaroděje:</strong> <a class="spell" href="https://www.aidedd.org/spell/detect-poison-and-disease" target="_blank" rel="noopener noreferrer">Detect Poison and Disease</a> (rituál), <a class="spell" href="https://www.aidedd.org/spell/lesser-restoration" target="_blank" rel="noopener noreferrer">Lesser Restoration</a> (v 5.5 <strong>Bonus Action!</strong> – okamžitě zruší <em>Poisoned / Paralyzed / Blinded</em> i tikající <em>Midnight Tears</em>) a <a class="spell" href="https://www.aidedd.org/spell/protection-from-poison" target="_blank" rel="noopener noreferrer">Protection from Poison</a> (1 h bez koncentrace: zruší <em>Poisoned</em> + <em>Advantage</em> + <em>Resistance</em>).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Filter & Search Controls (Poisons) -->
+    <section id="jedy-databaze" data-lore-section data-count-noun="jedů" aria-label="Databáze jedů">
+      <div class="lore-controls">
+        <div class="lore-search-row">
+          <div class="search-input-wrap">
+            <span class="search-icon" aria-hidden="true">🔎</span>
+            <input
+              type="search"
+              id="poisonSearch"
+              data-lore-search
+              class="lore-search-input"
+              placeholder="Hledat jed, příznak, původ či cenu (např. Torpor, Němý popel, Blinded, drow, půlnoc)..."
+              aria-label="Hledat v databázi jedů"
+            />
+          </div>
+          <span class="lore-count" id="poisonCount" data-lore-count>Zobrazeno 17 z 17 jedů</span>
+        </div>
+
+        <div class="filter-chips" role="group" aria-label="Filtrovat jedy podle vzácnosti">
+          <span class="chip-group-label">Vzácnost:</span>
+          <button type="button" class="chip active" data-filter="all" aria-pressed="true">Všechny jedy (17)</button>
+          <button type="button" class="chip" data-filter="common" aria-pressed="false">🟢 Známé &amp; Běžné (6)</button>
+          <button type="button" class="chip" data-filter="uncommon" aria-pressed="false">🟡 Neobvyklé &amp; Zákeřné (6)</button>
+          <button type="button" class="chip" data-filter="rare" aria-pressed="false">🔴 Nejvzácnější &amp; Legendární (5)</button>
+        </div>
+
+        <div class="filter-chips" role="group" aria-label="Filtrovat jedy podle způsobu podání">
+          <span class="chip-group-label">Podání:</span>
+          <button type="button" class="chip active" data-subfilter="all" aria-pressed="true">Všechny typy</button>
+          <button type="button" class="chip" data-subfilter="ingested" aria-pressed="false">🍷 Pozřené (Ingested)</button>
+          <button type="button" class="chip" data-subfilter="contact" aria-pressed="false">🖐️ Kontaktní (Contact)</button>
+          <button type="button" class="chip" data-subfilter="inhaled" aria-pressed="false">💨 Vdechované (Inhaled)</button>
+          <button type="button" class="chip" data-subfilter="injury" aria-pressed="false">🗡️ Zraňující (Injury)</button>
+        </div>
+      </div>
+
+      <!-- Poison Lore Cards Grid (17 Entries) -->
+      <div class="lore-grid">
+
+        <!-- TIER I: COMMON & KNOWN (6) -->
+        <!-- 1. BASIC POISON -->
+        <article class="lore-card" data-category="common injury">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="rule" href="https://www.dndbeyond.com/sources/dnd/br-2024/equipment#PoisonBasic100GP" target="_blank" rel="noopener noreferrer">Basic Poison</a> — Základní jed</h3>
+              <div class="lore-domain-sub">🗡️ Injury • Cena: <code>100 GP</code> • Zdroj: <em>PHB 2024</em></div>
+            </div>
+            <span class="badge badge-green">Známý • Běžný</span>
+          </div>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5:</strong> Nanáší se jako <strong>Bonus Action</strong> (1 zbraň nebo 3 kusy střeliva na 1 minutu). Při zásahu (<em>Piercing / Slashing</em>) způsobí extra <strong><code>1d4</code> Poison</strong> zranění <em>(v pravidlech 2024 bez záchranného hodu!)</em>.
+          </div>
+          <p>
+            Tmavý, mazlavý bylinný koncentrát z oměje, rulíku a pavoučích žláz s trpkým bylinným pachem. Běžné zboží pouličních vrahů v přístavním <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Dock_Ward" target="_blank" rel="noopener noreferrer">Dock Wardu</a> i žoldnéřů <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Zhentarim" target="_blank" rel="noopener noreferrer">Zhentarimu</a>; Vladislak jej umí sám vyrobit pomocí <em>Poisoner's Kitu</em> za 50 GP surovin.
+          </p>
+          <div class="vladislak-view">
+            <strong>👁️ Poznámka strážce</strong>
+            „Levná špína z přístavních uliček. Čaroděje nezabije jednou ranou, ale každé zranění navíc znamená další hod na udržení koncentrace.“
+          </div>
+        </article>
+
+        <!-- 2. ASSASSIN'S BLOOD -->
+        <article class="lore-card" data-category="common ingested">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="rule" href="https://www.dndbeyond.com/sources/dnd/br-2024/dms-toolbox#AssassinsBlood150GP" target="_blank" rel="noopener noreferrer">Assassin's Blood</a> — Vrahova krev</h3>
+              <div class="lore-domain-sub">🍷 Ingested • Cena: <code>150 GP</code> • Save: <code>DC 10 CON</code></div>
+            </div>
+            <span class="badge badge-green">Známý • Běžný</span>
+          </div>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5:</strong> <code>DC 10 CON</code> záchranný hod. Neúspěch: <strong><code>6 (1d12)</code> Poison</strong> zranění a stav <strong>Poisoned</strong> na <strong>24 hodin</strong>. Úspěch: poloviční zranění bez stavu.
+          </div>
+          <p>
+            Rudohnědá kapka s kovově nasládlou pachutí, od <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Calimshan" target="_blank" rel="noopener noreferrer">Calimshanu</a> po Waterdeep tradičně maskovaná v těžkých kořeněných červených vínech a zvěřinových omáčkách.
+          </p>
+          <div class="vladislak-view">
+            <strong>👁️ Poznámka strážce</strong>
+            „Zdravý žoldnéř tuhle břečku jen vyplivne, ale nevyspalého učence s nízkou odolností oslabí horečkou a třesem rukou na celý den. Poznáš ji podle měděného lesku u stěny číše.“
+          </div>
+        </article>
+
+        <!-- 3. TRUTH SERUM -->
+        <article class="lore-card" data-category="common ingested">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="rule" href="https://www.dndbeyond.com/sources/dnd/br-2024/dms-toolbox#TruthSerum150GP" target="_blank" rel="noopener noreferrer">Truth Serum</a> — Sérum pravdy</h3>
+              <div class="lore-domain-sub">🍷 Ingested • Cena: <code>150 GP</code> • Save: <code>DC 11 CON</code></div>
+            </div>
+            <span class="badge badge-green">Známý • Chrámový</span>
+          </div>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5:</strong> <code>DC 11 CON</code> záchranný hod. Neúspěch: stav <strong>Poisoned</strong> na <strong>1 hodinu</strong>; otrávený tvor nemůže vědomě vyslovit lež.
+          </div>
+          <p>
+            Čirá tinktura vonící slabě po šalvěji a kafru, hojně využívaná jak vyšetřovateli v eltabbarském chrámu <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Azuth" target="_blank" rel="noopener noreferrer">Azutha</a>, tak magistry <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Watchful_Order_of_Magists_and_Protectors" target="_blank" rel="noopener noreferrer">Watchful Order</a> ve Waterdeepu.
+          </p>
+          <div class="vladislak-view">
+            <strong>👁️ Poznámka strážce</strong>
+            „Oproti kouzlu Zone of Truth má jednu obrovskou výhodu i hrozbu: nezanechává žádnou magickou auru. Proto ve Waterdeepu nepijeme nic ani na zdvořilostní audienci u úředníků.“
+          </div>
+        </article>
+
+        <!-- 4. SERPENT VENOM -->
+        <article class="lore-card" data-category="common injury">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="rule" href="https://www.dndbeyond.com/sources/dnd/br-2024/dms-toolbox#SerpentVenom200GP" target="_blank" rel="noopener noreferrer">Serpent Venom</a> — Hadí jed</h3>
+              <div class="lore-domain-sub">🗡️ Injury • Cena: <code>200 GP</code> • Save: <code>DC 11 CON</code></div>
+            </div>
+            <span class="badge badge-green">Známý • Přírodní</span>
+          </div>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5:</strong> <code>DC 11 CON</code> záchranný hod. Neúspěch: <strong><code>10 (3d6)</code> Poison</strong> zranění. Úspěch: poloviční zranění.
+          </div>
+          <p>
+            Surový jantarový toxin stáčený z jedových žláz obřích zmijí (<em>Giant Poisonous Snake</em>) ze skalisek <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Priador" target="_blank" rel="noopener noreferrer">Priadoru</a> či džunglí <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Chult" target="_blank" rel="noopener noreferrer">Chultu</a>. Na vzduchu rychle zasychá v jemný nažloutlý krystalický povlak na čepeli.
+          </p>
+          <div class="vladislak-view">
+            <strong>👁️ Poznámka strážce</strong>
+            „Snadno dostupný a bolestivý. Na prvních úrovních dokáže šíp natřený hadím jedem poslat nechráněného mága rovnou k zemi – proto stojím v průchodu vždy jako první.“
+          </div>
+        </article>
+
+        <!-- 5. CARRION CRAWLER MUCUS -->
+        <article id="crawler-card" class="lore-card" data-category="common contact">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="rule" href="https://www.dndbeyond.com/sources/dnd/br-2024/dms-toolbox#CarrionCrawlerMucus200GP" target="_blank" rel="noopener noreferrer">Carrion Crawler Mucus</a> — Sliz mrchožrouta</h3>
+              <div class="lore-domain-sub">🖐️ Contact • Cena: <code>200 GP</code> • Save: <code>DC 13 CON</code></div>
+            </div>
+            <span class="badge badge-green">Známý • Pašovaný</span>
+          </div>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5:</strong> <code>DC 13 CON</code> záchranný hod. Neúspěch: <strong>Poisoned</strong> a <strong>Paralyzed</strong> na <strong>1 minutu</strong> (opakování záchrany na konci každého tahu oběti).
+          </div>
+          <p>
+            Nažloutlý gel z chapadel podzemních <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Carrion_crawler" target="_blank" rel="noopener noreferrer">mrchožroutů</a> páchnoucí vlhkou zatuchlinou. Ve Waterdeepu se ve velkém pašuje z chodeb <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Undermountain" target="_blank" rel="noopener noreferrer">Undermountainu</a> a <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Skullport" target="_blank" rel="noopener noreferrer">Skullportu</a> a natírá se na kliky, zámky i pečetě svitků.
+          </p>
+          <div class="vladislak-view">
+            <strong>👁️ Poznámka strážce</strong>
+            „Paralyzovaný čaroděj nepohne prstem ani rty – nesešle Shield ani Misty Step. Přesně tímhle slizem jsem v Eltabbaru potřel západku dveří pána rivala, aby při mé noční návštěvě nevydal ani hlásku.“
+          </div>
+        </article>
+
+        <!-- 6. LOLTH'S STING -->
+        <article class="lore-card" data-category="common injury">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="rule" href="https://www.dndbeyond.com/sources/dnd/br-2024/dms-toolbox#LolthsSting200GP" target="_blank" rel="noopener noreferrer">Lolth's Sting</a> — Žihadlo Lolth</h3>
+              <div class="lore-domain-sub">🗡️ Injury • Cena: <code>200 GP</code> • Save: <code>DC 13 CON</code> <em>(dříve Drow Poison)</em></div>
+            </div>
+            <span class="badge badge-green">Známý • Drowí</span>
+          </div>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5:</strong> <code>DC 13 CON</code> záchranný hod. Neúspěch: <strong>Poisoned</strong> na 1 hodinu; při <strong>neúspěchu o 5 a více</strong> také <strong>Unconscious</strong> (probudí zranění nebo zatřesení akcí).
+          </div>
+          <p>
+            Černá smolná pasta alchymistů <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Drow" target="_blank" rel="noopener noreferrer">drowů</a> z <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Underdark" target="_blank" rel="noopener noreferrer">Underdarku</a>, vyráběná v naprosté tmě z hlubinných hub a pavoučích sekretů. Pod Waterdeepem s ní čile kšeftují agenti <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Bregan_D%27aerthe" target="_blank" rel="noopener noreferrer">Bregan D'aerthe</a>.
+          </p>
+          <div class="vladislak-view">
+            <strong>👁️ Poznámka strážce</strong>
+            „Když ti ze stínu přiletí šipka z ruční kuše natřená černou smolou, nejde o vraždu, ale o únos zaživa. Stačí jediné zatřesení nebo Bonus Action Lesser Restoration a pán je okamžitě zpět na nohou.“
+          </div>
+        </article>
+
+        <!-- TIER II: UNCOMMON & SPECIALIST (6) -->
+        <!-- 7. MALICE -->
+        <article class="lore-card" data-category="uncommon inhaled">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="rule" href="https://www.dndbeyond.com/sources/dnd/br-2024/dms-toolbox#Malice250GP" target="_blank" rel="noopener noreferrer">Malice</a> — Zášť</h3>
+              <div class="lore-domain-sub">💨 Inhaled • Cena: <code>250 GP</code> • Save: <code>DC 15 CON</code></div>
+            </div>
+            <span class="badge badge-gold">Neobvyklý • Anti-mág</span>
+          </div>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5:</strong> <code>DC 15 CON</code> záchranný hod (5-ft krychle, zadržení dechu nepomáhá). Neúspěch: <strong>Poisoned</strong> a <strong>Blinded</strong> na <strong>1 hodinu</strong>.
+          </div>
+          <p>
+            Jemný šedozelený prach mletý z výtrusů jeskynních plísní a popela nočních můr, vyfukovaný z dutých prstenů či rozbíjených skleněných kuliček přímo do obličeje sesilatelů kouzel.
+          </p>
+          <div class="vladislak-view">
+            <strong>👁️ Poznámka strážce (Kritická hrozba!)</strong>
+            „Pro čaroděje horší než dýka v boku: slepota (Blinded) okamžitě vypne většinu zaklínadel vyžadujících cíl, který vidíš! Proto mám od 3. úrovně vždy připravenou Lesser Restoration jako Bonus Action.“
+          </div>
+        </article>
+
+        <!-- 8. PALE TINCTURE -->
+        <article class="lore-card" data-category="uncommon ingested">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="rule" href="https://www.dndbeyond.com/sources/dnd/br-2024/dms-toolbox#PaleTincture250GP" target="_blank" rel="noopener noreferrer">Pale Tincture</a> — Bledá tinktura</h3>
+              <div class="lore-domain-sub">🍷 Ingested • Cena: <code>250 GP</code> • Save: <code>DC 16 CON</code></div>
+            </div>
+            <span class="badge badge-gold">Neobvyklý • Thayský</span>
+          </div>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5:</strong> <code>DC 16 CON</code> save. Neúspěch: <strong><code>3 (1d6)</code> Poison</strong> a <strong>Poisoned</strong>. Save se opakuje každých 24 h (<code>1d6</code> Poison); <strong>zranění nelze nijak vyléčit</strong>, dokud trvá <em>Poisoned</em>. Končí až po <strong>7 úspěších</strong> (nebo magií).
+          </div>
+          <p>
+            Klasický thayský a mulanský „jed pomalého chřadnutí“, zcela bez barvy, chuti i zápachu. Oběť celé týdny bledne a slábne na lůžku, takže smrt v Eltabbaru vypadá jako přirozená souchotina nebo vyčerpání z nekromantických studií.
+          </p>
+          <div class="vladislak-view">
+            <strong>👁️ Poznámka strážce</strong>
+            „Oblíbený recept trpělivých dědiců v Eltabbaru. Jakmile ráno uvidíš, že se drobný škrábanec ani po spánku či léčivém kouzle nezacelil, nejde o únavu – je to Bledá tinktura.“
+          </div>
+        </article>
+
+        <!-- 9. ESSENCE OF ETHER -->
+        <article class="lore-card" data-category="uncommon inhaled">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="rule" href="https://www.dndbeyond.com/sources/dnd/br-2024/dms-toolbox#EssenceofEther300GP" target="_blank" rel="noopener noreferrer">Essence of Ether</a> — Esence éteru</h3>
+              <div class="lore-domain-sub">💨 Inhaled • Cena: <code>300 GP</code> • Save: <code>DC 15 CON</code></div>
+            </div>
+            <span class="badge badge-gold">Neobvyklý • Pasti</span>
+          </div>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5:</strong> <code>DC 15 CON</code> záchranný hod. Neúspěch: <strong>Poisoned</strong> a <strong>Unconscious</strong> na <strong>8 hodin</strong> (probudí zranění nebo zatřesení akcí).
+          </div>
+          <p>
+            Těkavá alchymistická pára uzavřená v tenkostěnných skleněných ampulích s lehce nasládlou vůní přezrálých hrušek a ozonu. Běžně nastražená v pružinových pastích truhlic se svitky nebo vpouštěná klíčovou dírkou do ložnic vyslanců.
+          </p>
+          <div class="vladislak-view">
+            <strong>👁️ Poznámka strážce</strong>
+            „Když v uzavřené komnatě ucítíš sladké ovoce, necpi nos k truhle – ustup o krok zpět. Cizí schránky pro čaroděje otevírám výhradně na dálku přes Mage Hand.“
+          </div>
+        </article>
+
+        <!-- 10. OIL OF TAGGIT -->
+        <article class="lore-card" data-category="uncommon contact">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="rule" href="https://www.dndbeyond.com/sources/dnd/br-2024/dms-toolbox#OilofTaggit400GP" target="_blank" rel="noopener noreferrer">Oil of Taggit</a> — Taggitový olej</h3>
+              <div class="lore-domain-sub">🖐️ Contact • Cena: <code>400 GP</code> • Save: <code>DC 13 CON</code></div>
+            </div>
+            <span class="badge badge-gold">Neobvyklý • Sabotáž</span>
+          </div>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5:</strong> <code>DC 13 CON</code> záchranný hod. Neúspěch: <strong>Poisoned</strong> a <strong>Unconscious</strong> na <strong>24 hodin</strong> <em>(probudí pouze zranění – pouhé zatřesení nefunguje!)</em>.
+          </div>
+          <p>
+            Hustý bezbarvý olej destilovaný z kořenů taggitu a bažinných mechů. V Thay se natírá do podšívek čelenek, rukavic či na rukojeti holí – oběť upadne do bezesného kómatu a zmešká audienci u Zulkira, protože ji sluhové třesením nevzbudí.
+          </p>
+          <div class="vladislak-view">
+            <strong>👁️ Poznámka strážce</strong>
+            „Zrádný tím, že vypadá jako hluboký spánek z vyčerpání. Pokud nejde spícího probrat voláním ani třesením, poznáš Taggit podle studeného potu a nehybných zornic.“
+          </div>
+        </article>
+
+        <!-- 11. BURNT OTHUR FUMES -->
+        <article class="lore-card" data-category="uncommon inhaled">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="rule" href="https://www.dndbeyond.com/sources/dnd/br-2024/dms-toolbox#BurntOthurFumes500GP" target="_blank" rel="noopener noreferrer">Burnt Othur Fumes</a> — Výpary spáleného othuru</h3>
+              <div class="lore-domain-sub">💨 Inhaled • Cena: <code>500 GP</code> • Save: <code>DC 13 CON</code></div>
+            </div>
+            <span class="badge badge-gold">Neobvyklý • Žíravý dým</span>
+          </div>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5:</strong> <code>DC 13 CON</code> save. Neúspěch: <strong><code>10 (3d6)</code> Poison</strong> a opakování záchrany na začátku každého tahu (<strong><code>3 (1d6)</code> Poison</strong> při neúspěchu). Končí až po <strong>3 úspěšných záchranách</strong>.
+          </div>
+          <p>
+            Štiplavý žlutohnědý dým vznikající žhnutím pryskyřice vzácného podzemního mechu <em>othur</em>, zákeřně přimíchávaný do chrámového kadidla, vonných tyčinek či pečetního vosku.
+          </p>
+          <div class="vladislak-view">
+            <strong>👁️ Poznámka strážce</strong>
+            „Rozleptává plíce zevnitř a každé kolo nutí čaroděje házet znovu na koncentraci. Proto v hostincích a salonech hlídám i to, co pálí v krbu a kadidelnicích.“
+          </div>
+        </article>
+
+        <!-- 12. TORPOR (ASH-TONGUE TORPOR - BACKSTORY HIGHLIGHT) -->
+        <article id="torpor-card" class="lore-card patron-highlight" data-category="uncommon ingested">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="rule" href="https://www.dndbeyond.com/sources/dnd/br-2024/dms-toolbox#Torpor600GP" target="_blank" rel="noopener noreferrer">Torpor</a> — var. „Němý popel“</h3>
+              <div class="lore-domain-sub">🍷 Ingested • Cena: <code>600 GP</code> • Save: <code>DC 15 CON</code></div>
+            </div>
+            <span class="badge badge-crimson">★ Jed z Eltabbaru</span>
+          </div>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5:</strong> <code>DC 15 CON</code> záchranný hod. Neúspěch: stav <strong>Poisoned</strong> na <strong><code>4d6</code> hodin</strong> a <strong>poloviční rychlost (Speed halved)</strong>.
+          </div>
+          <p>
+            Drahý alchymistický extrakt určený k tichému vyřazení mágů a šlechticů bez prolité krve. V Eltabbaru koluje jeho obávaná úprava <strong><em>„Němý popel“ (Ash-Tongue Torpor)</em></strong> s destilátem z podzemní houby <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Bluecap" target="_blank" rel="noopener noreferrer">Bluecap</a>: má zpožděný nástup (2–3 h), nepatrný dozvuk hořkých mandlí, dřevnatí jazyk a láme artikulaci verbálních složek kouzel.
+          </p>
+          <div>
+            <a class="story-link-badge" href="background.html#noc-zkousky">🩸 Příběh: Noc zkoušky v Eltabbaru &rarr;</a>
+          </div>
+          <div class="vladislak-view">
+            <strong>👁️ Poznámka strážce (Osobní zkušenost!)</strong>
+            „Ten mrazivý kovový stah pod jazykem už do smrti nezapomenu. Rival ho nanesl jako průzračnou glazuru na vnitřní okraj poháru mého pána – otestoval jsem ho špičkou dýky na sobě a do rána mu zbytek lahvičky vrátil až do dna.“
+          </div>
+        </article>
+
+        <!-- TIER III: RAREST & LEGENDARY (5) -->
+        <!-- 13. WYVERN POISON -->
+        <article class="lore-card" data-category="rare injury">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="rule" href="https://www.dndbeyond.com/sources/dnd/br-2024/dms-toolbox#WyvernPoison1200GP" target="_blank" rel="noopener noreferrer">Wyvern Poison</a> — Jed wyverny</h3>
+              <div class="lore-domain-sub">🗡️ Injury • Cena: <code>1 200 GP</code> • Save: <code>DC 14 CON</code></div>
+            </div>
+            <span class="badge badge-crimson">Vzácný • Smrtící</span>
+          </div>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5:</strong> <code>DC 14 CON</code> záchranný hod. Neúspěch: <strong><code>24 (7d6)</code> Poison</strong> zranění. Úspěch: poloviční zranění.
+          </div>
+          <p>
+            Hustý, temně jantarový toxin stáčený z ocasního bodce divokých <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Wyvern" target="_blank" rel="noopener noreferrer">wyvern</a> ze skalních hnízd v Mečových horách či pohoří <em>Sunrise Mountains</em> na hranici Thaye a Rashemenu.
+          </p>
+          <div class="vladislak-view">
+            <strong>👁️ Poznámka strážce</strong>
+            „Zbraň elitních nájemných vrahů. Na nižších úrovních dokáže jediný škrábanec dýkou s jedem wyverny zabít čaroděje i při úspěšné záchraně – tady rozhoduje Warding Bond a moje AC 23.“
+          </div>
+        </article>
+
+        <!-- 14. MIDNIGHT TEARS -->
+        <article class="lore-card" data-category="rare ingested">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="rule" href="https://www.dndbeyond.com/sources/dnd/br-2024/dms-toolbox#MidnightTears1500GP" target="_blank" rel="noopener noreferrer">Midnight Tears</a> — Půlnoční slzy</h3>
+              <div class="lore-domain-sub">🍷 Ingested • Cena: <code>1 500 GP</code> • Save: <code>DC 17 CON</code></div>
+            </div>
+            <span class="badge badge-crimson">Nejvzácnější • Královražedný</span>
+          </div>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5:</strong> <strong>Žádný projev až do úderu půlnoci!</strong> Není-li před půlnocí zneutralizován efektem rušícím stav <em>Poisoned</em>, oběť o půlnoci hází <code>DC 17 CON</code> save: <strong><code>31 (9d6)</code> Poison</strong> (polovina při úspěchu).
+          </div>
+          <p>
+            Mistrovský alchymistický klenot cechu vrahů z Calimshanu, špiček Zhentarimu i dvorů v Thay. Křišťálová kapka bez chuti, barvy a pachu podaná při polední hostině zajistí vrahovi dokonalé alibi desítky mil daleko.
+          </p>
+          <div class="vladislak-view">
+            <strong>👁️ Poznámka strážce</strong>
+            „Nikdy nevěř klidnému večeru po podezřelém banketu ve Waterdeepu. Rituál Detect Poison and Disease před ulehnutím a okamžitá Lesser Restoration vymažou Půlnoční slzy dřív, než odbije dvanáctá.“
+          </div>
+        </article>
+
+        <!-- 15. PURPLE WORM POISON -->
+        <article class="lore-card" data-category="rare injury">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="rule" href="https://www.dndbeyond.com/sources/dnd/br-2024/dms-toolbox#PurpleWormPoison2000GP" target="_blank" rel="noopener noreferrer">Purple Worm Poison</a> — Jed nachového červa</h3>
+              <div class="lore-domain-sub">🗡️ Injury • Cena: <code>2 000 GP</code> • Save: <code>DC 21 CON</code></div>
+            </div>
+            <span class="badge badge-crimson">Nejvzácnější • Kolosální</span>
+          </div>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5:</strong> <code>DC 21 CON</code> záchranný hod. Neúspěch: <strong><code>35 (10d6)</code> Poison</strong> zranění. Úspěch: poloviční zranění.
+          </div>
+          <p>
+            Nejsmrtelnější a nejdražší standardní jed v pravidlech <em>DMG 2024</em>, získávaný s nasazením života (<code>DC 20 Nature</code>) z ocasního žihadla kolosálního <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Purple_worm" target="_blank" rel="noopener noreferrer">Purple Worma</a> z hlubin Underdarku. Purpurově černá žíravina naleptávající i měkké kovy.
+          </p>
+          <div class="vladislak-view">
+            <strong>👁️ Poznámka strážce</strong>
+            „Proti DC 21 neobstojí holá lidská odolnost. Pokud stojíme proti vrahovi s fialově zčernalou čepelí, okamžitě na čaroděje sesílám Protection from Poison – srazí zranění na polovinu, a přes Warding Bond na čtvrtinu.“
+          </div>
+        </article>
+
+        <!-- 16. BLACK LOTUS EXTRACT (FR LORE RELIC) -->
+        <article class="lore-card" data-category="rare contact ingested">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="lore" href="https://forgottenrealms.fandom.com/wiki/Poison" target="_blank" rel="noopener noreferrer">Black Lotus Extract</a> — Extrakt Černého lotosu</h3>
+              <div class="lore-domain-sub">🖐️ Contact / 🍷 Ingested • Cena: <code>Nedostupné</code> • <em>Archiv Azutha (FR Lore)</em></div>
+            </div>
+            <span class="badge badge-crimson">Legendární Lore</span>
+          </div>
+          <div class="poison-mech">
+            <strong>Lore relikvie pro DM:</strong> Mýtický smrtící toxin mimo běžný trh – v kampani může představovat unikátní hrozbu při atentátu na arcimágy či Maskované pány.
+          </div>
+          <p>
+            Legendami opředený nektar z okvětních lístků černého lotosu z nejhlubších džunglí <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Chult" target="_blank" rel="noopener noreferrer">Chultu</a> a dalekého jihu, popsaný v uzamčených svitcích Azuthova chrámu v Eltabbaru. Vydává těžkou, omamnou vůni hořkého medu a zastavuje dech během několika úderů srdce po doteku s kůží.
+          </p>
+          <div class="vladislak-view">
+            <strong>👁️ Poznámka strážce</strong>
+            „V Eltabbaru jsem ho nikdy neviděl na vlastní oči – jen jeho popis v chrámových spisech o smrti starých Zulkirů. Kdyby se jediná lahvička objevila ve Skullportu, bude stát víc než celá kupecká loď.“
+          </div>
+        </article>
+
+        <!-- 17. SZASS'S VOID-BILE (FR THAYAN LORE RELIC) -->
+        <article class="lore-card" data-category="rare ingested injury">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="lore" href="https://forgottenrealms.fandom.com/wiki/Szass_Tam" target="_blank" rel="noopener noreferrer">Szassova nekrotická žluč</a> — Thayan Void-Bile</h3>
+              <div class="lore-domain-sub">🍷 Ingested / 🗡️ Injury • Cena: <code>Tajemství Thaye</code> • <em>Archiv Azutha (FR Lore)</em></div>
+            </div>
+            <span class="badge badge-crimson">Legendární Lore</span>
+          </div>
+          <div class="poison-mech">
+            <strong>Lore háček pro DM:</strong> Zakázaná alchymisticko-nekromantická směs na pomezí jedu a kletby, komplikující prosté oživení přes <a class="spell" href="https://www.aidedd.org/spell/revivify" target="_blank" rel="noopener noreferrer">Revivify</a> do rituálního očištění těla.
+          </div>
+          <p>
+            Šedavě popelavý destilát míchaný nekromanty vnitřního kruhu <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Szass_Tam" target="_blank" rel="noopener noreferrer">Szass Tama</a> z prachu zničených fylaktérií a žluči nemrtvých stvůr. Slouží k definitivnímu umlčení neposlušných Rudých čarodějů v zahraničních enklávách.
+          </p>
+          <div class="vladislak-view">
+            <strong>👁️ Poznámka strážce</strong>
+            „Důvod, proč na západě nesmíme selhat ani vzbudit pochybnosti o loajalitě. Před dýkou žoldáka ve Waterdeepu svého pána ochráním – před hněvem regenta Thaye by nás neochránily ani hradby celého města.“
+          </div>
+        </article>
+
+      </div>
+
+      <div class="lore-empty" id="poisonEmpty" data-lore-empty hidden>
+        Žádný jed ve vademecu neodpovídá zadanému filtru. Zkus upravit hledaný výraz nebo přepnout vzácnost či způsob podání výše.
+      </div>
+    </section>
+
+    <!-- SECTION 4.3: Future Lore Expansion Roadmap -->
     <section id="rozsireni-lore" style="margin-top:1.75rem;">
       <div class="dm-callout" style="margin-bottom:0;">
         <h3>📚 Připraveno k dalšímu rozšiřování během kampaně</h3>
         <p style="margin:0 0 0.45rem; font-size:0.93rem;">
-          Struktura této stránky je připravena na postupné doplňování nových znalostí (stačí přidat další karty a filtrační štítky):
+          Zápisník nyní pokrývá <strong>Kapitolu I (Božstva Thaye)</strong> i <strong>Kapitolu II (Vademecum jedů)</strong> a je připraven na další kapitoly z odehraných sezení:
         </p>
         <ul>
           <li><strong>Politika Thaye &amp; Osmička Zulkirů:</strong> Rozdělení magických škol v Eltabbaru, živí exulanti vs. nemrtvý dvůr Szass Tama.</li>
           <li><strong>Waterdeep &amp; Místní mocnosti:</strong> <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Watchful_Order_of_Magists_and_Protectors" target="_blank" rel="noopener noreferrer">Watchful Order of Magists and Protectors</a>, Městská hlídka, Maskovaní páni a postavení <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thayan_enclave" target="_blank" rel="noopener noreferrer">thayské enklávy</a> (Skullport / zahraniční obchod).</li>
-          <li><strong>Kontakty, šifry a alchymie:</strong> Poznámky z odehraných sezení, jména spojenců, nepřátel a identifikovaných jedů.</li>
+          <li><strong>Kontakty, šifry a deník vyšetřovatele:</strong> Jména odhalených spojenců, nepřátel a specifických vzorků z kampaně.</li>
         </ul>
       </div>
     </section>

@@ -28,7 +28,7 @@ Kompletní vícedílný interaktivní dossier postavy, mechanický build a pří
 
 ## Příběhový základ
 
-**Vladislak Ulmokina** pochází z rashemijské rodiny z nižší svobodné kasty v thayském hlavním městě **Eltabbaru** (syn **Hulmarry Ulmokiny** a starší bratr **Yuldry Ulmokiny**). Od dětství vyrůstal po boku mulanského učedníka — budoucího **Rudého čaroděje** — kterému před závěrečnými zkouškami zachránil život odhalením otráveného poháru od rivala.
+**Vladislak Ulmokina** pochází z rashemijské rodiny z nižší svobodné kasty v thayském hlavním městě **Eltabbaru** (syn **Hulmarry Ulmokiny** a starší bratr **Yuldry Ulmokiny**). Od dětství vyrůstal po boku mulanského učedníka — budoucího **Rudého čaroděje** — kterému v předvečer závěrečných zkoušek zachránil život odhalením zákeřného thayského jedu **Torpor (*„Němý popel“*)** na okraji obřadního poháru a tichým odstraněním rivala.
 
 Za odměnu byl vybrán do řad **Thayanských rytířů** a podstoupil bolestivý rituál, při němž mu bylo přes celá záda a páteř až k zátylku vypáleno a vytetováno ochranné magické znamení svazující jeho život s chráněným čarodějem. Nyní společně míří v utajení do **Waterdeepu**.
 
@@ -39,10 +39,10 @@ Za odměnu byl vybrán do řad **Thayanských rytířů** a podstoupil bolestiv�
 Web je rozdělen do 5 responzivních stránek optimalizovaných pro **iPhone 16 Pro**, **iPad (landscape)** i **MacBook 14"** s přepínáním barevných palet **Srcery Dark** a **Ayu Light**:
 
 - **[`index.html`](./index.html)** — **01. Přehled & Staty:** Koncept postavy, vlastnosti, dovednosti, tichá zbroj (*Breastplate + Štít*) a ikonické zbraně (*Hůl Azutha + Rituální dýka*).
-- **[`background.html`](./background.html)** — **02. Původ & Roleplay:** Příběh z Eltabbaru, mechaniky rituálního thayského tetování a kulturní detaily etnika *Rashemi* v Thay.
+- **[`background.html`](./background.html)** — **02. Původ & Roleplay:** Příběh z Eltabbaru (včetně otravy *Němým popelem*), mechaniky rituálního thayského tetování a kulturní detaily etnika *Rashemi* v Thay.
 - **[`tactics.html`](./tactics.html)** — **03. Taktika & Leveling:** Bojová i sociální synergie s Rudým čarodějem a průvodce postupem po úrovních 1–12.
-- **[`lore.html`](./lore.html)** — **04. Znalosti světa (Lore):** Interaktivní filtrovatelná databáze thayských božstev s osobním pohledem Vladislaka, připravená na průběžné rozšiřování.
+- **[`lore.html`](./lore.html)** — **04. Znalosti světa (Lore):** Interaktivní filtrovatelná databáze thayských božstev a **Vademecum jedů** (17 běžných, neobvyklých i nejvzácnějších jedů DnD 5.5 & Forgotten Realms) s osobním pohledem Vladislaka.
 - **[`dm.html`](./dm.html)** — **05. Pro DM (Session 0):** Kontrola souladu s pravidly DnD 5.5, otevřené otázky pro Session 0 a příběhové háčky.
-- **[`css/styles.css`](./css/styles.css)** & **[`js/main.js`](./js/main.js)** — Sdílené styly a bezrámový vanilla JS skript (navigace, hamburger drawer, téma, filtrování lore).
+- **[`css/styles.css`](./css/styles.css)** & **[`js/main.js`](./js/main.js)** — Sdílené styly a bezrámový vanilla JS skript (navigace, hamburger drawer, téma, nezávislé vícenásobné filtrování lore kapitol).
 - **[`thayan_knight_cleric.md`](./thayan_knight_cleric.md)** — Kompletní textový zdrojový rozbor postavy v Markdownu.
 - **[`GEMINI.md`](./GEMINI.md)** — Základní architektonická, vizuální a pravidlová pravidla projektu.

@@ -148,7 +148,66 @@ Podle Forgotten Realms existuje zásadní rozdíl mezi svobodnými **Rashemaar**
 
 ---
 
-## 7. Příběh postavy (Backstory): Vladislak Ulmokina
+## 7. Lore: Vademecum jedů – Databáze pro Thayan Knighta (*DnD 5.5 & Forgotten Realms*)
+
+V **Eltabbaru**, kde je otevřený magický souboj mezi učedníky přísně svázán protokolem Zulkirů, jsou alchymistické a přírodní jedy každodenním nástrojem politiky. Během výcviku vyšetřovatele v **chrámu Azutha** si Vladislak osvojil rozsáhlé znalosti travičství – nejen aby dokázal jedy sám míchat a aplikovat, ale především proto, aby podle sotva znatelné vůně, lomu světla na hladině vína či prvních záškubů svalů poznal, čím se nepřítel pokouší zničit jeho **Rudého čaroděje**.
+
+### Protokol osobního strážce a pravidla jedů v DnD 5.5 (*PHB 2024* & *DMG 2024*)
+* **4 způsoby podání (*DMG 2024*):**
+  1. **Pozřený (*Ingested*):** V jídle či nápoji; oběť musí polknout celou dávku (částečná dávka dle DM dává *Advantage* na záchranu nebo poloviční zranění). Nejčastější zbraň thayských hostin i měšťanských salonů ve Waterdeepu.
+  2. **Kontaktní (*Contact*):** Natřený na okraj poháru, pečeť svitku, brk či kliku; působí okamžitě při doteku holou kůží, dokud není setřen či smyt. *(Proto Vladislak manipuluje s podezřelými dary v rukavicích nebo od 3. úr. přes **Mage Hand**!)*
+  3. **Vdechovaný (*Inhaled*):** Prášek nebo plyn uvolněný do **5-ft krychle (*Cube*)**. **Zadržení dechu proti němu nefunguje**, protože leptá a proniká přes nosní sliznice a slzné kanálky!
+  4. **Zraňující (*Injury*):** V DnD 5.5 se nanáší jako **Bonus Action** na 1 zbraň nebo až 3 kusy střeliva; spustí se při způsobení *Piercing* nebo *Slashing* zranění.
+* **Odhalení, protilátky a sběr (*PHB 2024* & *DMG 2024*):**
+  * **Kontrola jídla a předmětů (*Poisoner's Kit – Utilize*):** Akce *Study / Search*, `DC 10 Intelligence`. Díky souběhu zdatnosti ve skillu (*Investigation* / *Perception*) a nástroji (*Poisoner's Kit*) hází Vladislak v 5.5 **automaticky s Výhodou (Advantage)**!
+  * **Rychlá alchymistická pomoc (*Antitoxin – 50 GP*):** Vypití zabere v 5.5 pouze **Bonus Action** a dává na 1 hodinu *Advantage* na záchranné hody pro vyhnutí se či ukončení stavu *Poisoned*.
+  * **Klerická protiopatření pro čaroděje:** *Detect Poison and Disease* (1. úr., rituál), **Lesser Restoration** (2. úr., v 5.5 **Bonus Action!** – okamžitě ukončí *Poisoned*, *Paralyzed* či *Blinded* a zneutralizuje i tikající *Midnight Tears*) a **Protection from Poison** (2. úr., bez koncentrace na 1 h ukončí *Poisoned*, dá *Advantage* na záchrany a *Resistance* na Poison zranění).
+  * **Sběr jedu z nestvůr (*Harvesting Poison – DMG 2024*):** Z mrtvého či *Incapacitated* tvora trvá `1d6` minut, vyžaduje hod `DC 20 Intelligence (Nature)` s *Poisoner's Kitem* (získá 1 dávku; při neúspěchu o 5 a více je sběrač sám zasažen jedem!).
+
+---
+
+### I. Známé a běžné jedy (*Common & Known Poisons* | 100 – 200 GP)
+*Jedy pouličních cechů, žoldnéřů Zhentarimu, pašeráků z přístavní čtvrti Dock Ward i chrámových vyšetřovatelů.*
+
+| Jed (Zdroj 5.5) | Typ & Cena | Mechanika (*PHB / DMG 2024*) | Smyslové znaky, původ ve Forgotten Realms & poznámky strážce |
+| :--- | :---: | :--- | :--- |
+| **Basic Poison** *(Základní jed – PHB 2024)* | *Injury* **100 GP** | **Bonus Action** (1 zbraň / 3 střely na 1 min). Při zásahu (*Piercing/Slashing*) extra **`1d4` Poison** zranění *(v 5.5 bez záchrany!)*. | Tmavý, mazlavý bylinný koncentrát z oměje, rulíku a pavoučích žláz s trpkým pachem. Běžný v uličkách Waterdeepu; Vladislak jej umí sám vyrobit přes *Poisoner's Kit* (50 GP surovin). |
+| **Assassin's Blood** *(Vrahova krev – DMG 2024)* | *Ingested* **150 GP** | `DC 10 CON` save. Neúspěch: **`6 (1d12)` Poison** zranění a stav **Poisoned** na 24 h. Úspěch: poloviční zranění. | Rudohnědá kapka s kovově nasládlou pachutí, maskovaná v těžkých červených vínech od Calimshanu po Waterdeep. Zdravý válečník jí snadno odolá, ale vyčerpaného učence vyřadí na celý den. |
+| **Truth Serum** *(Sérum pravdy – DMG 2024)* | *Ingested* **150 GP** | `DC 11 CON` save. Neúspěch: **Poisoned** na 1 h; oběť během trvání **nemůže vědomě vyslovit lež**. | Čirá tinktura s lehkou vůní šalvěje a kafru, používaná vyšetřovateli Azuthova chrámu v Eltabbaru i magistry *Watchful Order*. Výhoda oproti *Zone of Truth*: nezanechává žádnou magickou auru! |
+| **Serpent Venom** *(Hadí jed – DMG 2024)* | *Injury* **200 GP** | `DC 11 CON` save. Neúspěch: **`10 (3d6)` Poison** zranění. Úspěch: poloviční zranění. | Jantarový toxin stáčený ze žláz obřích jedovatých hadů (*Giant Poisonous Snake*) z džunglí Chultu či skalisek Priadoru. Na vzduchu zasychá v jemný nažloutlý krystalický film na ostří. |
+| **Carrion Crawler Mucus** *(Sliz mrchožrouta – DMG 2024)* | *Contact* **200 GP** | `DC 13 CON` save. Neúspěch: **Poisoned** a **Paralyzed** na 1 min (opakování záchrany na konci každého tahu). | Nažloutlý gel páchnoucí zatuchlinou, ve Waterdeepu hojně pašovaný z *Undermountainu* a *Skullportu*. Natírá se na zámky, pečetě a okraje svitků – *Paralyzed* čaroděj nemůže seslat ani *Shield*! *(Použit Vladislakem při tiché odplatě v Eltabbaru.)* |
+| **Lolth's Sting** *(Žihadlo Lolth – DMG 2024, dříve Drow Poison)* | *Injury* **200 GP** | `DC 13 CON` save. Neúspěch: **Poisoned** na 1 h; při **neúspěchu o 5 a více** navíc **Unconscious** (probudí zranění nebo zatřesení akcí). | Černá, hustá pasta drowích vrahů z *Underdarku* (ve Skullportu s ní kšeftují žoldnéři *Bregan D'aerthe*), vařená z hlubinných hub v naprosté tmě. Ideální na šipky kuší k tichému únosu mágů zaživa. |
+
+---
+
+### II. Neobvyklé a zákeřné jedy (*Uncommon & Specialist Poisons* | 250 – 600 GP)
+*Specializované zbraně špionů, dvorských travičů a soupeřících čarodějských rodů určené k vyřazení sesilatelů kouzel.*
+
+| Jed (Zdroj 5.5) | Typ & Cena | Mechanika (*DMG 2024*) | Smyslové znaky, původ ve Forgotten Realms & poznámky strážce |
+| :--- | :---: | :--- | :--- |
+| **Malice** *(Zášť – DMG 2024)* | *Inhaled* **250 GP** | `DC 15 CON` save. Neúspěch: **Poisoned** a **Blinded** na 1 hodinu. | Šedozelený prach z výtrusů jeskynních plísní vyfukovaný z dutých prstenů či trubiček. **Kritická hrozba pro čaroděje:** stav *Blinded* okamžitě znemožní seslat většinu kouzel vyžadujících *„cíl, který vidíš“*! Vladislak jej čistí Bonus Akcí přes *Lesser Restoration*. |
+| **Pale Tincture** *(Bledá tinktura – DMG 2024)* | *Ingested* **250 GP** | `DC 16 CON` save. Neúspěch: **`3 (1d6)` Poison** a **Poisoned**. Opakování každých 24 h (`1d6` Poison); **zranění nelze nijak léčit**, dokud trvá *Poisoned*. Končí až po **7 úspěšných záchranách**. | Pověstný thayský a mulanský „jed pomalého chřadnutí“, zcela bez barvy, chuti i zápachu. Oběť týdny chřadne a bledne bez zjevné příčiny, takže smrt vypadá jako souchotina nebo vyčerpání z nekromantických studií. |
+| **Essence of Ether** *(Esence éteru – DMG 2024)* | *Inhaled* **300 GP** | `DC 15 CON` save. Neúspěch: **Poisoned** a **Unconscious** na 8 hodin (probudí zranění či zatřesení akcí). | Těkavá alchymistická pára ukrytá ve skleněných ampulích s lehce nasládlou vůní přezrálých hrušek. Běžně nastražená v jehlách a truhlách s cennými svitky nebo vpouštěná klíčovou dírkou do ložnic vyslanců. |
+| **Oil of Taggit** *(Taggitový olej – DMG 2024)* | *Contact* **400 GP** | `DC 13 CON` save. Neúspěch: **Poisoned** a **Unconscious** na **24 hodin** *(probudí pouze zranění – třesení nefunguje!)*. | Bezbarvý, lehce olejovitý výtažek z kořenů taggitu. V Thay se natírá do podšívek čelenek či na rukojeti holí rivalů – oběť upadne do bezesného kómatu a zmešká audienci u Zulkira, protože ji sluhové třesením nevzbudí. |
+| **Burnt Othur Fumes** *(Výpary spáleného othuru – DMG 2024)* | *Inhaled* **500 GP** | `DC 13 CON` save. Neúspěch: **`10 (3d6)` Poison** a opakování na začátku každého tahu (**`3 (1d6)` Poison** při neúspěchu). Končí po **3 úspěšných záchranách**. | Štiplavý žlutohnědý dým z pryskyřice vzácného podzemního mechu *othur*, často maskovaný v chrámovém kadidle či pečetním vosku. Způsobuje opakované zranění každé kolo a rozbíjí tak čaroději *Concentration*! |
+| **Torpor – v Thay var. *„Němý popel“*** *(Otupělost – DMG 2024)* | *Ingested* **600 GP** | `DC 15 CON` save. Neúspěch: **Poisoned** na **`4d6` hodin** a **poloviční rychlost (Speed halved)**. | **★ Jed z Eltabbaru (viz Backstory)!** Drahý alchymistický extrakt zneškodňující mágy bez prolité krve. Eltabbarská subvarianta ***„Němý popel“ (Ash-Tongue Torpor)*** s destilátem z houby *Bluecap* má zpožděný nástup (2–3 h), dřevnatí jazyk a ochromuje výslovnost verbálních složek kouzel. |
+
+---
+
+### III. Nejvzácnější a legendární jedy (*Rarest & Master-Tier Poisons* | 1 200+ GP & Archiv Azutha)
+*Smrtící relikvie určené pro krále, arcimágy a Zulkiry, střežené v trezorech enkláv nebo získávané z kolosů Temných říší.*
+
+| Jed (Zdroj 5.5 / FR Lore) | Typ & Cena | Mechanika (*DMG 2024*) / Lore účinek | Smyslové znaky, původ ve Forgotten Realms & poznámky strážce |
+| :--- | :---: | :--- | :--- |
+| **Wyvern Poison** *(Jed wyverny – DMG 2024)* | *Injury* **1 200 GP** | `DC 14 CON` save. Neúspěch: **`24 (7d6)` Poison** zranění. Úspěch: poloviční zranění. | Hustý, temně jantarový toxin z ocasního bodce wyvern z *Mečových hor* či pohoří *Sunrise Mountains* na pomezí Thaye a Rashemenu. Na nižších úrovních dokáže jediný škrábanec dýkou okamžitě usmrtit čaroděje i při úspěšné záchraně! |
+| **Midnight Tears** *(Půlnoční slzy – DMG 2024)* | *Ingested* **1 500 GP** | **Žádný projev až do půlnoci!** Pokud není do půlnoci zrušen efektem ukončujícím *Poisoned*, oběť hází `DC 17 CON` save: **`31 (9d6)` Poison** (polovina při úspěchu). | Korunní klenot elitních travičů Calimshanu, Zhentarimu i dvorů v Thay. Čirá kapka bez chuti a pachu podaná při polední hostině zajistí vrahovi dokonalé alibi. Po podezřelém banketu proto Vladislak kontroluje čaroděje rituálem *Detect Poison and Disease* ještě před půlnocí! |
+| **Purple Worm Poison** *(Jed nachového červa – DMG 2024)* | *Injury* **2 000 GP** | `DC 21 CON` save. Neúspěch: **`35 (10d6)` Poison** zranění. Úspěch: poloviční zranění. | Nejsmrtelnější standardní jed *DMG 2024*, stáčený s nasazením života (`DC 20 Nature`) z žihadla kolosálního *Purple Worma* z hlubin *Underdarku*. Purpurově černá žíravá tekutina; `DC 21` téměř jistě prorazí obranu každého smrtelníka, kterého nekryje *Protection from Poison* nebo Vladislakův *Warding Bond*. |
+| **Extrakt Černého lotosu** *(Black Lotus Extract – FR Lore)* | *Contact / Ingested* **Nedostupné** | *Lore relikvie (dle uvážení DM – mýtický smrtící jed).* | Vzácný nektar z černého lotosu z nejhlubších džunglí Chultu a dalekého jihu, zmiňovaný v uzavřených svitcích Azuthova chrámu. Údajně páchne po hořkém medu a zastavuje srdce během několika vteřin po doteku na kůži. |
+| **Szassova nekrotická žluč** *(Thayan Void-Bile – FR Lore)* | *Ingested / Injury* **Tajemství Thaye** | *Lore háček pro DM (kombinace jedu a nekromantické kletby).* | Zakázané alchymisticko-nekromantické destiláty vnitřního kruhu *Szass Tama*. Podle chrámových záznamů v Eltabbaru nejen tráví krev, ale zanechávají v těle nekrotickou pečeť, která komplikuje vzkříšení přes *Revivify*, dokud není tělo očištěno. |
+
+---
+
+## 8. Příběh postavy (Backstory): Vladislak Ulmokina
 
 * **Jméno:** Vladislak Ulmokina
 * **Věk:** ~25–26 let *(vrstevník svého Rudého čaroděje)*
@@ -163,12 +222,16 @@ Kněží Azutha ve Vladislakovi brzy objevili vzácnou kombinaci vlastností: ž
 
 Právě tehdy si mladého akolyty všiml mulanský rod tvého budoucího **Rudého čaroděje**. Nabídli dohodu, která se v Thay neodmítá: rod vezme Vladislakovu rashemijskou matku **Hulmarru** a mladší sestru **Yuldru** pod svou trvalou patronaci (zajistí jim v Eltabbaru bezpečný dům, jídlo a nedotknutelnost) a Vladislak zasvětí svůj život ochraně jejich stejně starého dědice. Vyrůstali od té doby bok po boku – jeden ve věžích nad svitky vysoké magie, druhý o krok za ním ve stínech chodeb, na cvičištích a v chrámu. Znáš každý jeho zvyk, tón hlasu i tajemství, a pod neproniknutelnou maskou protokolu je pro tebe jedinou skutečnou blízkostí, kterou v životě máš.
 
-### Noc zkoušky a rituál žhavého inkoustu
-Zlom přišel v předvečer čarodějovy klíčové učednické zkoušky v Eltabbaru. V sázce bylo vše – neúspěch znamenal pád v hierarchii nebo smrt. Vladislak při rutinní kontrole odhalil v čarodějově poháru bezbarvý, pomalu působící thayský jed nastražený ambiciózním rivalem, který měl čaroději uprostřed rituálu ochromit mysl i jazyk.
+### Noc zkoušky, „Němý popel“ a rituál žhavého inkoustu
+Zlom přišel v předvečer čarodějovy klíčové učednické zkoušky v Eltabbaru. V sázce bylo vše – neúspěch před mistry řádu znamenal ztrátu cti celého domu, otroctví nebo smrt uprostřed nezvládnutého zaklínadla. Když služebnictvo přineslo do studovny tradiční večerní džbán horkého kořeněného thayského vína (*jhuild*) na uklidnění mysli, samotný džbán byl čistý – případný ochutnávač u kuchyně by nepoznal vůbec nic.
 
-Kdyby Vladislak spustil otevřený poplach, zkouška by byla odložena a rod by vypadal slabě. Jednal proto tiše a bez jakýchkoliv rytířských skrupulí: část otrávené směsi otestoval na sobě, aby přesně určil její složení a namíchal protilátku (*Poisoner's Kit*), a téže noci se beze zvuku protáhl do komnat viníka (*Stealth*, *Investigation*). Ráno byla cesta ke zkoušce čistá – a rival se ke zkoušce už nikdy nedostavil.
+Vladislak však při své rutinní kontrole komnat (*Investigation / Perception + Poisoner's Kit s Advantage*) zachytil pod těžkou vůní skořice a hřebíčku sotva znatelný trpký závan hořkých mandlí a všiml si tenkého, průzračného olejovitého filmu zaschlého přímo na **vnitřním okraji čarodějova obřadního poháru**, který se rozpouštěl teprve dotekem horkého vína. Ambiciózní rival z konkurenčního rodu nepoužil obyčejný pouliční jed, který by zanechal jasné stopy vraždy, ale obávanou eltabbarskou modifikaci jedu **Torpor** (*DMG 2024*, 600 GP) známou mezi Rudými čaroději jako ***„Němý popel“ (Ash-Tongue Torpor)***. Tato drahá směs s destilátem z podzemní houby *Bluecap* propuká až se zpožděním dvou až tří hodin: nezasahuje srdce, nýbrž ochromuje jemnou motoriku jazyka, patra a soustředění. Čaroděj měl ráno nakráčet před komisi zdánlivě zdráv, ale v nejvyšším bodě rituálu by se mu zdřevěnělý jazyk zadrhl na verbálních složkách kouzla – a nespoutané Tkanivo by ho před zraky všech roztrhalo zaživa jako „neschopného učedníka“.
 
-Odměnou i pečetí tohoto činu bylo Vladislakovo přijetí mezi **Thayan Knights**. Během hodin trvajícího bolestivého obřadu mu kněží a mágové rodu vyryli přes **celá záda a podél páteře až k zátylku** spletité magické tetování propojující vztyčenou ruku Azutha s rodovou pečetí jeho pána. Od té noci jsou spojeni krví i magií: kdykoliv Vladislak vyvolá ochrannou bariéru (*Shield*), převezme pánovy rány (*Warding Bond*) nebo se čaroděj ocitne ve smrtelném ohrožení, jizvy pod zbrojí se rozpálí jako žhavé železo.
+Kdyby Vladislak spustil otevřený poplach, vyšetřování by zkoušku odložilo a rod by v očích Zulkirů vypadal zranitelně. Jednal proto tiše, chladně a bez jakýchkoliv rytířských skrupulí: vlnitou špičkou své skryté rituální dýky seškrábl stopové množství glazury a otestoval ji na vlastní sliznici pod jazykem. Okamžitě poznal ledové mravenčení v dásních typické pro *Torpor*, pomocí své soupravy (*Poisoner's Kit*) neutralizoval účinek na sobě silným **Antitoxinem** z drceného bezoáru a hořkého rashemijského kořene, pohár beze slova vyměnil a čaroděje nechal v klidu dokončit přípravu.
+
+Ještě téže noci se však s temnou čepelí v ruce beze zvuku protáhl stíny věže do komnat viníka (*Stealth*, *Investigation*), kde ve falešném dně psací skříňky našel zbytek lahvičky *Němého popela*. Rival neměl šanci ani vykřiknout – Vladislak mu nejprve potřel západku dveří kontaktním slizem **Carrion Crawler Mucus** (*DMG 2024*), který učedníka na místě znehybnil (*Paralyzed*), a poté mu do hrdla vlil zbytek jeho vlastní neředěné dávky *Torporu*. Ráno tvůj Rudý čaroděj složil zkoušku s naprostou bravurou – zatímco zohavené selhání jeho rivala při „osamělé noční přípravě zaklínadel“ uzavřeli mistři jako běžnou nehodu přeceněných sil.
+
+Odměnou i věčnou pečetí tohoto činu bylo Vladislakovo přijetí mezi **Thayan Knights**. Během hodin trvajícího bolestivého obřadu mu kněží a mágové rodu vyryli přes **celá záda a podél páteře až k zátylku** spletité magické tetování propojující vztyčenou ruku Azutha s rodovou pečetí jeho pána. Od té noci jsou spojeni krví i magií: kdykoliv Vladislak vyvolá ochrannou bariéru (*Shield*), převezme pánovy rány (*Warding Bond*) nebo se čaroděj ocitne ve smrtelném ohrožení, jizvy pod zbrojí se rozpálí jako žhavé železo.
 
 ### Mise do Waterdeepu
 Nyní byli oba vysláni z Thaye daleko na západ, do hlučného a nepředvídatelného **Waterdeepu**, aby splnili delikátní úkol. Pro Vladislaka je Město nádhery chaotickým mraveništěm plným změkčilých lidí, kteří nechápou skutečný Řád – ale jako chladný pragmatik pohrdá zbytečnou krutostí, která by přitáhla pozornost městské hlídky či mágů. Má jediný zákon: **mise musí uspět a jeho čaroděj se musí vrátit živý.** Protože dobře ví, že pokud selže tady na západě, zaplatí za to nejen on, ale i **Hulmarra a Yuldra** čekající doma v Eltabbaru.
@@ -176,12 +239,12 @@ Nyní byli oba vysláni z Thaye daleko na západ, do hlučného a nepředvídate
 ---
 
 ### Rychlý tahák osobnosti (pro deník postavy)
-* **Osobnostní rys:** Mluvím málo, tiše a věcně. Než si v cizí hospodě sedneme, automaticky zkontroluji východy, stíny u stropu i pohár svého pána.
-* **Ideál (Řád a Služba – LN):** Magie je nejvyšší řád světa. Čaroděj je mysl, která jí vládne; já jsem štít, který nedovolí chaosu a čepelím přerušit jeho dílo.
+* **Osobnostní rys:** Mluvím málo, tiše a věcně. Než si v cizí hospodě sedneme, opřu hůl Azutha u dveří a automaticky zkontroluji východy, stíny u stropu i vnitřní okraj poháru svého pána.
+* **Ideál (Řád a Služba – LN):** Magie je nejvyšší řád světa. Čaroděj je mysl, která jí vládne; já jsem štít, který nedovolí chaosu, jedu a čepelím přerušit jeho dílo.
 * **Pouto (Bond):** Dvě přísahy mě drží při životě – můj Rudý čaroděj, se kterým jsem vyrostl ve stínech Eltabbaru, a má matka **Hulmarra** se sestrou **Yuldrou** v Thay, jejichž bezpečí visí na mé bezchybné službě.
-* **Slabina (Flaw):** Můj vlastní život pro mě nemá žádnou hodnotu v porovnání s bezpečím mého čaroděje – bez zaváhání skočím do smrtelné rány a pro jeho ochranu použiju jed, lež i jakoukoliv špinavost bez výčitek svědomí.
+* **Slabina (Flaw):** Můj vlastní život pro mě nemá žádnou hodnotu v porovnání s bezpečím mého čaroděje – bez zaváhání skočím do smrtelné rány, otestuji neznámý jed na vlastním těle a pro jeho ochranu použiju jakoukoliv špinavost bez výčitek svědomí.
 
 ### Otevřené body k doladění s DM a spoluhráčem (Session 0)
 1. **Společné krytí ve Waterdeepu:** Jak vystupujete na veřejnosti (např. učenec/kupec z východu a jeho zarostlý rashemijský osobní strážce, nebo oficiální vyslanci enklávy)?
-2. **Podoba rodové pečeti a jméno rodu:** Jak se jmenuje mulanský rod (či mentor/Zulkir) tvého spoluhráče, jehož znak máš vytetovaný přes celá záda, a jak se jmenuje ten mrtvý rival z Eltabbaru (kdyby se jeho příbuzní chtěli v kampani pomstít)?
+2. **Podoba rodové pečeti a jméno rodu:** Jak se jmenuje mulanský rod (či mentor/Zulkir) tvého spoluhráče, jehož znak máš vytetovaný přes celá záda, a jak se jmenoval onen otrávený rival z Eltabbaru (kdyby jeho příbuzní pojali podezření, odkud tehdy pocházel *Němý popel*)?
 3. **Konkrétní cíl mise ve Waterdeepu:** Co přesně pro Thay ve městě hledáte nebo zařizujete – a ví Vladislak o celém zadání totéž co čaroděj?

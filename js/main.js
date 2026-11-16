@@ -143,29 +143,33 @@
       .toLowerCase();
   }
 
-  function initLoreFilter() {
-    var searchInput = document.getElementById('loreSearch');
-    var chips = document.querySelectorAll('.chip[data-filter]');
-    var cards = document.querySelectorAll('.lore-card[data-category]');
-    var countEl = document.getElementById('loreCount');
-    var emptyEl = document.getElementById('loreEmpty');
+  function initLoreSection(container) {
+    var searchInput = container.querySelector('[data-lore-search], #loreSearch');
+    var chips = container.querySelectorAll('.chip[data-filter]');
+    var subChips = container.querySelectorAll('.chip[data-subfilter]');
+    var cards = container.querySelectorAll('.lore-card[data-category]');
+    var countEl = container.querySelector('[data-lore-count], #loreCount');
+    var emptyEl = container.querySelector('[data-lore-empty], #loreEmpty');
+    var noun = container.getAttribute('data-count-noun') || 'záznamů';
 
     if (!cards.length) {
       return;
     }
 
     var activeCategory = 'all';
+    var activeSubfilter = 'all';
 
     function updateLoreView() {
       var query = searchInput ? normalizeText(searchInput.value.trim()) : '';
       var visibleCount = 0;
 
       cards.forEach(function (card) {
-        var cat = card.getAttribute('data-category') || '';
-        var categoryMatch = activeCategory === 'all' || cat.split(' ').indexOf(activeCategory) !== -1;
+        var cats = (card.getAttribute('data-category') || '').split(/\s+/);
+        var categoryMatch = activeCategory === 'all' || cats.indexOf(activeCategory) !== -1;
+        var subMatch = activeSubfilter === 'all' || cats.indexOf(activeSubfilter) !== -1;
         var textMatch = !query || normalizeText(card.textContent).indexOf(query) !== -1;
 
-        if (categoryMatch && textMatch) {
+        if (categoryMatch && subMatch && textMatch) {
           card.removeAttribute('hidden');
           visibleCount += 1;
         } else {
@@ -174,7 +178,7 @@
       });
 
       if (countEl) {
-        countEl.textContent = 'Zobrazeno ' + visibleCount + ' z ' + cards.length + ' záznamů';
+        countEl.textContent = 'Zobrazeno ' + visibleCount + ' z ' + cards.length + ' ' + noun;
       }
 
       if (emptyEl) {
@@ -199,11 +203,36 @@
       });
     });
 
+    subChips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        subChips.forEach(function (c) {
+          c.classList.remove('active');
+          c.setAttribute('aria-pressed', 'false');
+        });
+        chip.classList.add('active');
+        chip.setAttribute('aria-pressed', 'true');
+        activeSubfilter = chip.getAttribute('data-subfilter') || 'all';
+        updateLoreView();
+      });
+    });
+
     if (searchInput) {
       searchInput.addEventListener('input', updateLoreView);
     }
 
     updateLoreView();
+  }
+
+  function initLoreFilter() {
+    var sections = document.querySelectorAll('[data-lore-section]');
+    if (sections.length) {
+      sections.forEach(initLoreSection);
+      return;
+    }
+    var fallback = document.getElementById('bozstva-databaze');
+    if (fallback) {
+      initLoreSection(fallback);
+    }
   }
 
   document.addEventListener('DOMContentLoaded', function () {
