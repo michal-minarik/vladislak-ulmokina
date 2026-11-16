@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="cs" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Vladislak Ulmokina — 05. Otevřené body pro DM (DnD 5.5 Dossier)</title>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('vladislak-theme');
+        document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Přeskočit na obsah</a>
+
+  <!-- Sticky Top Navigation -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html" aria-label="Vladislak Ulmokina – Domů">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="32,4 58,19 58,45 32,60 6,45 6,19" stroke="var(--crimson)" stroke-width="3.5" fill="var(--crimson-soft)"/>
+            <path d="M32 15C28 22 24 27 24 33C24 37.5 27.6 41 32 41C36.4 41 40 37.5 40 33C40 27 36 22 32 15Z" stroke="var(--gold)" stroke-width="3" fill="var(--gold-soft)"/>
+            <path d="M32 24V48M25 44H39" stroke="var(--heading)" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">Vladislak Ulmokina</span>
+          <span class="brand-sub">Thayan Knight • DnD 5.5</span>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Hlavní navigace">
+        <a href="index.html"><span class="nav-idx">01</span>Přehled &amp; Staty</a>
+        <a href="background.html"><span class="nav-idx">02</span>Původ &amp; Roleplay</a>
+        <a href="tactics.html"><span class="nav-idx">03</span>Taktika &amp; Levely</a>
+        <a href="lore.html"><span class="nav-idx">04</span>Lore</a>
+        <a href="dm.html" aria-current="page"><span class="nav-idx">05</span>Pro DM</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <button class="btn-theme" id="themeBtn" type="button" aria-label="Přepnout barevný režim">
+          <span aria-hidden="true">☀️</span><span>Ayu<span class="theme-label-full"> Light</span></span>
+        </button>
+        <button class="hamburger-btn" id="hamburgerBtn" type="button" aria-label="Otevřít menu sekcí" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Slide-Out Hamburger Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobilní navigace" aria-hidden="true">
+    <div class="drawer-header">
+      <span class="drawer-title">Navigace Dossieru</span>
+      <button class="drawer-close" id="drawerCloseBtn" type="button" aria-label="Zavřít menu">&times;</button>
+    </div>
+    <nav class="drawer-nav" aria-label="Sekce postavy">
+      <a href="index.html">
+        <span class="drawer-link-top"><span class="drawer-link-idx">01</span> Přehled &amp; Staty</span>
+        <span class="drawer-link-desc">Koncept, vlastnosti, dovednosti, tichá zbroj a zbraně</span>
+      </a>
+      <a href="background.html">
+        <span class="drawer-link-top"><span class="drawer-link-idx">02</span> Původ &amp; Roleplay</span>
+        <span class="drawer-link-desc">Příběh z Eltabbaru, rituální tetování a etnikum Rashemi</span>
+      </a>
+      <a href="tactics.html">
+        <span class="drawer-link-top"><span class="drawer-link-idx">03</span> Taktika &amp; Leveling</span>
+        <span class="drawer-link-desc">Bojová synergie s Rudým čarodějem a postup po úrovních 1–12</span>
+      </a>
+      <a href="lore.html">
+        <span class="drawer-link-top"><span class="drawer-link-idx">04</span> Znalosti světa (Lore)</span>
+        <span class="drawer-link-desc">Božstva a náboženství v Thay očima klerika Azutha</span>
+      </a>
+      <a href="dm.html" aria-current="page">
+        <span class="drawer-link-top"><span class="drawer-link-idx">05</span> Otevřené body pro DM</span>
+        <span class="drawer-link-desc">Shrnutí pravidel 5.5e, Session 0 otázky a háčky do kampaně</span>
+      </a>
+    </nav>
+    <div class="drawer-footer" id="drawerThemeStatus">Aktivní paleta: Srcery Dark</div>
+  </aside>
+
+  <main class="container" id="main-content">
+
+    <!-- Compact Subpage Banner -->
+    <div class="page-header">
+      <span class="eyebrow">05 • Podklady pro DM &amp; Session 0</span>
+      <h1>Otevřené body pro DM &amp; Kontrola pravidel</h1>
+      <p>
+        Přehled souladu celého buildu s pravidly D&amp;D 5.5 (2024+), otázky ke společnému sladění na Session 0 se spoluhráčem (<a class="lore" href="https://forgottenrealms.fandom.com/wiki/Red_Wizards_of_Thay" target="_blank" rel="noopener noreferrer">Rudým čarodějem</a>) a připravené příběhové háčky do <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Waterdeep" target="_blank" rel="noopener noreferrer">Waterdeepu</a>.
+      </p>
+    </div>
+
+    <!-- Legend for Clickable Links -->
+    <div class="legend-bar">
+      <strong style="color:var(--heading);">Legenda prokliků:</strong>
+      <span><a class="spell" href="https://www.aidedd.org/spell/shield" target="_blank" rel="noopener noreferrer">Kouzla &amp; Featy (5.5e karty)</a></span>
+      <span><a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thay" target="_blank" rel="noopener noreferrer">Reálie Forgotten Realms (Wiki)</a></span>
+      <span><a class="rule" href="https://rpgbot.net/2024-dnd/classes/cleric/" target="_blank" rel="noopener noreferrer">Pravidla DnD 5.5 &amp; RPGBOT</a></span>
+    </div>
+
+    <!-- SECTION 5.1: DM Rules Compliance Summary -->
+    <section id="pravidla-dm">
+      <div class="dm-callout" style="margin-bottom:0;">
+        <h3>📋 5.1 Rychlé shrnutí pro DM ke schválení (100% DnD 5.5, žádný legacy obsah)</h3>
+        <ul>
+          <li><strong>Použité příručky (2024+):</strong> <em>Player's Handbook (2024)</em>, <em>Dungeon Master's Guide (2024)</em>, <em>Forgotten Realms: Heroes of Faerûn</em>, <em>Arcana Unleashed (2026 – Arcana Domain)</em>.</li>
+          <li><strong>Custom Background (podle DMG 2024, <em>Creating a Background</em>):</strong> <em>Thayan Knight</em> (+2 WIS / +1 CON, Origin Feat <a class="spell" href="https://www.aidedd.org/feat/magic-initiate" target="_blank" rel="noopener noreferrer">Magic Initiate: Wizard</a>, skilly <em>Investigation + Stealth</em>, nástroj <a class="rule" href="https://www.dndbeyond.com/sources/dnd/free-rules/equipment" target="_blank" rel="noopener noreferrer">Poisoner's Kit</a> v hodnotě startovních 50 GP).</li>
+          <li><strong>Výzbroj, zbraně a ekonomika rukou:</strong> Nosí výhradně tichou střední zbroj bez postihu na <em>Stealth</em> (<em>Chain Shirt</em> AC 17/22 &rarr; <em>Breastplate</em> AC 18/23 se štítem) a <em>Simple Weapons</em> (okovaná poutnická hůl Azutha <em>Quarterstaff</em> + rituální dýka <em>Dagger</em>). Na 1.–3. úrovni drží při boji v jedné ruce štít a druhou nechává volnou pro somatické složky kouzla <a class="spell" href="https://www.aidedd.org/spell/shield" target="_blank" rel="noopener noreferrer">Shield</a>; od 4. úrovně s featem <a class="spell" href="https://www.aidedd.org/feat/war-caster" target="_blank" rel="noopener noreferrer">War Caster</a> třímá štít i hůl současně.</li>
+          <li><strong>Magické tetování v pravidlech:</strong> Zcela pokryté standardními mechanikami hráče (<a class="spell" href="https://www.aidedd.org/spell/shield" target="_blank" rel="noopener noreferrer">Shield</a> z <em>Magic Initiate</em> jako ochranná runa + <a class="spell" href="https://www.aidedd.org/spell/warding-bond" target="_blank" rel="noopener noreferrer">Warding Bond</a> od 3. úrovně jako přebírání zranění čaroděje bez žádného homebrew zvýhodnění).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SECTION 5.2: Session 0 Open Questions -->
+    <section id="session0">
+      <div class="card">
+        <h2 class="section-title">
+          <span><span class="section-num">5.2</span> Otevřené body pro Session 0 (DM &amp; Spoluhráč)</span>
+          <span class="badge badge-crimson">4 body k rozhodnutí</span>
+        </h2>
+
+        <div class="grid-2">
+          <div class="subcard">
+            <h3>🎭 1. Společné krytí ve Waterdeepu</h3>
+            <p>
+              Pod jakou oficiální identitou ve městě vystupujeme před Městskou hlídkou a <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Watchful_Order_of_Magists_and_Protectors" target="_blank" rel="noopener noreferrer">Watchful Order</a>?
+            </p>
+            <ul>
+              <li><strong>Varianta A (Utajená):</strong> Učenec či kupec s magickým zbožím z východu a jeho zarostlý rashemijský průvodce na cestě <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Dajemma" target="_blank" rel="noopener noreferrer">dajemma</a> se symbolem <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Azuth" target="_blank" rel="noopener noreferrer">Azutha</a>.</li>
+              <li><strong>Varianta B (Diplomatická / Enkláva):</strong> Oficiálně registrovaní vyslanci obchodní <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thayan_enclave" target="_blank" rel="noopener noreferrer">thayské enklávy</a> s diplomatickou pečetí (či tajnou základnou ve Skullportu).</li>
+            </ul>
+          </div>
+
+          <div class="subcard">
+            <h3>🩸 2. Jméno rodu, pečeť a mrtvý rival</h3>
+            <p>
+              Propojení Vladislakova tetování a minulosti s postavou Rudého čaroděje:
+            </p>
+            <ul>
+              <li>Jak se jmenuje <strong>mulanský rod</strong> (příp. patron či <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Zulkir" target="_blank" rel="noopener noreferrer">Zulkir</a>) mého Rudého čaroděje, jehož znak nosím vytetovaný podél páteře?</li>
+              <li>Jak se jmenoval onen ambiciózní rival z <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Eltabbar" target="_blank" rel="noopener noreferrer">Eltabbaru</a>, který nastražil jed před zkouškou – a tuší jeho rodina, kdo v noci navštívil jeho komnaty?</li>
+            </ul>
+          </div>
+
+          <div class="subcard">
+            <h3>📜 3. Konkrétní cíl mise a míra tajemství</h3>
+            <p>
+              Co přesně máme ve Waterdeepu pro Thay získat, vypátrat nebo vyjednat?
+            </p>
+            <ul>
+              <li>Zná Vladislak celé zadání do posledního slova stejně jako jeho čaroděj, nebo má čaroděj od svých nadřízených ještě uzavřenou vrstvu rozkazů?</li>
+              <li>Jak budeme zapojeni do širší družiny ostatních hráčů (společný zaměstnavatel, vzájemně výhodné spojenectví z nutnosti)?</li>
+            </ul>
+          </div>
+
+          <div class="subcard">
+            <h3>💰 4. Startovní úroveň, zbroj a prsteny pouta</h3>
+            <p>
+              Praktické potvrzení startovní výbavy podle toho, na jaké úrovni kampaň začíná:
+            </p>
+            <ul>
+              <li>Při startu na <strong>1. úrovni</strong> začíná Vladislak s <em>Chain Shirt</em> (AC 17/22) a na <em>Breastplate</em> (400 GP) + <strong>2 platinové prsteny pro <a class="spell" href="https://www.aidedd.org/spell/warding-bond" target="_blank" rel="noopener noreferrer">Warding Bond</a></strong> (2× 50 GP, nespotřebovávají se) si vydělá během prvních misí.</li>
+              <li>Pokud začínáme na vyšší úrovni nebo s rodovou výbavou na cestu, můžeme tyto položky zahrnout rovnou jako dar patronátního rodu?</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5.3: Optional DM Campaign Hooks -->
+    <section id="hacky-pro-dm">
+      <div class="card">
+        <h2 class="section-title"><span><span class="section-num">5.3</span> Nabídnuté příběhové háčky a odměny pro DM</span></h2>
+        <div class="grid-3">
+          <div class="subcard">
+            <h3>🏠 Rukojmí patronátu v Eltabbaru</h3>
+            <p>
+              Matka <strong>Hulmarra</strong> a mladší sestra <strong>Yuldra Ulmokina</strong> žijí v Eltabbaru pod ochranou čarodějova rodu. Jakýkoliv dopis z domova, změna politických poměrů v Thay nebo vydírání od nepřátel rodu okamžitě dostává Vladislaka pod osobní tlak.
+            </p>
+          </div>
+
+          <div class="subcard">
+            <h3>✨ Probuzení tetování (5.5e Item)</h3>
+            <p>
+              V příručce <em>Forgotten Realms: Heroes of Faerûn</em> existuje oficiální magický předmět <strong>Thayan Spell Tattoo</strong> (<em>Uncommon wondrous item</em>). DM jím může v průběhu kampaně odměnit splněný rozkaz z Thaye jako rituální probuzení hlubší vrstvy Vladislakových jizev.
+            </p>
+          </div>
+
+          <div class="subcard">
+            <h3>⚖️ Chrám Azutha ve Waterdeepu</h3>
+            <p>
+              Ve Waterdeepu stojí chrám <a class="lore" href="https://forgottenrealms.fandom.com/wiki/House_of_Wonder" target="_blank" rel="noopener noreferrer">House of Wonder</a> (zasvěcený Mystře i Azuthovi). Setkání drsného eltabbarského vyšetřovatele Azutha se západními kněžími nabízí skvělé sociální scény mezi legálním krytím a odlišným pojetím Řádu.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Page Pager -->
+    <nav class="page-pager" aria-label="Přechod mezi sekcemi">
+      <a class="pager-link prev" href="lore.html">
+        <span class="pager-dir">&larr; Předchozí sekce</span>
+        <span class="pager-title">04. Znalosti světa (Lore)</span>
+      </a>
+      <a class="pager-link next" href="index.html">
+        <span class="pager-dir">Zpět na úvod &rarr;</span>
+        <span class="pager-title">01. Přehled &amp; Staty</span>
+      </a>
+    </nav>
+
+    <footer>
+      Vladislak Ulmokina • D&amp;D 5.5 (2024 Rules) Character Dossier • Postaveno s využitím <a class="rule" href="https://rpgbot.net/2024-dnd/classes/cleric/" target="_blank" rel="noopener noreferrer">RPGBOT.net</a> &amp; <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Main_Page" target="_blank" rel="noopener noreferrer">Forgotten Realms Wiki</a>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

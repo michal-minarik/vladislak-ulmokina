@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="cs" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Vladislak Ulmokina — 04. Znalosti světa &amp; Božstva Thaye (DnD 5.5 Dossier)</title>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('vladislak-theme');
+        document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Přeskočit na obsah</a>
+
+  <!-- Sticky Top Navigation -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html" aria-label="Vladislak Ulmokina – Domů">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="32,4 58,19 58,45 32,60 6,45 6,19" stroke="var(--crimson)" stroke-width="3.5" fill="var(--crimson-soft)"/>
+            <path d="M32 15C28 22 24 27 24 33C24 37.5 27.6 41 32 41C36.4 41 40 37.5 40 33C40 27 36 22 32 15Z" stroke="var(--gold)" stroke-width="3" fill="var(--gold-soft)"/>
+            <path d="M32 24V48M25 44H39" stroke="var(--heading)" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">Vladislak Ulmokina</span>
+          <span class="brand-sub">Thayan Knight • DnD 5.5</span>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Hlavní navigace">
+        <a href="index.html"><span class="nav-idx">01</span>Přehled &amp; Staty</a>
+        <a href="background.html"><span class="nav-idx">02</span>Původ &amp; Roleplay</a>
+        <a href="tactics.html"><span class="nav-idx">03</span>Taktika &amp; Levely</a>
+        <a href="lore.html" aria-current="page"><span class="nav-idx">04</span>Lore</a>
+        <a href="dm.html"><span class="nav-idx">05</span>Pro DM</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <button class="btn-theme" id="themeBtn" type="button" aria-label="Přepnout barevný režim">
+          <span aria-hidden="true">☀️</span><span>Ayu<span class="theme-label-full"> Light</span></span>
+        </button>
+        <button class="hamburger-btn" id="hamburgerBtn" type="button" aria-label="Otevřít menu sekcí" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Slide-Out Hamburger Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobilní navigace" aria-hidden="true">
+    <div class="drawer-header">
+      <span class="drawer-title">Navigace Dossieru</span>
+      <button class="drawer-close" id="drawerCloseBtn" type="button" aria-label="Zavřít menu">&times;</button>
+    </div>
+    <nav class="drawer-nav" aria-label="Sekce postavy">
+      <a href="index.html">
+        <span class="drawer-link-top"><span class="drawer-link-idx">01</span> Přehled &amp; Staty</span>
+        <span class="drawer-link-desc">Koncept, vlastnosti, dovednosti, tichá zbroj a zbraně</span>
+      </a>
+      <a href="background.html">
+        <span class="drawer-link-top"><span class="drawer-link-idx">02</span> Původ &amp; Roleplay</span>
+        <span class="drawer-link-desc">Příběh z Eltabbaru, rituální tetování a etnikum Rashemi</span>
+      </a>
+      <a href="tactics.html">
+        <span class="drawer-link-top"><span class="drawer-link-idx">03</span> Taktika &amp; Leveling</span>
+        <span class="drawer-link-desc">Bojová synergie s Rudým čarodějem a postup po úrovních 1–12</span>
+      </a>
+      <a href="lore.html" aria-current="page">
+        <span class="drawer-link-top"><span class="drawer-link-idx">04</span> Znalosti světa (Lore)</span>
+        <span class="drawer-link-desc">Božstva a náboženství v Thay očima klerika Azutha</span>
+      </a>
+      <a href="dm.html">
+        <span class="drawer-link-top"><span class="drawer-link-idx">05</span> Otevřené body pro DM</span>
+        <span class="drawer-link-desc">Shrnutí pravidel 5.5e, Session 0 otázky a háčky do kampaně</span>
+      </a>
+    </nav>
+    <div class="drawer-footer" id="drawerThemeStatus">Aktivní paleta: Srcery Dark</div>
+  </aside>
+
+  <main class="container" id="main-content">
+
+    <!-- Compact Subpage Banner -->
+    <div class="page-header">
+      <span class="eyebrow">04 • Znalosti světa • Religion (+5) &amp; Arcana (+7 Expertise)</span>
+      <h1>Zápisník znalostí: Božstva a víra v Thay</h1>
+      <p>
+        Živá databáze reálií, které Vladislak zná ze služby v chrámu v <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Eltabbar" target="_blank" rel="noopener noreferrer">Eltabbaru</a> a z výcviku <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thayan_knight" target="_blank" rel="noopener noreferrer">Thayan Knighta</a>. První kapitola mapuje náboženskou krajinu <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thay" target="_blank" rel="noopener noreferrer">Thaye</a> a její přesah do <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Waterdeep" target="_blank" rel="noopener noreferrer">Waterdeepu</a>.
+      </p>
+    </div>
+
+    <!-- Legend for Clickable Links -->
+    <div class="legend-bar">
+      <strong style="color:var(--heading);">Legenda prokliků:</strong>
+      <span><a class="spell" href="https://www.aidedd.org/spell/shield" target="_blank" rel="noopener noreferrer">Kouzla &amp; Featy (5.5e karty)</a></span>
+      <span><a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thay" target="_blank" rel="noopener noreferrer">Reálie Forgotten Realms (Wiki)</a></span>
+      <span><a class="rule" href="https://rpgbot.net/2024-dnd/classes/cleric/" target="_blank" rel="noopener noreferrer">Pravidla DnD 5.5 &amp; RPGBOT</a></span>
+    </div>
+
+    <!-- SECTION 4.1: Overview of Religion in Thay -->
+    <section id="vira-v-thay">
+      <div class="card">
+        <h2 class="section-title">
+          <span><span class="section-num">4.1</span> Jak funguje víra v magokracii Thay</span>
+          <span class="badge-book">Kapitola I: Thayský panteon</span>
+        </h2>
+        <p style="margin-top:0;">
+          Na rozdíl od západního Faerûnu není <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thay" target="_blank" rel="noopener noreferrer">Thay</a> zbožnou zemí. Vládnoucí <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Red_Wizards_of_Thay" target="_blank" rel="noopener noreferrer">Rudí čarodějové</a> a rada <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Zulkir" target="_blank" rel="noopener noreferrer">Zulkirů</a> pod nadvládou liche <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Szass_Tam" target="_blank" rel="noopener noreferrer">Szass Tama</a> pohlížejí na bohy s chladným pragmatismem – nejvyšší mocí je pro ně samotné <strong>Umění (arkánní magie)</strong> a vlastní cesta k nesmrtelnosti.
+        </p>
+        <p style="margin-bottom:0;">
+          Přesto chrámy v <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Eltabbar" target="_blank" rel="noopener noreferrer">Eltabbaru</a> či Bezanturu hrají v životě svobodných <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Rashemaar" target="_blank" rel="noopener noreferrer">Rashemiů</a>, vojáků i nižší šlechty klíčovou roli: <strong>státem tolerované církve udržují železnou kázeň, magický protokol a poslušnost kast</strong>, zatímco zakázané kulty přežívají ve stínech spiklenců nebo jsou nemilosrdně likvidovány.
+        </p>
+      </div>
+    </section>
+
+    <!-- Interactive Filter & Search Controls -->
+    <section id="bozstva-databaze" aria-label="Databáze božstev v Thay">
+      <div class="lore-controls">
+        <div class="lore-search-row">
+          <div class="search-input-wrap">
+            <span class="search-icon" aria-hidden="true">🔎</span>
+            <input
+              type="search"
+              id="loreSearch"
+              class="lore-search-input"
+              placeholder="Hledat božstvo, sféru nebo klíčové slovo (např. Azuth, oheň, nekromancie, Waterdeep)..."
+              aria-label="Hledat v databázi lore"
+            />
+          </div>
+          <span class="lore-count" id="loreCount">Zobrazeno 8 z 8 záznamů</span>
+        </div>
+
+        <div class="filter-chips" role="group" aria-label="Filtrovat podle kategorie božstev">
+          <button type="button" class="chip active" data-filter="all" aria-pressed="true">Všechna božstva (8)</button>
+          <button type="button" class="chip" data-filter="magic" aria-pressed="false">Řád magie &amp; Patron</button>
+          <button type="button" class="chip" data-filter="state" aria-pressed="false">Státní &amp; Dominantní kulty</button>
+          <button type="button" class="chip" data-filter="shadow" aria-pressed="false">Stínové, Obchodní &amp; Zakázané</button>
+        </div>
+      </div>
+
+      <!-- Lore Cards Grid -->
+      <div class="lore-grid">
+
+        <!-- 1. AZUTH -->
+        <article class="lore-card patron-highlight" data-category="magic">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="lore" href="https://forgottenrealms.fandom.com/wiki/Azuth" target="_blank" rel="noopener noreferrer">Azuth</a> — Pán kouzel</h3>
+              <div class="lore-domain-sub">Symbol: Levá ruka vztyčená vzhůru v modrém plameni • Zbraň: <em>Quarterstaff (The Old Staff)</em></div>
+            </div>
+            <span class="badge badge-crimson">LN • Patron Vladislaka</span>
+          </div>
+          <p>
+            Bůh čarodějů, mágů a magické disciplíny. V Thay se mu arogantní Rudí čarodějové málokdy klaní z čisté zbožnosti, avšak jeho chrámy v <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Eltabbar" target="_blank" rel="noopener noreferrer">Eltabbaru</a> požívají tiché úcty jako <strong>strážci rituální přesnosti, archivů a magického práva</strong>. Právě zde jsou cvičeni chrámoví vyšetřovatelé odhalující sabotáže mezi čarodějskými rody.
+          </p>
+          <div class="vladislak-view">
+            <strong>👁️ Pohled Vladislaka</strong>
+            „Rudí čarodějové uctívají vlastní moc, ale bez Azuthova Řádu by je jejich vlastní rituály roztrhaly na kusy. Můj pán je mysl, která třímá Tkanivo; já jsem hůl a štít, který nedovolí chaosu přerušit jeho zaklínadlo.“
+          </div>
+        </article>
+
+        <!-- 2. KOSSUTH -->
+        <article class="lore-card" data-category="state">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="lore" href="https://forgottenrealms.fandom.com/wiki/Kossuth" target="_blank" rel="noopener noreferrer">Kossuth</a> — Pán plamenů</h3>
+              <div class="lore-domain-sub">Symbol: Spletený rudý plamen • Sféra: Oheň, očista zkouškou a ničivá síla</div>
+            </div>
+            <span class="badge badge-blue">N • Tradiční státní kult</span>
+          </div>
+          <p>
+            Prvotní pán živlu ohně a <strong>historicky zdaleka nejrozšířenější a nejvlivnější náboženství v Thay</strong> (slavný chrám <em>Flaming Brazier</em> v Eltabbaru). Kossuthova doktrína hlásá, že pouze ti, kdo projdou výhní zkoušek a spálí slabost, mají právo vládnout – což dokonale rezonuje s thayskou mentalitou i evokační magií.
+          </p>
+          <div class="vladislak-view">
+            <strong>👁️ Pohled Vladislaka</strong>
+            „Kossuthovi kněží učí, že co neshoří, je hodno přežít. Mezi Rashemii v Eltabbaru má Pán plamenů obrovský respekt – oheň je přímý a spravedlivý, na rozdíl od jedů nalévaných potají.“
+          </div>
+        </article>
+
+        <!-- 3. BANE -->
+        <article class="lore-card" data-category="state">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="lore" href="https://forgottenrealms.fandom.com/wiki/Bane" target="_blank" rel="noopener noreferrer">Bane</a> — Černý pán</h3>
+              <div class="lore-domain-sub">Symbol: Zelené paprsky vyrážející ze sevřené černé pěsti • Sféra: Tyranie, hierarchie, strach</div>
+            </div>
+            <span class="badge badge-blue">LE • Vojenská hierarchie</span>
+          </div>
+          <p>
+            Státem podporovaný bůh železné nadvlády, dobývání a neotřesitelné hierarchie. Jeho církev má v Thay silné zázemí mezi <em>tharchiony</em>, veliteli posádek a velkou částí řadových <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thayan_knight" target="_blank" rel="noopener noreferrer">Thayan Knights</a>, protože posvěcuje absolutní podřízenost nižších vrstev a otroků vyšším pánům.
+          </p>
+          <div class="vladislak-view">
+            <strong>👁️ Pohled Vladislaka</strong>
+            „Polovina rytířů v kasárnách Eltabbaru přísahá při Černé ruce. Bane rozumí kázni a poslušnosti, ale plete si Řád s krutostí na odiv – a hlučný tyran v ulicích Waterdeepu přitáhne pozornost dřív, než dopije první pohár.“
+          </div>
+        </article>
+
+        <!-- 4. VELSHAROON & MYRKUL -->
+        <article class="lore-card" data-category="state magic">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="lore" href="https://forgottenrealms.fandom.com/wiki/Velsharoon" target="_blank" rel="noopener noreferrer">Velsharoon</a> &amp; <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Myrkul" target="_blank" rel="noopener noreferrer">Myrkul</a></h3>
+              <div class="lore-domain-sub">Symbol: Korunovaná smějící se lebka liche / Bílá lebka • Sféra: Nekromancie, nemrtví</div>
+            </div>
+            <span class="badge badge-blue">NE • Opora Szass Tama</span>
+          </div>
+          <p>
+            V dnešním Thay, kde nemrtvé legie převyšují počtem živé dělníky a nejvyšší metou mulanské aristokracie je lichství či upírství, představují polobůh nekromancie Velsharoon a Pán kostí Myrkul ideologický pilíř režimu <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Szass_Tam" target="_blank" rel="noopener noreferrer">Szass Tama</a>.
+          </p>
+          <div class="vladislak-view">
+            <strong>👁️ Pohled Vladislaka</strong>
+            „V Thay dnes mrtví sklízejí pole a živí drží jazyk za zuby. Nekromancie je legitimní zbraň mých pánů – mé odvracení nemrtvých nikdy nezasáhne služebníky mého čaroděje – ale propadnout kultu kostí znamená ztratit chladný úsudek.“
+          </div>
+        </article>
+
+        <!-- 5. LOVIATAR -->
+        <article class="lore-card" data-category="shadow state">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="lore" href="https://forgottenrealms.fandom.com/wiki/Loviatar" target="_blank" rel="noopener noreferrer">Loviatar</a> — Panna bolesti</h3>
+              <div class="lore-domain-sub">Symbol: Devítiocasá důtka s ostny • Sféra: Bolest, mučení, vytrvalost v utrpení</div>
+            </div>
+            <span class="badge badge-green">LE • Otrokáři &amp; Zkoušky</span>
+          </div>
+          <p>
+            Bohyně agónie a trýzně uctívaná dozorci otroků, vyšetřovateli v kobkách mulanských paláců a mistry bolestivých iniciačních rituálů. Její modlitby často zaznívají i při vypalování ochranných znamení do kůže osobních strážců jako zkouška sebekontroly.
+          </p>
+          <div class="vladislak-view">
+            <strong>👁️ Pohled Vladislaka</strong>
+            „Když mi mágové celé hodiny ryli žhavý inkoust podél páteře, starý dozorce u stolu šeptal jméno Panny bolesti. Pro mě ale bolest není modlitba – bolest je jen hluk těla, který se strážce naučí vypnout.“
+          </div>
+        </article>
+
+        <!-- 6. SHAR -->
+        <article class="lore-card" data-category="shadow magic">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="lore" href="https://forgottenrealms.fandom.com/wiki/Shar" target="_blank" rel="noopener noreferrer">Shar</a> — Paní noci</h3>
+              <div class="lore-domain-sub">Symbol: Černý disk s temně fialovým okrajem • Sféra: Tma, tajemství, ztráta, spiknutí</div>
+            </div>
+            <span class="badge badge-green">NE • Tajné buňky</span>
+          </div>
+          <p>
+            Kult Shar operuje v Thay v hlubokém utajení. Vládnoucí Zulkirové jej tvrdě potírají, protože její tajné buňky a uživatelé stínové magie kují spiknutí mimo státní dohled – přesto k ní utíkají zhrzení učedníci, vrazi i spiklenci v Eltabbaru i v podzemí Waterdeepu.
+          </p>
+          <div class="vladislak-view">
+            <strong>👁️ Pohled Vladislaka</strong>
+            „Kde najdeš fialovo-černý kruh Shar, tam hledej falešnou podlahu a otrávenou čepel. A pozor ve Waterdeepu – její církev má v přístavních stínech oči všude, proto držíme Nystulovu auru bez přestávky.“
+          </div>
+        </article>
+
+        <!-- 7. GARGAUTH & WAUKEEN -->
+        <article class="lore-card" data-category="shadow">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="lore" href="https://forgottenrealms.fandom.com/wiki/Waukeen" target="_blank" rel="noopener noreferrer">Waukeen</a> &amp; <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Gargauth" target="_blank" rel="noopener noreferrer">Gargauth</a></h3>
+              <div class="lore-domain-sub">Symbol: Zlatá mince / Zlomený roh • Sféra: Obchod enkláv vs. politická zrada</div>
+            </div>
+            <span class="badge badge-green">N / LE • Zlato &amp; Intriky</span>
+          </div>
+          <p>
+            Dvě tváře thayské politiky: <strong>Waukeen</strong> je pragmaticky tolerována v zahraničních <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thayan_enclave" target="_blank" rel="noopener noreferrer">thayských enklávách</a>, které na Západě prodávají svitky a lektvary. Naopak <strong>Gargauth</strong> (Skrytý pán zrady a zkorumpované moci) je šeptaným patronem ambiciózních rivalů hledajících zkratku přes mrtvolu svého mistra.
+          </p>
+          <div class="vladislak-view">
+            <strong>👁️ Pohled Vladislaka</strong>
+            „Jménem Waukeen se ve Waterdeepu podepisují směnky a kupuje mlčení. Gargauthovým stylem zase jednal ten učedník, který v Eltabbaru otrávil pohár mého pána – a ještě téže noci zjistil, že každá zkratka má svůj konec.“
+          </div>
+        </article>
+
+        <!-- 8. MYSTRA & KELEMVOR -->
+        <article class="lore-card" data-category="magic shadow">
+          <div class="lore-card-head">
+            <div>
+              <h3><a class="lore" href="https://forgottenrealms.fandom.com/wiki/Mystra" target="_blank" rel="noopener noreferrer">Mystra</a> &amp; <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Kelemvor" target="_blank" rel="noopener noreferrer">Kelemvor</a></h3>
+              <div class="lore-domain-sub">Symbol: Kruh hvězd / Vzpřímená paže s váhami • Sféra: Tkanivo vs. Soud mrtvých</div>
+            </div>
+            <span class="badge badge-crimson">NG / LN • Klíč pro Waterdeep!</span>
+          </div>
+          <p>
+            V Thay je církev <strong>Kelemvora</strong> (nesmiřitelného nepřítele nemrtvých) postavena mimo zákon a tvrdě pronásledována. Naopak <strong>Mystra</strong> je v Thay vnímána s revanšistickou nedůvěrou kvůli jejím Vyvoleným (<a class="lore" href="https://forgottenrealms.fandom.com/wiki/Laeral_Silverhand" target="_blank" rel="noopener noreferrer">Laeral Silverhand</a>, <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Harpers" target="_blank" rel="noopener noreferrer">Harpeři</a>), zatímco ve <strong>Waterdeepu</strong> tvoří její chrám s církví Azutha nejbližší spojence!
+          </p>
+          <div class="vladislak-view">
+            <strong>👁️ Pohled Vladislaka (Zásadní krytí!)</strong>
+            „Tohle je naše největší výhoda ve Waterdeepu: zatímco Rudý plášť či lebka Velsharoona znamenají okamžité zatčení, svatý symbol Azutha na mém štítu a holi je pro místní kněze Mystry i Watchful Order naprosto legální a důvěryhodný – aniž bych musel vyslovit jedinou lež.“
+          </div>
+        </article>
+
+      </div>
+
+      <div class="lore-empty" id="loreEmpty" hidden>
+        Žádný záznam v databázi neodpovídá zadanému hledání. Zkus upravit klíčové slovo nebo přepnout kategorii výše.
+      </div>
+    </section>
+
+    <!-- SECTION 4.2: Future Lore Expansion Roadmap -->
+    <section id="rozsireni-lore" style="margin-top:1.75rem;">
+      <div class="dm-callout" style="margin-bottom:0;">
+        <h3>📚 Připraveno k dalšímu rozšiřování během kampaně</h3>
+        <p style="margin:0 0 0.45rem; font-size:0.93rem;">
+          Struktura této stránky je připravena na postupné doplňování nových znalostí (stačí přidat další karty a filtrační štítky):
+        </p>
+        <ul>
+          <li><strong>Politika Thaye &amp; Osmička Zulkirů:</strong> Rozdělení magických škol v Eltabbaru, živí exulanti vs. nemrtvý dvůr Szass Tama.</li>
+          <li><strong>Waterdeep &amp; Místní mocnosti:</strong> <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Watchful_Order_of_Magists_and_Protectors" target="_blank" rel="noopener noreferrer">Watchful Order of Magists and Protectors</a>, Městská hlídka, Maskovaní páni a postavení <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thayan_enclave" target="_blank" rel="noopener noreferrer">thayské enklávy</a> (Skullport / zahraniční obchod).</li>
+          <li><strong>Kontakty, šifry a alchymie:</strong> Poznámky z odehraných sezení, jména spojenců, nepřátel a identifikovaných jedů.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Bottom Page Pager -->
+    <nav class="page-pager" aria-label="Přechod mezi sekcemi">
+      <a class="pager-link prev" href="tactics.html">
+        <span class="pager-dir">&larr; Předchozí sekce</span>
+        <span class="pager-title">03. Taktika &amp; Leveling</span>
+      </a>
+      <a class="pager-link next" href="dm.html">
+        <span class="pager-dir">Další sekce &rarr;</span>
+        <span class="pager-title">05. Otevřené body pro DM</span>
+      </a>
+    </nav>
+
+    <footer>
+      Vladislak Ulmokina • D&amp;D 5.5 (2024 Rules) Character Dossier • Postaveno s využitím <a class="rule" href="https://rpgbot.net/2024-dnd/classes/cleric/" target="_blank" rel="noopener noreferrer">RPGBOT.net</a> &amp; <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Main_Page" target="_blank" rel="noopener noreferrer">Forgotten Realms Wiki</a>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -10,7 +10,7 @@ Kompletní návrh postavy a příběhového pozadí postavený **striktně na pr
 | :--- | :--- | :--- | :--- | :--- |
 | **Rasa (Species)** | **Human (Člověk – etnikum Rashemi)** | *PHB 2024* | **Blue (★★★★)** | Nejpočetnější lidské etnikum v Thay; dává *Heroic Inspiration* každý Long Rest, extra skill a **2. Origin Feat** na 1. úrovni. |
 | **Povolání a Subclassa** | **Cleric – Arcana Domain** | *PHB 2024* / *Arcana Unleashed* | **Green / Blue** | Mystický osobní strážce a anti-mág: *Mind Sliver* oslabuje záchrany nepřátel pro kouzla tvého čaroděje, *Nystul's Magic Aura* kryje vaši thayskou magii ve Waterdeepu, *Counterspell* a *Dispel Magic* chrání čaroděje. |
-| **Divine Order (1. úroveň)** | **Thaumaturge** | *PHB 2024* | **Blue (★★★★)** | Střední zbroj + štít (AC 18–19, se *Shieldem* 23–24), extra Cleric cantrip a přičítáš **Moudrost (Wisdom)** k hodům na *Arcana* a *Religion*. |
+| **Divine Order (1. úroveň)** | **Thaumaturge** | *PHB 2024* | **Blue (★★★★)** | Tichá střední zbroj + štít (AC 18, se *Shieldem* 23 bez postihu na *Stealth*), extra Cleric cantrip a přičítáš **Moudrost (Wisdom)** k hodům na *Arcana* a *Religion*. |
 | **Božstvo a přesvědčení** | **Azuth** (Pán kouzel, patron mágů – LN) | *Forgotten Realms* | — | V Thay tradičně uctívaný; neřeší dobro a zlo, posvátným zákonem je pro tebe hierarchie magie a přežití tvého Rudého čaroděje. |
 | **Background** | **Thayan Knight** *(Custom Background)* | *DMG 2024* | **Blue (★★★★)** | Přesně na míru: **+2 Wis / +1 Con**, *Magic Initiate (Wizard)*, skilly **Investigation + Stealth** (nulový překryv s *Arcana*) a **Poisoner's Kit**. |
 | **Origin Featy (2× na 1. úr.)** | **Magic Initiate (Wizard)** + **Alert** | *PHB 2024* | **Blue + Blue** | *Shield* (+5 AC jako reakce = **tvé rituální thayské tetování**) + vysoká Iniciativa a **možnost prohodit si v boji pořadí se svým Rudým čarodějem**. |
@@ -30,7 +30,7 @@ Kompletní návrh postavy a příběhového pozadí postavený **striktně na pr
 
 | Vlastnost | Základ (Point Buy) | Bonus z Backgroundu | Výsledek | Oprava | Poznámka |
 | :--- | :---: | :---: | :---: | :---: | :--- |
-| **Strength (Síla)** | 8 | — | **8** | **-1** | Zbraně nepoužíváš (cantripy jsou silnější), nosíš střední zbroj. |
+| **Strength (Síla)** | 8 | — | **8** | **-1** | Nablízko neútočíš (útočíš kouzly, nosíš tichou střední zbroj a symbolickou hůl Azutha + rituální dýku). |
 | **Dexterity (Obratnost)** | 14 | — | **14** | **+2** | Maximum pro střední zbroj, bonus do **Stealth** a +2 k Iniciativě (s *Alert* celkem +4 na 1. úr.!). |
 | **Constitution (Odolnost)** | 15 | +1 | **16** | **+3** | Maximum životů a silné záchrany na udržení koncentrace. |
 | **Intelligence (Inteligence)** | 10 | — | **10** | **+0** | Díky *Thaumaturge* + *Student of Arcana* budeš mít v *Arcana* i tak obří bonus (+7 na 3. úr., +13 na 9. úr.!). |
@@ -54,7 +54,7 @@ Kompletní návrh postavy a příběhového pozadí postavený **striktně na pr
 Podle kánonu Forgotten Realms procházejí Thayan Knights bolestivým rituálem tetování (na čele či na zádech), které je svazuje s Rudými čaroději, snižuje jejich schopnost vzdorovat magii vlastních pánů a u některých variant jim umožňuje **přebírat zranění určená jejich čaroději**:
 
 1. **Od 1. úrovně – Ochranné znamení (*Magic Initiate: Wizard* přes Wisdom):**
-   * **Kouzlo 1. úrovně – Shield:** 1× za Long Rest zdarma a **dále kdykoliv za tvé běžné Cleric spell sloty**! Jako reakci na zásah tetování rudě vzplane a zvedne ti AC o **+5** až do tvého příštího tahu (se šupinovou zbrojí a štítem **AC 23** už na 1. úrovni, s půlplátovou zbrojí **AC 24**; navíc jsi imunní vůči *Magic Missile*).
+   * **Kouzlo 1. úrovně – Shield:** 1× za Long Rest zdarma a **dále kdykoliv za tvé běžné Cleric spell sloty**! Jako reakci na zásah tetování rudě vzplane a zvedne ti AC o **+5** až do tvého příštího tahu (s *Chain Shirt* a štítem **AC 22**, s *Breastplate* **AC 23** bez postihu na *Stealth*; navíc jsi imunní vůči *Magic Missile*).
    * **2 Wizard cantripy (od 1. úrovně):**
      * **Message** – tichá telepatická/šeptaná komunikace přímo s tvým Rudým čarodějem uprostřed jednání ve Waterdeepu nebo při hlídce.
      * **Blade Ward** *(v 5.5e se sesílá jako Akce před bojem a dává útočníkům postih `-1d4` k útokům proti tobě na 1 minutu)* nebo **Ray of Frost** *(zpomalení nepřítele běžícího k tvému čaroději o 10 stop!)*.
@@ -76,7 +76,7 @@ Tohle kombo dělá z tvého klerika nejlepšího myslitelného parťáka pro ča
 2. **Krytí před hlídkami ve Waterdeepu (*Nystul's Magic Aura* – 3. úroveň):**
    * Ve Waterdeepu (město plné *Watchful Order of Magists and Protectors*, Harperů a Laeral Silverhand) vzbudí thayská nekromancie nebo rituální tetování okamžitý poplach. Jako Arcana klerik máš trvale připravenou **Nystul's Magic Aura**, kterou zamaskuješ magické předměty, tetování i aury zaklínadel vás obou před *Detect Magic* a věštěním.
 3. **Živý štít v první linii (*Spirit Guardians* + *Shield* + *Fortifying Spell*):**
-   * Postavíš se přímo před svého čaroděje, zapneš **Spirit Guardians** (nepřátelé v okruhu 15 stop mají poloviční rychlost, takže k čaroději nedojdou, a berou masivní Radiant zranění) a jakékoliv útoky do sebe vykreješ vysokým AC + reakcí **Shield** (AC 23–24).
+   * Postavíš se přímo před svého čaroděje, zapneš **Spirit Guardians** (nepřátelé v okruhu 15 stop mají poloviční rychlost, takže k čaroději nedojdou, a berou masivní Radiant zranění) a jakékoliv útoky do sebe vykreješ přes **AC 18 + reakci Shield (AC 23)**.
    * Přes **Modify Magic: Fortifying Spell** (Channel Divinity bez akce) můžeš při seslání kouzla (např. *Healing Word*, *Bless* nebo *Shield of Faith*) rovnou hodit na čaroděje **`2d8 + Cleric level` dočasných životů**.
 4. **Anti-mág a okamžité čištění (*Counterspell* na 5. úr. + *Dispelling Recovery* na 6. úr.):**
    * Na 5. úrovni získáš trvale připravený **Counterspell** a **Dispel Magic** – šetříš tím spell sloty i reakci svému Rudému čaroději.
@@ -87,9 +87,9 @@ Tohle kombo dělá z tvého klerika nejlepšího myslitelného parťáka pro ča
 ## 5. Postup po úrovních (Level 1 – 12) podle RPGBOT
 
 ### 1. úroveň
-* **Zbroj a výbava (podle toho, zda jdeš potichu):**
-  * **Tichá varianta do ulic Waterdeepu (bez nevýhody na *Stealth*!):** Na startu **Chain Shirt** (AC 13 + 2 Dex) + Štít (+2 AC, svatý symbol Azutha) = **AC 17** (se *Shieldem* **AC 22**), co nejdřív upgraduj na **Breastplate** (400 GP) = **AC 18** (se *Shieldem* **AC 23**) při zachování plného *Stealthu*!
-  * **Těžší střední zbroj do otevřeného boje (s nevýhodou na *Stealth*):** **Scale Mail** (**AC 18 / 23**) -> později **Half Plate** (**AC 19 / 24**).
+* **Tichá zbroj a ikonické zbraně (bez postihu na *Stealth*!):**
+  * **Zbroj:** Na startu **Chain Shirt** (AC 13 + 2 Dex) + Štít (+2 AC, svatý symbol Azutha) = **AC 17** (se *Shieldem* **AC 22**), co nejdřív upgraduj na **Breastplate** (400 GP) = **AC 18** (se *Shieldem* **AC 23**) při zachování plného *Stealthu*!
+  * **Ikonické zbraně (*Simple Weapons*, bez útočení nablízko):** **Okovaná poutnická hůl Azutha** (*Quarterstaff / Arcane Staff* – kanonická zbraň Azutha, krytí poutníka na *dajemmě* a fyzický zátaras do dveří; od 4. úr. s *War Caster* ji držíš zároveň se štítem) + **Skrytá thayská rituální dýka** (*Kris Dagger*, Finesse DEX +2 – pro krevní rituál *Warding Bond*, testování jedů a tichou práci ve stínech).
   * Z 50 GP rozpočtu Custom Backgroundu pořiď **Poisoner's Kit** (50 GP).
 * **Cleric Cantripy (4 celkem díky *Thaumaturge*):**
   1. **Toll the Dead** *(hlavní útočný cantrip – `1d8`/`1d12` Necrotic)*

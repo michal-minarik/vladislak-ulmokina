@@ -2,686 +2,113 @@
 <html lang="cs" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vladislak Ulmokina – Thayan Knight Klerik (DnD 5.5 Dossier pro DM)</title>
-  <style>
-    :root,
-    [data-theme="dark"] {
-      --bg: #0f0d10;
-      --bg-elevated: #18141a;
-      --bg-card: #1f1a22;
-      --bg-card-alt: #27202b;
-      --border: #3a2b36;
-      --border-accent: #8b2635;
-      --text: #f2ece9;
-      --text-muted: #b8aba6;
-      --heading: #fff8f2;
-      --crimson: #d13b4b;
-      --crimson-soft: rgba(209, 59, 75, 0.14);
-      --gold: #e0b36a;
-      --gold-soft: rgba(224, 179, 106, 0.14);
-      --rpg-blue: #58a6ff;
-      --rpg-blue-bg: rgba(88, 166, 255, 0.15);
-      --rpg-green: #4ac26b;
-      --rpg-green-bg: rgba(74, 194, 107, 0.15);
-      --link-spell: #9ecbff;
-      --link-spell-bg: rgba(158, 203, 255, 0.11);
-      --link-lore: #f0b97a;
-      --link-lore-bg: rgba(240, 185, 122, 0.11);
-      --link-rule: #7ee2b8;
-      --link-rule-bg: rgba(126, 226, 184, 0.11);
-      --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
-    }
-
-    [data-theme="light"] {
-      --bg: #f6f1e7;
-      --bg-elevated: #efe7d8;
-      --bg-card: #fffcf5;
-      --bg-card-alt: #f4ecdd;
-      --border: #d8cbb8;
-      --border-accent: #8b1e2b;
-      --text: #251e1c;
-      --text-muted: #635550;
-      --heading: #1a1110;
-      --crimson: #8b1e2b;
-      --crimson-soft: rgba(139, 30, 43, 0.1);
-      --gold: #946216;
-      --gold-soft: rgba(148, 98, 22, 0.12);
-      --rpg-blue: #0969da;
-      --rpg-blue-bg: rgba(9, 105, 218, 0.12);
-      --rpg-green: #1a7f37;
-      --rpg-green-bg: rgba(26, 127, 55, 0.12);
-      --link-spell: #0b57d0;
-      --link-spell-bg: rgba(11, 87, 208, 0.08);
-      --link-lore: #8a4b08;
-      --link-lore-bg: rgba(138, 75, 8, 0.09);
-      --link-rule: #136f42;
-      --link-rule-bg: rgba(19, 111, 66, 0.09);
-      --shadow: 0 6px 20px rgba(37, 30, 28, 0.08);
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.65;
-      font-size: 16px;
-    }
-
-    h1, h2, h3, h4, .serif {
-      font-family: Georgia, "Palatino Linotype", "Book Antiqua", Palatino, serif;
-      color: var(--heading);
-      margin-top: 0;
-    }
-
-    /* Sticky Top Navigation */
-    .topbar {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--bg-elevated);
-      border-bottom: 1px solid var(--border);
-      backdrop-filter: blur(10px);
-    }
-
-    .topbar-inner {
-      max-width: 1120px;
-      margin: 0 auto;
-      padding: 0.65rem 1.25rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 0.35rem;
-      flex-wrap: wrap;
-    }
-
-    .nav-links a {
-      color: var(--text-muted);
-      text-decoration: none;
-      font-size: 0.85rem;
-      font-weight: 600;
-      padding: 0.35rem 0.65rem;
-      border-radius: 6px;
-      transition: all 0.15s ease;
-    }
-
-    .nav-links a:hover {
-      color: var(--heading);
-      background: var(--crimson-soft);
-    }
-
-    .topbar-actions {
-      display: flex;
-      gap: 0.5rem;
-      align-items: center;
-    }
-
-    .btn {
-      cursor: pointer;
-      border: 1px solid var(--border);
-      background: var(--bg-card);
-      color: var(--text);
-      font-size: 0.82rem;
-      font-weight: 600;
-      padding: 0.4rem 0.75rem;
-      border-radius: 6px;
-      transition: all 0.15s ease;
-    }
-
-    .btn:hover {
-      border-color: var(--crimson);
-      color: var(--heading);
-    }
-
-    /* Layout Container */
-    .container {
-      max-width: 1120px;
-      margin: 0 auto;
-      padding: 2rem 1.25rem 4rem;
-    }
-
-    /* Hero Header */
-    .hero {
-      position: relative;
-      background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-card-alt) 100%);
-      border: 1px solid var(--border);
-      border-left: 4px solid var(--crimson);
-      border-radius: 14px;
-      padding: 2rem;
-      box-shadow: var(--shadow);
-      margin-bottom: 1.5rem;
-    }
-
-    .hero-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-    }
-
-    .eyebrow {
-      display: inline-block;
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-weight: 700;
-      color: var(--crimson);
-      background: var(--crimson-soft);
-      padding: 0.25rem 0.65rem;
-      border-radius: 999px;
-      margin-bottom: 0.65rem;
-    }
-
-    .hero h1 {
-      font-size: 2.35rem;
-      margin-bottom: 0.35rem;
-      letter-spacing: -0.01em;
-    }
-
-    .hero-subtitle {
-      color: var(--text-muted);
-      font-size: 1.05rem;
-      margin: 0 0 1.25rem;
-      max-width: 740px;
-    }
-
-    .sigil-box {
-      width: 78px;
-      height: 78px;
-      border-radius: 12px;
-      background: var(--crimson-soft);
-      border: 1px solid var(--border-accent);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-
-    /* Quick Stat Strip */
-    .quick-stats {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 0.75rem;
-      margin-top: 1.25rem;
-      padding-top: 1.25rem;
-      border-top: 1px solid var(--border);
-    }
-
-    .qstat {
-      background: var(--bg-elevated);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 0.7rem 0.9rem;
-    }
-
-    .qstat-label {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--text-muted);
-      display: block;
-    }
-
-    .qstat-value {
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--heading);
-      margin-top: 0.15rem;
-      display: block;
-    }
-
-    .qstat-note {
-      font-size: 0.78rem;
-      color: var(--gold);
-      display: block;
-    }
-
-    /* Link Legend Bar */
-    .legend-bar {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.9rem;
-      align-items: center;
-      background: var(--bg-elevated);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 0.65rem 1rem;
-      margin-bottom: 1.75rem;
-      font-size: 0.84rem;
-      color: var(--text-muted);
-    }
-
-    /* Semantic Hyperlinks */
-    a.spell, a.lore, a.rule {
-      text-decoration: none;
-      padding: 0.08rem 0.35rem;
-      border-radius: 4px;
-      font-weight: 600;
-      transition: filter 0.15s ease, background 0.15s ease;
-      border-bottom: 1px dashed currentColor;
-    }
-
-    a.spell {
-      color: var(--link-spell);
-      background: var(--link-spell-bg);
-    }
-
-    a.lore {
-      color: var(--link-lore);
-      background: var(--link-lore-bg);
-    }
-
-    a.rule {
-      color: var(--link-rule);
-      background: var(--link-rule-bg);
-    }
-
-    a.spell:hover, a.lore:hover, a.rule:hover {
-      filter: brightness(1.18);
-      border-bottom-style: solid;
-    }
-
-    /* Sections & Cards */
-    section {
-      margin-bottom: 2rem;
-      scroll-margin-top: 4.5rem;
-    }
-
-    .card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 1.6rem 1.75rem;
-      box-shadow: var(--shadow);
-    }
-
-    .section-title {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      padding-bottom: 0.55rem;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-    }
-
-    .section-num {
-      color: var(--crimson);
-      margin-right: 0.35rem;
-    }
-
-    /* DM Check Callout */
-    .dm-callout {
-      background: linear-gradient(135deg, var(--crimson-soft) 0%, var(--gold-soft) 100%);
-      border: 1px solid var(--border-accent);
-      border-radius: 12px;
-      padding: 1.2rem 1.4rem;
-      margin-bottom: 1.75rem;
-    }
-
-    .dm-callout h3 {
-      font-size: 1.1rem;
-      margin-bottom: 0.45rem;
-      color: var(--heading);
-    }
-
-    .dm-callout ul {
-      margin: 0.4rem 0 0;
-      padding-left: 1.25rem;
-    }
-
-    .dm-callout li {
-      margin-bottom: 0.3rem;
-      font-size: 0.94rem;
-    }
-
-    /* Tables */
-    .table-wrap {
-      overflow-x: auto;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.93rem;
-    }
-
-    th, td {
-      text-align: left;
-      padding: 0.7rem 0.85rem;
-      border-bottom: 1px solid var(--border);
-      vertical-align: top;
-    }
-
-    th {
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--text-muted);
-      background: var(--bg-elevated);
-    }
-
-    tr:last-child td {
-      border-bottom: none;
-    }
-
-    /* RPGBOT Badges */
-    .badge {
-      display: inline-block;
-      font-size: 0.75rem;
-      font-weight: 700;
-      padding: 0.18rem 0.5rem;
-      border-radius: 5px;
-      white-space: nowrap;
-    }
-
-    .badge-blue {
-      color: var(--rpg-blue);
-      background: var(--rpg-blue-bg);
-      border: 1px solid rgba(88, 166, 255, 0.35);
-    }
-
-    .badge-green {
-      color: var(--rpg-green);
-      background: var(--rpg-green-bg);
-      border: 1px solid rgba(74, 194, 107, 0.35);
-    }
-
-    .badge-book {
-      color: var(--gold);
-      background: var(--gold-soft);
-      font-size: 0.74rem;
-      padding: 0.15rem 0.45rem;
-      border-radius: 4px;
-      font-weight: 600;
-    }
-
-    /* Ability Score Grid */
-    .ability-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
-      gap: 0.85rem;
-      margin: 1rem 0 1.25rem;
-    }
-
-    .ability-box {
-      background: var(--bg-elevated);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 0.9rem;
-      text-align: center;
-    }
-
-    .ability-box.primary {
-      border-color: var(--crimson);
-      background: linear-gradient(180deg, var(--crimson-soft) 0%, var(--bg-elevated) 100%);
-    }
-
-    .ability-name {
-      font-size: 0.76rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--text-muted);
-      font-weight: 700;
-    }
-
-    .ability-score {
-      font-size: 1.85rem;
-      font-weight: 800;
-      color: var(--heading);
-      line-height: 1.2;
-      margin: 0.2rem 0;
-    }
-
-    .ability-mod {
-      display: inline-block;
-      font-size: 0.9rem;
-      font-weight: 700;
-      padding: 0.1rem 0.55rem;
-      border-radius: 999px;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      color: var(--gold);
-      margin-bottom: 0.35rem;
-    }
-
-    .ability-calc {
-      font-size: 0.76rem;
-      color: var(--text-muted);
-    }
-
-    /* Two-Column Grid */
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-      gap: 1.15rem;
-    }
-
-    .subcard {
-      background: var(--bg-elevated);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1.1rem 1.25rem;
-    }
-
-    .subcard h3 {
-      font-size: 1.08rem;
-      margin-bottom: 0.5rem;
-      color: var(--gold);
-    }
-
-    .subcard ul {
-      margin: 0.35rem 0 0;
-      padding-left: 1.2rem;
-    }
-
-    .subcard li {
-      margin-bottom: 0.4rem;
-      font-size: 0.93rem;
-    }
-
-    /* Armor Mode Switcher */
-    .armor-toggle {
-      display: inline-flex;
-      background: var(--bg-elevated);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 0.2rem;
-      gap: 0.2rem;
-    }
-
-    .armor-toggle button {
-      border: none;
-      background: transparent;
-      color: var(--text-muted);
-      font-size: 0.8rem;
-      font-weight: 600;
-      padding: 0.35rem 0.7rem;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    .armor-toggle button.active {
-      background: var(--crimson);
-      color: #fff;
-    }
-
-    /* Level Timeline */
-    .timeline {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .level-item {
-      display: grid;
-      grid-template-columns: 110px 1fr;
-      gap: 1rem;
-      background: var(--bg-elevated);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1rem 1.2rem;
-    }
-
-    .level-tag {
-      font-family: Georgia, serif;
-      font-weight: 700;
-      font-size: 1.05rem;
-      color: var(--crimson);
-      border-right: 1px solid var(--border);
-      padding-right: 0.75rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-    }
-
-    .level-tag span {
-      font-family: Inter, sans-serif;
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      font-weight: 500;
-      margin-top: 0.2rem;
-    }
-
-    .level-body ul {
-      margin: 0;
-      padding-left: 1.2rem;
-    }
-
-    .level-body li {
-      margin-bottom: 0.38rem;
-      font-size: 0.94rem;
-    }
-
-    /* Backstory Prose */
-    .story-prose p {
-      margin: 0 0 1.05rem;
-      font-size: 1rem;
-    }
-
-    .story-chapter {
-      color: var(--gold);
-      font-size: 1.15rem;
-      margin: 1.35rem 0 0.5rem;
-    }
-
-    .trait-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 0.85rem;
-      margin-top: 1.25rem;
-    }
-
-    .trait-card {
-      background: var(--bg-elevated);
-      border: 1px solid var(--border);
-      border-top: 3px solid var(--crimson);
-      border-radius: 10px;
-      padding: 0.9rem 1rem;
-      font-size: 0.92rem;
-    }
-
-    .trait-card strong {
-      display: block;
-      font-size: 0.76rem;
-      text-transform: uppercase;
-      letter-spacing: 0.07em;
-      color: var(--gold);
-      margin-bottom: 0.3rem;
-    }
-
-    footer {
-      text-align: center;
-      color: var(--text-muted);
-      font-size: 0.84rem;
-      margin-top: 2.5rem;
-      padding-top: 1.25rem;
-      border-top: 1px solid var(--border);
-    }
-
-    @media (max-width: 680px) {
-      .hero h1 { font-size: 1.8rem; }
-      .level-item { grid-template-columns: 1fr; }
-      .level-tag { border-right: none; border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; }
-    }
-
-    @media print {
-      .topbar, .armor-toggle { display: none !important; }
-      body { background: #fff; color: #000; font-size: 11pt; }
-      .card, .hero, .subcard, .level-item, .qstat, .ability-box {
-        box-shadow: none !important;
-        break-inside: avoid;
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Vladislak Ulmokina — 01. Přehled &amp; Staty (DnD 5.5 Dossier)</title>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('vladislak-theme');
+        document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
       }
-    }
-  </style>
+    })();
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Přeskočit na obsah</a>
 
-  <!-- Top Navigation -->
+  <!-- Sticky Top Navigation -->
   <header class="topbar">
     <div class="topbar-inner">
-      <nav class="nav-links" aria-label="Sekce postavy">
-        <a href="#prehled">1. Přehled</a>
-        <a href="#staty">2. Staty &amp; Background</a>
-        <a href="#tetovani">3. Tetování</a>
-        <a href="#synergie">4. Synergie s čarodějem</a>
-        <a href="#levely">5. Postup (1–12)</a>
-        <a href="#rashemi">6. Lore Rashemi</a>
-        <a href="#pribeh">7. Příběh &amp; Session 0</a>
+      <a class="brand" href="index.html" aria-label="Vladislak Ulmokina – Domů">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="32,4 58,19 58,45 32,60 6,45 6,19" stroke="var(--crimson)" stroke-width="3.5" fill="var(--crimson-soft)"/>
+            <path d="M32 15C28 22 24 27 24 33C24 37.5 27.6 41 32 41C36.4 41 40 37.5 40 33C40 27 36 22 32 15Z" stroke="var(--gold)" stroke-width="3" fill="var(--gold-soft)"/>
+            <path d="M32 24V48M25 44H39" stroke="var(--heading)" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">Vladislak Ulmokina</span>
+          <span class="brand-sub">Thayan Knight • DnD 5.5</span>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Hlavní navigace">
+        <a href="index.html" aria-current="page"><span class="nav-idx">01</span>Přehled &amp; Staty</a>
+        <a href="background.html"><span class="nav-idx">02</span>Původ &amp; Roleplay</a>
+        <a href="tactics.html"><span class="nav-idx">03</span>Taktika &amp; Levely</a>
+        <a href="lore.html"><span class="nav-idx">04</span>Lore</a>
+        <a href="dm.html"><span class="nav-idx">05</span>Pro DM</a>
       </nav>
+
       <div class="topbar-actions">
-        <button class="btn" id="themeBtn" type="button" onclick="toggleTheme()">☀️ Světlý pergamen</button>
-        <button class="btn" type="button" onclick="window.print()">🖨️ Tisk / PDF</button>
+        <button class="btn-theme" id="themeBtn" type="button" aria-label="Přepnout barevný režim">
+          <span aria-hidden="true">☀️</span><span>Ayu<span class="theme-label-full"> Light</span></span>
+        </button>
+        <button class="hamburger-btn" id="hamburgerBtn" type="button" aria-label="Otevřít menu sekcí" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
       </div>
     </div>
   </header>
 
-  <main class="container">
+  <!-- Mobile Slide-Out Hamburger Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobilní navigace" aria-hidden="true">
+    <div class="drawer-header">
+      <span class="drawer-title">Navigace Dossieru</span>
+      <button class="drawer-close" id="drawerCloseBtn" type="button" aria-label="Zavřít menu">&times;</button>
+    </div>
+    <nav class="drawer-nav" aria-label="Sekce postavy">
+      <a href="index.html" aria-current="page">
+        <span class="drawer-link-top"><span class="drawer-link-idx">01</span> Přehled &amp; Staty</span>
+        <span class="drawer-link-desc">Koncept, vlastnosti, dovednosti, tichá zbroj a zbraně</span>
+      </a>
+      <a href="background.html">
+        <span class="drawer-link-top"><span class="drawer-link-idx">02</span> Původ &amp; Roleplay</span>
+        <span class="drawer-link-desc">Příběh z Eltabbaru, rituální tetování a etnikum Rashemi</span>
+      </a>
+      <a href="tactics.html">
+        <span class="drawer-link-top"><span class="drawer-link-idx">03</span> Taktika &amp; Leveling</span>
+        <span class="drawer-link-desc">Bojová synergie s Rudým čarodějem a postup po úrovních 1–12</span>
+      </a>
+      <a href="lore.html">
+        <span class="drawer-link-top"><span class="drawer-link-idx">04</span> Znalosti světa (Lore)</span>
+        <span class="drawer-link-desc">Božstva a náboženství v Thay očima klerika Azutha</span>
+      </a>
+      <a href="dm.html">
+        <span class="drawer-link-top"><span class="drawer-link-idx">05</span> Otevřené body pro DM</span>
+        <span class="drawer-link-desc">Shrnutí pravidel 5.5e, Session 0 otázky a háčky do kampaně</span>
+      </a>
+    </nav>
+    <div class="drawer-footer" id="drawerThemeStatus">Aktivní paleta: Srcery Dark</div>
+  </aside>
+
+  <main class="container" id="main-content">
 
     <!-- Hero Character Banner -->
     <div class="hero">
       <div class="hero-top">
         <div>
-          <span class="eyebrow">D&amp;D 5.5 (2024+) Dossier postavy ke kontrole pro DM</span>
+          <span class="eyebrow">01 • D&amp;D 5.5 (2024+) • Přehled &amp; Statistiky</span>
           <h1>Vladislak Ulmokina</h1>
           <p class="hero-subtitle">
-            Osobní strážce (<a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thayan_knight" target="_blank" rel="noopener noreferrer">Thayan Knight</a>) z etnika <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Rashemaar" target="_blank" rel="noopener noreferrer">Rashemi</a>, klerik <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Azuth" target="_blank" rel="noopener noreferrer">Azutha</a> (<a class="rule" href="https://rpgbot.net/2024-dnd/classes/cleric/cleric-subclasses/#arcana-domain" target="_blank" rel="noopener noreferrer">Arcana Domain</a>) vyslaný z <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Eltabbar" target="_blank" rel="noopener noreferrer">Eltabbaru</a> v <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thay" target="_blank" rel="noopener noreferrer">Thay</a> do <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Waterdeep" target="_blank" rel="noopener noreferrer">Waterdeepu</a> po boku svého <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Red_Wizards_of_Thay" target="_blank" rel="noopener noreferrer">Rudého čaroděje</a>.
+            Osobní strážce (<a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thayan_knight" target="_blank" rel="noopener noreferrer">Thayan Knight</a>) z etnika <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Rashemaar" target="_blank" rel="noopener noreferrer">Rashemi</a>, klerik <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Azuth" target="_blank" rel="noopener noreferrer">Azutha</a> (<a class="rule" href="https://rpgbot.net/2024-dnd/classes/cleric/cleric-subclasses/#arcana-domain" target="_blank" rel="noopener noreferrer">Arcana Domain</a>) vyslaný z <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Eltabbar" target="_blank" rel="noopener noreferrer">Eltabbaru</a> v <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thay" target="_blank" rel="noopener noreferrer">Thay</a> na tajnou misi do <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Waterdeep" target="_blank" rel="noopener noreferrer">Waterdeepu</a> po boku svého <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Red_Wizards_of_Thay" target="_blank" rel="noopener noreferrer">Rudého čaroděje</a>.
           </p>
         </div>
-        <!-- Subtle Thayan / Azuth Sigil SVG -->
+        <!-- Adaptive Thayan / Azuth Sigil SVG -->
         <div class="sigil-box" title="Pečeť Azutha a Thayan Knighta">
           <svg width="46" height="46" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <polygon points="32,4 58,19 58,45 32,60 6,45 6,19" stroke="#d13b4b" stroke-width="2.5" fill="rgba(209,59,75,0.1)"/>
-            <circle cx="32" cy="32" r="16" stroke="#e0b36a" stroke-width="1.8" stroke-dasharray="4 3"/>
-            <path d="M32 16C28 23 24 27 24 33C24 37.5 27.6 41 32 41C36.4 41 40 37.5 40 33C40 27 36 23 32 16Z" stroke="#e0b36a" stroke-width="2" fill="rgba(224,179,106,0.2)"/>
-            <path d="M32 25V47M26 44H38" stroke="#fff8f2" stroke-width="2" stroke-linecap="round"/>
+            <polygon points="32,4 58,19 58,45 32,60 6,45 6,19" stroke="var(--crimson)" stroke-width="2.5" fill="var(--crimson-soft)"/>
+            <circle cx="32" cy="32" r="16" stroke="var(--gold)" stroke-width="1.8" stroke-dasharray="4 3"/>
+            <path d="M32 16C28 23 24 27 24 33C24 37.5 27.6 41 32 41C36.4 41 40 37.5 40 33C40 27 36 23 32 16Z" stroke="var(--gold)" stroke-width="2" fill="var(--gold-soft)"/>
+            <path d="M32 25V47M26 44H38" stroke="var(--heading)" stroke-width="2.2" stroke-linecap="round"/>
           </svg>
-        </div>
-      </div>
-
-      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.6rem; margin-top:0.4rem;">
-        <span style="font-size:0.84rem; color:var(--text-muted);">Režim zbroje pro náhled statistik:</span>
-        <div class="armor-toggle" role="group" aria-label="Přepínač zbroje">
-          <button type="button" class="active" id="modeStealth" onclick="setArmorMode('stealth')">🕵️ Tichý režim do města (Breastplate)</button>
-          <button type="button" id="modeBattle" onclick="setArmorMode('battle')">🛡️ Otevřený boj (Scale / Half Plate)</button>
         </div>
       </div>
 
@@ -697,9 +124,9 @@
           <span class="qstat-note">Divine Order: Thaumaturge</span>
         </div>
         <div class="qstat">
-          <span class="qstat-label">Obranné číslo (AC)</span>
-          <span class="qstat-value" id="acVal">18 (23 se Shield)</span>
-          <span class="qstat-note" id="acNote">Breastplate + Štít (bez postihu na Stealth!)</span>
+          <span class="qstat-label">Obranné číslo (Stealth)</span>
+          <span class="qstat-value">AC 18 (23 se Shield)</span>
+          <span class="qstat-note">Breastplate + Štít (Chain Shirt AC 17/22 do nákupu za 400 GP)</span>
         </div>
         <div class="qstat">
           <span class="qstat-label">Iniciativa (1. úr.)</span>
@@ -712,38 +139,27 @@
           <span class="qstat-note">d8 + CON (+3) • 25 HP na 3. úr.</span>
         </div>
         <div class="qstat">
-          <span class="qstat-label">Víra &amp; Přesvědčení</span>
+          <span class="qstat-label">Zbraně &amp; Víra</span>
           <span class="qstat-value">Azuth (LN)</span>
-          <span class="qstat-note">Řád magie &amp; bezvýhradná služba</span>
+          <span class="qstat-note">Hůl Azutha + Rituální dýka</span>
         </div>
       </div>
     </div>
 
     <!-- Legend for Clickable Links -->
     <div class="legend-bar">
-      <strong style="color:var(--heading);">Legenda prokliků v dokumentu:</strong>
+      <strong style="color:var(--heading);">Legenda prokliků:</strong>
       <span><a class="spell" href="https://www.aidedd.org/spell/shield" target="_blank" rel="noopener noreferrer">Kouzla &amp; Featy (5.5e karty)</a></span>
       <span><a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thay" target="_blank" rel="noopener noreferrer">Reálie Forgotten Realms (Wiki)</a></span>
       <span><a class="rule" href="https://rpgbot.net/2024-dnd/classes/cleric/" target="_blank" rel="noopener noreferrer">Pravidla DnD 5.5 &amp; RPGBOT</a></span>
     </div>
 
-    <!-- DM Quick Compliance Summary -->
-    <div class="dm-callout">
-      <h3>📋 Rychlé shrnutí pro DM ke schválení (100% DnD 5.5, žádný legacy obsah)</h3>
-      <ul>
-        <li><strong>Použité příručky (2024+):</strong> <em>Player's Handbook (2024)</em>, <em>Dungeon Master's Guide (2024)</em>, <em>Arcana Unleashed (2026 – Arcana Domain)</em>.</li>
-        <li><strong>Custom Background (podle DMG 2024, <em>Creating a Background</em>):</strong> <em>Thayan Knight</em> (+2 WIS / +1 CON, feat <a class="spell" href="https://www.aidedd.org/feat/magic-initiate" target="_blank" rel="noopener noreferrer">Magic Initiate: Wizard</a>, skilly <em>Investigation + Stealth</em>, nástroj <em>Poisoner's Kit</em>, startovních 50 GP).</li>
-        <li><strong>Magické tetování v pravidlech:</strong> Zcela pokryté legálními mechanikami hráče (<a class="spell" href="https://www.aidedd.org/spell/shield" target="_blank" rel="noopener noreferrer">Shield</a> z <em>Magic Initiate</em> jako ochranná runa + <a class="spell" href="https://www.aidedd.org/spell/warding-bond" target="_blank" rel="noopener noreferrer">Warding Bond</a> od 3. úrovně jako přebírání zranění čaroděje). Časem lze volitelně rozvinout přes 5.5e předmět <em>Thayan Spell Tattoo</em> (<em>Heroes of Faerûn</em>).</li>
-        <li><strong>Body ke společnému doladění (Session 0):</strong> Na konci stránky v <a class="rule" href="#session0">Sekci 7</a> jsou 3 krátké otázky k našemu krytí a úkolu ve <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Waterdeep" target="_blank" rel="noopener noreferrer">Waterdeepu</a>.</li>
-      </ul>
-    </div>
-
-    <!-- SECTION 1 -->
+    <!-- SECTION 1: Concept Summary -->
     <section id="prehled">
       <div class="card">
-        <h2 class="section-title"><span><span class="section-num">1.</span> Shrnutí konceptu a klíčových voleb</span></h2>
+        <h2 class="section-title"><span><span class="section-num">1.1</span> Shrnutí konceptu a klíčových voleb</span></h2>
         <div class="table-wrap">
-          <table>
+          <table class="responsive-table">
             <thead>
               <tr>
                 <th>Kategorie</th>
@@ -755,46 +171,46 @@
             </thead>
             <tbody>
               <tr>
-                <td><strong>Rasa (Species)</strong></td>
-                <td><a class="rule" href="https://www.dndbeyond.com/sources/dnd/free-rules/character-origins#Human" target="_blank" rel="noopener noreferrer">Human</a> – etnikum <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Rashemaar" target="_blank" rel="noopener noreferrer">Rashemi</a></td>
-                <td><span class="badge-book">PHB 2024</span></td>
-                <td><span class="badge badge-blue">Blue ★★★★</span></td>
-                <td>Nejpočetnější lidské etnikum v <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thay" target="_blank" rel="noopener noreferrer">Thay</a>; dává <em>Heroic Inspiration</em> každý Long Rest, extra skill (<em>Perception</em>) a <strong>2. Origin Feat</strong> na 1. úrovni.</td>
+                <td data-label="Kategorie"><strong>Rasa (Species)</strong></td>
+                <td data-label="Volba (DnD 5.5)"><a class="rule" href="https://www.dndbeyond.com/sources/dnd/free-rules/character-origins#Human" target="_blank" rel="noopener noreferrer">Human</a> – etnikum <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Rashemaar" target="_blank" rel="noopener noreferrer">Rashemi</a></td>
+                <td data-label="Zdroj"><span class="badge-book">PHB 2024</span></td>
+                <td data-label="RPGBOT"><span class="badge badge-blue">Blue ★★★★</span></td>
+                <td data-label="Proč to sedí">Nejpočetnější lidské etnikum v <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thay" target="_blank" rel="noopener noreferrer">Thay</a>; dává <em>Heroic Inspiration</em> každý Long Rest, extra skill (<em>Perception</em>) a <strong>2. Origin Feat</strong> na 1. úrovni.</td>
               </tr>
               <tr>
-                <td><strong>Povolání &amp; Subclassa</strong></td>
-                <td><a class="rule" href="https://www.dndbeyond.com/sources/dnd/free-rules/character-classes#Cleric" target="_blank" rel="noopener noreferrer">Cleric</a> – <a class="rule" href="https://rpgbot.net/2024-dnd/classes/cleric/cleric-subclasses/#arcana-domain" target="_blank" rel="noopener noreferrer">Arcana Domain</a></td>
-                <td><span class="badge-book">PHB 2024 / AU</span></td>
-                <td><span class="badge badge-green">Green</span> <span class="badge badge-blue">Blue</span></td>
-                <td>Mystický bodyguard a anti-mág: <a class="spell" href="https://www.aidedd.org/spell/mind-sliver" target="_blank" rel="noopener noreferrer">Mind Sliver</a> oslabuje záchrany pro kouzla čaroděje, <a class="spell" href="https://www.aidedd.org/spell/nystuls-magic-aura" target="_blank" rel="noopener noreferrer">Nystul's Magic Aura</a> kryje thayskou magii ve Waterdeepu, <a class="spell" href="https://www.aidedd.org/spell/counterspell" target="_blank" rel="noopener noreferrer">Counterspell</a> a <a class="spell" href="https://www.aidedd.org/spell/dispel-magic" target="_blank" rel="noopener noreferrer">Dispel Magic</a>.</td>
+                <td data-label="Kategorie"><strong>Povolání &amp; Subclassa</strong></td>
+                <td data-label="Volba (DnD 5.5)"><a class="rule" href="https://www.dndbeyond.com/sources/dnd/free-rules/character-classes#Cleric" target="_blank" rel="noopener noreferrer">Cleric</a> – <a class="rule" href="https://rpgbot.net/2024-dnd/classes/cleric/cleric-subclasses/#arcana-domain" target="_blank" rel="noopener noreferrer">Arcana Domain</a></td>
+                <td data-label="Zdroj"><span class="badge-book">PHB 2024 / AU</span></td>
+                <td data-label="RPGBOT"><span class="badge badge-green">Green</span> <span class="badge badge-blue">Blue</span></td>
+                <td data-label="Proč to sedí">Mystický bodyguard a anti-mág: <a class="spell" href="https://www.aidedd.org/spell/mind-sliver" target="_blank" rel="noopener noreferrer">Mind Sliver</a> oslabuje záchrany pro kouzla čaroděje, <a class="spell" href="https://www.aidedd.org/spell/nystuls-magic-aura" target="_blank" rel="noopener noreferrer">Nystul's Magic Aura</a> kryje thayskou magii ve Waterdeepu, <a class="spell" href="https://www.aidedd.org/spell/counterspell" target="_blank" rel="noopener noreferrer">Counterspell</a> a <a class="spell" href="https://www.aidedd.org/spell/dispel-magic" target="_blank" rel="noopener noreferrer">Dispel Magic</a>.</td>
               </tr>
               <tr>
-                <td><strong>Divine Order (1. úr.)</strong></td>
-                <td><a class="rule" href="https://rpgbot.net/2024-dnd/classes/cleric/#cleric-class-features" target="_blank" rel="noopener noreferrer">Thaumaturge</a></td>
-                <td><span class="badge-book">PHB 2024</span></td>
-                <td><span class="badge badge-blue">Blue ★★★★</span></td>
-                <td>Střední zbroj + štít (AC 17–19, se <a class="spell" href="https://www.aidedd.org/spell/shield" target="_blank" rel="noopener noreferrer">Shieldem</a> 22–24), extra Cleric cantrip a přičítáš <strong>Wisdom</strong> k hodům na <em>Arcana</em> a <em>Religion</em>.</td>
+                <td data-label="Kategorie"><strong>Divine Order (1. úr.)</strong></td>
+                <td data-label="Volba (DnD 5.5)"><a class="rule" href="https://rpgbot.net/2024-dnd/classes/cleric/#cleric-class-features" target="_blank" rel="noopener noreferrer">Thaumaturge</a></td>
+                <td data-label="Zdroj"><span class="badge-book">PHB 2024</span></td>
+                <td data-label="RPGBOT"><span class="badge badge-blue">Blue ★★★★</span></td>
+                <td data-label="Proč to sedí">Tichá střední zbroj + štít (AC 18, se <a class="spell" href="https://www.aidedd.org/spell/shield" target="_blank" rel="noopener noreferrer">Shieldem</a> 23 bez postihu na <em>Stealth</em>), extra Cleric cantrip a přičítáš <strong>Wisdom</strong> k hodům na <em>Arcana</em> a <em>Religion</em>.</td>
               </tr>
               <tr>
-                <td><strong>Božstvo &amp; Přesvědčení</strong></td>
-                <td><a class="lore" href="https://forgottenrealms.fandom.com/wiki/Azuth" target="_blank" rel="noopener noreferrer">Azuth</a> (Lawful Neutral)</td>
-                <td><span class="badge-book">Forgotten Realms</span></td>
-                <td>—</td>
-                <td>Patron čarodějů a magické disciplíny uctívaný v Thay; nehledí na dobro a zlo, posvátným řádem je ochrana jeho Rudého čaroděje.</td>
+                <td data-label="Kategorie"><strong>Božstvo &amp; Přesvědčení</strong></td>
+                <td data-label="Volba (DnD 5.5)"><a class="lore" href="https://forgottenrealms.fandom.com/wiki/Azuth" target="_blank" rel="noopener noreferrer">Azuth</a> (Lawful Neutral)</td>
+                <td data-label="Zdroj"><span class="badge-book">Forgotten Realms</span></td>
+                <td data-label="RPGBOT">—</td>
+                <td data-label="Proč to sedí">Patron čarodějů a magické disciplíny uctívaný v Thay; nehledí na dobro a zlo, posvátným řádem je ochrana jeho Rudého čaroděje.</td>
               </tr>
               <tr>
-                <td><strong>Background</strong></td>
-                <td><strong>Thayan Knight</strong> <em>(Custom)</em></td>
-                <td><span class="badge-book">DMG 2024</span></td>
-                <td><span class="badge badge-blue">Blue ★★★★</span></td>
-                <td><strong>+2 WIS / +1 CON</strong>, feat <a class="spell" href="https://www.aidedd.org/feat/magic-initiate" target="_blank" rel="noopener noreferrer">Magic Initiate (Wizard)</a>, skilly <strong>Investigation + Stealth</strong> (0 % překryvu s <em>Arcana</em>) a <a class="rule" href="https://www.dndbeyond.com/sources/dnd/free-rules/equipment" target="_blank" rel="noopener noreferrer">Poisoner's Kit</a>.</td>
+                <td data-label="Kategorie"><strong>Background</strong></td>
+                <td data-label="Volba (DnD 5.5)"><strong>Thayan Knight</strong> <em>(Custom)</em></td>
+                <td data-label="Zdroj"><span class="badge-book">DMG 2024</span></td>
+                <td data-label="RPGBOT"><span class="badge badge-blue">Blue ★★★★</span></td>
+                <td data-label="Proč to sedí"><strong>+2 WIS / +1 CON</strong>, feat <a class="spell" href="https://www.aidedd.org/feat/magic-initiate" target="_blank" rel="noopener noreferrer">Magic Initiate (Wizard)</a>, skilly <strong>Investigation + Stealth</strong> (0 % překryvu s <em>Arcana</em>) a <a class="rule" href="https://www.dndbeyond.com/sources/dnd/free-rules/equipment" target="_blank" rel="noopener noreferrer">Poisoner's Kit</a>.</td>
               </tr>
               <tr>
-                <td><strong>Origin Featy (2×)</strong></td>
-                <td><a class="spell" href="https://www.aidedd.org/feat/magic-initiate" target="_blank" rel="noopener noreferrer">Magic Initiate (Wizard)</a> + <a class="spell" href="https://www.aidedd.org/feat/alert" target="_blank" rel="noopener noreferrer">Alert</a></td>
-                <td><span class="badge-book">PHB 2024</span></td>
-                <td><span class="badge badge-blue">Blue + Blue</span></td>
-                <td><a class="spell" href="https://www.aidedd.org/spell/shield" target="_blank" rel="noopener noreferrer">Shield</a> (+5 AC reakcí = <strong>rituální tetování</strong>) + vysoká Iniciativa a možnost <strong>vyměnit si pořadí v boji se svým Rudým čarodějem</strong>.</td>
+                <td data-label="Kategorie"><strong>Origin Featy (2×)</strong></td>
+                <td data-label="Volba (DnD 5.5)"><a class="spell" href="https://www.aidedd.org/feat/magic-initiate" target="_blank" rel="noopener noreferrer">Magic Initiate (Wizard)</a> + <a class="spell" href="https://www.aidedd.org/feat/alert" target="_blank" rel="noopener noreferrer">Alert</a></td>
+                <td data-label="Zdroj"><span class="badge-book">PHB 2024</span></td>
+                <td data-label="RPGBOT"><span class="badge badge-blue">Blue + Blue</span></td>
+                <td data-label="Proč to sedí"><a class="spell" href="https://www.aidedd.org/spell/shield" target="_blank" rel="noopener noreferrer">Shield</a> (+5 AC reakcí = <strong>rituální tetování</strong>) + vysoká Iniciativa a možnost <strong>vyměnit si pořadí v boji se svým Rudým čarodějem</strong>.</td>
               </tr>
             </tbody>
           </table>
@@ -802,10 +218,10 @@
       </div>
     </section>
 
-    <!-- SECTION 2 -->
+    <!-- SECTION 2: Stats & Skills -->
     <section id="staty">
       <div class="card">
-        <h2 class="section-title"><span><span class="section-num">2.</span> Vlastnosti, Dovednosti a Custom Background (DMG 2024)</span></h2>
+        <h2 class="section-title"><span><span class="section-num">1.2</span> Vlastnosti, Dovednosti a Custom Background (DMG 2024)</span></h2>
 
         <p style="margin-top:0; color:var(--text-muted); font-size:0.94rem;">
           Rozdělení pomocí <strong>Point Buy (27 bodů)</strong> na 1. úrovni. Alternativa pro <em>Standard Array</em>: <code>STR 8, DEX 14, CON 14 (13+1), INT 12, WIS 17 (15+2), CHA 10</code>.
@@ -816,7 +232,7 @@
             <div class="ability-name">Strength</div>
             <div class="ability-score">8</div>
             <div class="ability-mod">-1</div>
-            <div class="ability-calc">Základ 8 • střední zbroj</div>
+            <div class="ability-calc">Základ 8 • neútočí zbraní</div>
           </div>
           <div class="ability-box">
             <div class="ability-name">Dexterity</div>
@@ -855,7 +271,7 @@
             <h3>🎯 Dovednosti (0 % překryvu – 6 skillů na 3. úr.)</h3>
             <ul>
               <li><strong>Investigation (+2):</strong> z Backgroundu <em>Thayan Knight</em> – hledání pastí, stop a skrytých hrozeb.</li>
-              <li><strong>Stealth (+4):</strong> z Backgroundu <em>Thayan Knight</em> – tichý doprovod v ulicích <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Waterdeep" target="_blank" rel="noopener noreferrer">Waterdeepu</a>.</li>
+              <li><strong>Stealth (+4):</strong> z Backgroundu <em>Thayan Knight</em> – tichý doprovod v ulicích <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Waterdeep" target="_blank" rel="noopener noreferrer">Waterdeepu</a> (v Breastplate bez nevýhody!).</li>
               <li><strong>Perception (+5):</strong> z rasy <em>Human (Skillful)</em> – neustálá ostražitost osobního strážce.</li>
               <li><strong>Insight (+5):</strong> z povolání <em>Cleric</em> – čtení úmyslů a odhalování lží kolem čaroděje.</li>
               <li><strong>Religion (+5 s Thaumaturge!):</strong> z povolání <em>Cleric</em> – přičítáš INT (+0) + PB (+2) + <strong>WIS (+3)</strong>.</li>
@@ -875,277 +291,76 @@
       </div>
     </section>
 
-    <!-- SECTION 3 -->
-    <section id="tetovani">
-      <div class="card">
-        <h2 class="section-title"><span><span class="section-num">3.</span> Rituální Thayské tetování v mechanikách DnD 5.5</span></h2>
-        <p style="margin-top:0;">
-          Podle kánonu procházejí <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thayan_knight" target="_blank" rel="noopener noreferrer">Thayan Knights</a> bolestivým rituálem, při kterém získávají magické tetování svazující jejich život s <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Red_Wizards_of_Thay" target="_blank" rel="noopener noreferrer">Rudými čaroději</a> (včetně schopnosti absorbovat zranění určená jejich pánovi). Vladislak nosí tento obrazec přes <strong>celá záda a páteř až k zátylku</strong>:
-        </p>
-        <div class="grid-2">
-          <div class="subcard">
-            <h3>🔥 1. úroveň: Ochranná pečeť (Magic Initiate: Wizard)</h3>
-            <ul>
-              <li>Sesílací vlastnost: <strong>Wisdom</strong>.</li>
-              <li><strong><a class="spell" href="https://www.aidedd.org/spell/shield" target="_blank" rel="noopener noreferrer">Shield</a> (1. úroveň):</strong> 1× za Long Rest zdarma a <strong>dále kdykoliv za běžné klerické spell sloty</strong>. Tetování na zádech rudě vzplane a reakcí zvedne AC o <strong>+5</strong> do příštího tahu (a zneškodní <a class="spell" href="https://www.aidedd.org/spell/magic-missile" target="_blank" rel="noopener noreferrer">Magic Missile</a>).</li>
-              <li><strong><a class="spell" href="https://www.aidedd.org/spell/message" target="_blank" rel="noopener noreferrer">Message</a> (Cantrip):</strong> Tichá komunikace s Rudým čarodějem během jednání či hlídky.</li>
-              <li><strong><a class="spell" href="https://www.aidedd.org/spell/blade-ward" target="_blank" rel="noopener noreferrer">Blade Ward</a> / <a class="spell" href="https://www.aidedd.org/spell/ray-of-frost" target="_blank" rel="noopener noreferrer">Ray of Frost</a> (Cantrip):</strong> Ochranná bariéra před bojem (<code>-1d4</code> k útokům nepřátel) nebo zpomalení útočníka běžícího k čaroději o 10 stop.</li>
-            </ul>
-          </div>
-          <div class="subcard">
-            <h3>🩸 3. úroveň: Sdílení ran (Warding Bond) &amp; Rozvoj</h3>
-            <ul>
-              <li><strong><a class="spell" href="https://www.aidedd.org/spell/warding-bond" target="_blank" rel="noopener noreferrer">Warding Bond</a> (2. úroveň klerika, 1 h, bez koncentrace!):</strong> Doslovný přepis lore Thayan Knightů do pravidel – Rudý čaroděj získá <strong>+1 AC, +1 na všechny záchrany a Resistance na všechna zranění</strong>, zatímco druhou polovinu zranění přebírá tetování přímo do Vladislakova těla.</li>
-              <li><strong>Volitelný háček pro DM (<em>Heroes of Faerûn</em>):</strong> Oficiální 5.5e předmět <em>Thayan Spell Tattoo</em> (Uncommon wondrous item frakce Red Wizards) může v budoucnu představovat probuzení vyšší vrstvy tetování za splněné úkoly.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 4 -->
-    <section id="synergie">
-      <div class="card">
-        <h2 class="section-title"><span><span class="section-num">4.</span> Taktická synergie s Rudým čarodějem</span></h2>
-        <div class="grid-2">
-          <div class="subcard">
-            <h3>⚡ 1. Prohození iniciativy (<a class="spell" href="https://www.aidedd.org/feat/alert" target="_blank" rel="noopener noreferrer">Alert</a>)</h3>
-            <p style="margin:0; font-size:0.93rem;">
-              V DnD 5.5 dovoluje feat <em>Alert</em> hned po hodu na iniciativu <strong>vyměnit si pořadí s ochotným spojencem</strong>:
-            </p>
-            <ul>
-              <li><strong>Skupina nepřátel:</strong> Vladislak hodí vysoko, prohodí si tah s čarodějem &rarr; čaroděj pálí plošné kouzlo dřív, než se nepřátelé pohnou.</li>
-              <li><strong>Jeden boss:</strong> Vladislak jde první, sešle <a class="spell" href="https://www.aidedd.org/spell/mind-sliver" target="_blank" rel="noopener noreferrer">Mind Sliver</a> (INT save &rarr; <strong><code>-1d4</code> na další záchranný hod</strong>) a připraví bosse na hlavní kouzlo čaroděje.</li>
-            </ul>
-          </div>
-
-          <div class="subcard">
-            <h3>🎭 2. Krytí magie ve Waterdeepu</h3>
-            <p style="margin:0; font-size:0.93rem;">
-              Ve <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Waterdeep" target="_blank" rel="noopener noreferrer">Waterdeepu</a> (pod dohledem <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Watchful_Order_of_Magists_and_Protectors" target="_blank" rel="noopener noreferrer">Watchful Order</a>, <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Harpers" target="_blank" rel="noopener noreferrer">Harperů</a> a <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Laeral_Silverhand" target="_blank" rel="noopener noreferrer">Laeral Silverhand</a>) má Vladislak od 3. úrovně trvale připravenou <a class="spell" href="https://www.aidedd.org/spell/nystuls-magic-aura" target="_blank" rel="noopener noreferrer">Nystul's Magic Aura</a> – skryje aury rituálních tetování, předmětů i nekromancie před <a class="spell" href="https://www.aidedd.org/spell/detect-magic" target="_blank" rel="noopener noreferrer">Detect Magic</a>.
-            </p>
-          </div>
-
-          <div class="subcard">
-            <h3>🛡️ 3. Živý štít v první linii</h3>
-            <p style="margin:0; font-size:0.93rem;">
-              Stojí přímo před čarodějem se zapnutými <a class="spell" href="https://www.aidedd.org/spell/spirit-guardians" target="_blank" rel="noopener noreferrer">Spirit Guardians</a> (zpomalení nepřátel v okruhu 15 stop na polovinu + plošné Radiant zranění) a vysokým AC 23–24 se <a class="spell" href="https://www.aidedd.org/spell/shield" target="_blank" rel="noopener noreferrer">Shieldem</a>. Přes Channel Divinity <strong>Fortifying Spell</strong> hází čaroději při kouzlení <code>2d8 + Cleric level</code> dočasných HP bez akce.
-            </p>
-          </div>
-
-          <div class="subcard">
-            <h3>🚫 4. Anti-mág a okamžité čištění</h3>
-            <p style="margin:0; font-size:0.93rem;">
-              Od 5. úrovně má vždy připravený <a class="spell" href="https://www.aidedd.org/spell/counterspell" target="_blank" rel="noopener noreferrer">Counterspell</a> a <a class="spell" href="https://www.aidedd.org/spell/dispel-magic" target="_blank" rel="noopener noreferrer">Dispel Magic</a>. Od 6. úrovně (<strong>Dispelling Recovery</strong>) může po jakémkoliv léčivém kouzle za slot seslat na cíl jako <strong>Bonus Action zdarma bez slotu Dispel Magic</strong> (100% legální v jednom tahu dle pravidel 5.5e!).
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 5 -->
-    <section id="levely">
+    <!-- SECTION 3: Stealth Armor & Iconic Weapons -->
+    <section id="vyzbroj">
       <div class="card">
         <h2 class="section-title">
-          <span><span class="section-num">5.</span> Postup po úrovních (Level 1 – 12)</span>
-          <a class="rule" href="https://rpgbot.net/2024-dnd/classes/cleric/" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem;">RPGBOT 2024 Cleric Guide &nearr;</a>
+          <span><span class="section-num">1.3</span> Tichá výzbroj a ikonické zbraně (Bez útoků nablízko)</span>
+          <span class="badge badge-blue">Simple Weapons • Stealth Ready</span>
         </h2>
+        <p style="margin-top:0; color:var(--text-muted); font-size:0.94rem;">
+          Díky volbě <strong>Thaumaturge</strong> má Vladislak zdatnost v jednoduchých zbraních (<em>Simple Weapons</em>), střední zbroji a štítech. Protože v boji útočí výhradně kouzly a cantripy přes <strong>Wisdom</strong>, nenosí hřmotné válečné zbraně – každá část jeho výstroje má v ulicích Waterdeepu přesný <strong>symbolický, krycí i taktický účel</strong>:
+        </p>
 
-        <div class="timeline">
-          <div class="level-item">
-            <div class="level-tag">1. úroveň<span>Thaumaturge &amp; Origin</span></div>
-            <div class="level-body">
-              <ul>
-                <li><strong>Výbava:</strong> Tichá varianta bez postihu na Stealth: <em>Chain Shirt</em> (AC 17 se štítem) &rarr; upgrade na <em>Breastplate</em> (<strong>AC 18 / 23 se Shieldem</strong>). Těžší bojová varianta: <em>Scale Mail</em> (AC 18) &rarr; <em>Half Plate</em> (<strong>AC 19 / 24</strong>). Svatý symbol <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Azuth" target="_blank" rel="noopener noreferrer">Azutha</a> na štítu + <em>Poisoner's Kit</em> (50 GP).</li>
-                <li><strong>Cleric Cantripy (4):</strong> <a class="spell" href="https://www.aidedd.org/spell/toll-the-dead" target="_blank" rel="noopener noreferrer">Toll the Dead</a>, <a class="spell" href="https://www.aidedd.org/spell/sacred-flame" target="_blank" rel="noopener noreferrer">Sacred Flame</a>, <a class="spell" href="https://www.aidedd.org/spell/guidance" target="_blank" rel="noopener noreferrer">Guidance</a>, <a class="spell" href="https://www.aidedd.org/spell/thaumaturgy" target="_blank" rel="noopener noreferrer">Thaumaturgy</a> <em>(+ <a class="spell" href="https://www.aidedd.org/spell/message" target="_blank" rel="noopener noreferrer">Message</a> a <a class="spell" href="https://www.aidedd.org/spell/blade-ward" target="_blank" rel="noopener noreferrer">Blade Ward</a> z Magic Initiate)</em>.</li>
-                <li><strong>Základní kouzla 1. úrovně:</strong> <a class="spell" href="https://www.aidedd.org/spell/bless" target="_blank" rel="noopener noreferrer">Bless</a>, <a class="spell" href="https://www.aidedd.org/spell/healing-word" target="_blank" rel="noopener noreferrer">Healing Word</a>, <a class="spell" href="https://www.aidedd.org/spell/command" target="_blank" rel="noopener noreferrer">Command</a>, <a class="spell" href="https://www.aidedd.org/spell/shield-of-faith" target="_blank" rel="noopener noreferrer">Shield of Faith</a> (+ <a class="spell" href="https://www.aidedd.org/spell/shield" target="_blank" rel="noopener noreferrer">Shield</a> z featu).</li>
-              </ul>
+        <div class="grid-3">
+          <div class="gear-card stealth-armor">
+            <div class="gear-meta">
+              <span class="badge badge-blue">AC 18 (23 se Shield)</span>
+              <span class="badge-book">Plný Stealth (+4)</span>
             </div>
+            <h3 class="serif" style="margin:0; font-size:1.08rem; color:var(--heading);">🛡️ Tichá zbroj &amp; Štít Azutha</h3>
+            <p style="margin:0; font-size:0.91rem;">
+              Tmavě matovaný <strong>Breastplate</strong> (AC 14 + 2 DEX) pod cestovním pláštěm doplněný <strong>štítem</strong> (+2 AC) s vytepaným svatým symbolem <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Azuth" target="_blank" rel="noopener noreferrer">Azutha</a>. Nezvoní a nedává žádný postih na <em>Stealth</em> při nočním sledování ve Waterdeepu.
+            </p>
+            <p style="margin:0; font-size:0.82rem; color:var(--text-muted);">
+              <em>Poznámka ke startu na 1. úrovni:</em> Ze startovního zlata začíná s <strong>Chain Shirt + Štít (AC 17 / 22 se Shield)</strong> a kupuje <em>Breastplate</em> za prvních 400 GP.
+            </p>
           </div>
 
-          <div class="level-item">
-            <div class="level-tag">2. úroveň<span>Channel Divinity</span></div>
-            <div class="level-body">
-              <ul>
-                <li><strong>Channel Divinity (2 použití; +1 za Short Rest, všechna za Long Rest):</strong> <em>Divine Spark</em> (léčení nebo Radiant/Necrotic zranění na 30 ft.) a <em>Turn Undead</em> (v 5.5e cílí jen na <em>„undead of your choice“</em> – <strong>nikdy nezasáhne případné nemrtvé sluhy tvého Rudého čaroděje!</strong>).</li>
-              </ul>
+          <div class="gear-card primary-weapon">
+            <div class="gear-meta">
+              <span class="badge badge-crimson">Posvátná zbraň Azutha</span>
+              <span class="badge-book">Quarterstaff / Staff Focus</span>
             </div>
+            <h3 class="serif" style="margin:0; font-size:1.08rem; color:var(--heading);">🦯 Okovaná poutnická hůl Azutha</h3>
+            <p style="margin:0; font-size:0.91rem;">
+              Těžká jasanová hůl pobitá černým železem s nenápadnou runou vztyčené dlaně. <strong>Quarterstaff</strong> (<em>The Old Staff</em>) je v kánonu posvátnou zbraní samotného Azutha a v Eltabbaru odznakem chrámového vyšetřovatele Řádu.
+            </p>
+            <p style="margin:0; font-size:0.84rem; color:var(--text-muted);">
+              <strong>Roleplay &amp; taktika:</strong> Na veřejnosti dotváří přestrojení poutníka z východu na cestě <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Dajemma" target="_blank" rel="noopener noreferrer">dajemma</a>, v <em>PHB 2024</em> slouží jako <strong>Arcane Focus (Staff)</strong> a v úzkých dveřích jí Vladislak fyzicky zahradí průchod k čaroději, aniž by musel udeřit. <em>(Do 4. úr. ji při tasení štítu připíná k řemenu kvůli volné ruce pro somatický Shield; od 4. úr. s <a class="spell" href="https://www.aidedd.org/feat/war-caster" target="_blank" rel="noopener noreferrer">War Caster</a> drží hůl i štít současně.)</em>
+            </p>
           </div>
 
-          <div class="level-item">
-            <div class="level-tag">3. úroveň<span>Arcana Domain (AU)</span></div>
-            <div class="level-body">
-              <ul>
-                <li><strong>Domain Spells (vždy připravená):</strong> <a class="spell" href="https://www.aidedd.org/spell/detect-magic" target="_blank" rel="noopener noreferrer">Detect Magic</a>, <a class="spell" href="https://www.aidedd.org/spell/magic-missile" target="_blank" rel="noopener noreferrer">Magic Missile</a>, <a class="spell" href="https://www.aidedd.org/spell/magic-weapon" target="_blank" rel="noopener noreferrer">Magic Weapon</a>, <a class="spell" href="https://www.aidedd.org/spell/nystuls-magic-aura" target="_blank" rel="noopener noreferrer">Nystul's Magic Aura</a>.</li>
-                <li><strong>Student of Arcana:</strong> Zdatnost a <strong>Expertise v Arcana</strong> + 2 Wizard cantripy počítané jako Cleric cantripy (přes Wisdom): <a class="spell" href="https://www.aidedd.org/spell/mind-sliver" target="_blank" rel="noopener noreferrer">Mind Sliver</a> a <a class="spell" href="https://www.aidedd.org/spell/mage-hand" target="_blank" rel="noopener noreferrer">Mage Hand</a>.</li>
-                <li><strong>Modify Magic (Channel Divinity):</strong> <em>Fortifying Spell</em> (<code>2d8 + Cleric level</code> THP cíli kouzla) a <em>Tenacious Spell</em> (<code>-1d6</code> k záchraně cíle proti tvému kouzlu).</li>
-                <li><strong>Doporučená kouzla 2. úrovně:</strong> <a class="spell" href="https://www.aidedd.org/spell/warding-bond" target="_blank" rel="noopener noreferrer">Warding Bond</a>, <a class="spell" href="https://www.aidedd.org/spell/aid" target="_blank" rel="noopener noreferrer">Aid</a>, <a class="spell" href="https://www.aidedd.org/spell/hold-person" target="_blank" rel="noopener noreferrer">Hold Person</a>, <a class="spell" href="https://www.aidedd.org/spell/silence" target="_blank" rel="noopener noreferrer">Silence</a>, <a class="spell" href="https://www.aidedd.org/spell/lesser-restoration" target="_blank" rel="noopener noreferrer">Lesser Restoration</a>.</li>
-              </ul>
+          <div class="gear-card">
+            <div class="gear-meta">
+              <span class="badge badge-green">Finesse (DEX +2)</span>
+              <span class="badge-book">Krevní rituály &amp; Jedy</span>
             </div>
-          </div>
-
-          <div class="level-item">
-            <div class="level-tag">4. úroveň<span>Klíčový Feat</span></div>
-            <div class="level-body">
-              <ul>
-                <li><strong><a class="spell" href="https://www.aidedd.org/feat/war-caster" target="_blank" rel="noopener noreferrer">War Caster</a></strong> <span class="badge badge-blue">Blue</span>: Zvyšuje <strong>Wisdom na 18 (+4)</strong>, dává <strong>Advantage</strong> na CON záchrany pro koncentraci, umožňuje somatické složky (<a class="spell" href="https://www.aidedd.org/spell/shield" target="_blank" rel="noopener noreferrer">Shield</a>, <a class="spell" href="https://www.aidedd.org/spell/counterspell" target="_blank" rel="noopener noreferrer">Counterspell</a>) se štítem v ruce a nahrazuje Opportunity Attack kouzlem (<em>Command / Hold Person / Mind Sliver</em>).</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="level-item">
-            <div class="level-tag">5. úroveň<span>Power Spike</span></div>
-            <div class="level-body">
-              <ul>
-                <li><strong>Domain Spells:</strong> <a class="spell" href="https://www.aidedd.org/spell/counterspell" target="_blank" rel="noopener noreferrer">Counterspell</a>, <a class="spell" href="https://www.aidedd.org/spell/dispel-magic" target="_blank" rel="noopener noreferrer">Dispel Magic</a>.</li>
-                <li><strong>Hlavní kouzla 3. úrovně:</strong> <a class="spell" href="https://www.aidedd.org/spell/spirit-guardians" target="_blank" rel="noopener noreferrer">Spirit Guardians</a> a <a class="spell" href="https://www.aidedd.org/spell/revivify" target="_blank" rel="noopener noreferrer">Revivify</a> + <strong>Sear Undead</strong> (<code>4d8</code> Radiant při neúspěšném Turn Undead).</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="level-item">
-            <div class="level-tag">6. – 12. úr.<span>Vyšší úrovně</span></div>
-            <div class="level-body">
-              <ul>
-                <li><strong>6. úroveň:</strong> <strong>Dispelling Recovery</strong> (Bonus Action <a class="spell" href="https://www.aidedd.org/spell/dispel-magic" target="_blank" rel="noopener noreferrer">Dispel Magic</a> zdarma po léčení/zrušení stavu) + 3. použití Channel Divinity.</li>
-                <li><strong>7. úroveň:</strong> <strong>Blessed Strikes: Potent Cantrips</strong> <span class="badge badge-blue">Blue</span> (+WIS ke zranění Cleric cantripů vč. <em>Mind Sliver</em>) + Domain Spells (<a class="spell" href="https://www.aidedd.org/spell/arcane-eye" target="_blank" rel="noopener noreferrer">Arcane Eye</a>, <a class="spell" href="https://www.aidedd.org/spell/leomund-s-secret-chest" target="_blank" rel="noopener noreferrer">Leomund's Secret Chest</a>) + <a class="spell" href="https://www.aidedd.org/spell/death-ward" target="_blank" rel="noopener noreferrer">Death Ward</a> (8h pojistka pro čaroděje bez koncentrace) a <a class="spell" href="https://www.aidedd.org/spell/banishment" target="_blank" rel="noopener noreferrer">Banishment</a>.</li>
-                <li><strong>8. – 12. úroveň:</strong> Na 8. úr. <strong>+2 Wisdom &rarr; 20 (+5)</strong> (příp. <a class="spell" href="https://www.aidedd.org/feat/inspiring-leader" target="_blank" rel="noopener noreferrer">Inspiring Leader</a> + <a class="spell" href="https://www.aidedd.org/feat/telekinetic" target="_blank" rel="noopener noreferrer">Telekinetic</a>), na 9. úr. <a class="spell" href="https://www.aidedd.org/spell/bigby-s-hand" target="_blank" rel="noopener noreferrer">Bigby's Hand</a> &amp; <a class="spell" href="https://www.aidedd.org/spell/teleportation-circle" target="_blank" rel="noopener noreferrer">Teleportation Circle</a>, na 12. úr. <a class="spell" href="https://www.aidedd.org/feat/resilient" target="_blank" rel="noopener noreferrer">Resilient (Constitution)</a> <span class="badge badge-blue">Blue</span>.</li>
-              </ul>
-            </div>
+            <h3 class="serif" style="margin:0; font-size:1.08rem; color:var(--heading);">🗡️ Skrytá thayská rituální dýka</h3>
+            <p style="margin:0; font-size:0.91rem;">
+              Úzká obřadní dýka s vlnitou čepelí z tmavé thayské oceli (<em>Kris Dagger</em>, Simple Weapon, <code>+4</code> k zásahu přes Obratnost) ukrytá v pochvě pod pláštěm na vnitřní straně opasku.
+            </p>
+            <p style="margin:0; font-size:0.84rem; color:var(--text-muted);">
+              <strong>Roleplay &amp; taktika:</strong> Neslouží k šermu, ale k <strong>prolití kapky krve při aktivaci rituálu <a class="spell" href="https://www.aidedd.org/spell/warding-bond" target="_blank" rel="noopener noreferrer">Warding Bond</a></strong>, k seškrabávání vzorků jedů z pohárů (<em>Poisoner's Kit</em>) a k tiché práci ve stínech – přesně jako o noci před čarodějovou zkouškou.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 6 -->
-    <section id="rashemi">
-      <div class="card">
-        <h2 class="section-title"><span><span class="section-num">6.</span> Etnikum Rashemi v Thay &amp; Roleplay detaily</span></h2>
-        <div class="grid-2">
-          <div class="subcard">
-            <h3>🌍 Thayští Rashemi vs. Rashemaar</h3>
-            <ul>
-              <li>Zatímco svobodní <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Rashemaar" target="_blank" rel="noopener noreferrer">Rashemaar</a> ze severního <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Rashemen" target="_blank" rel="noopener noreferrer">Rashemenu</a> slouží čarodějkám <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Wychlaran" target="_blank" rel="noopener noreferrer">Wychlaran</a> a Thay nenávidí, <strong>Rashemi</strong> na náhorní plošině <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Priador" target="_blank" rel="noopener noreferrer">Priador</a> (potomci prastarého <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Raumathar" target="_blank" rel="noopener noreferrer">Raumatharu</a>) tvoří <strong>nejpočetnější lidské etnikum v samotném <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thay" target="_blank" rel="noopener noreferrer">Thay</a></strong>.</li>
-              <li>Považují se především za občany Thaye a chovají hluboký respekt k <strong>projevům magické moci</strong>. Na rozdíl od vysoké, štíhlé šlechty <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Mulan" target="_blank" rel="noopener noreferrer">Mulanů</a> je Vladislak nižší (~168 cm), podsaditý a svalnatý, se snědou pletí a tmavýma očima.</li>
-            </ul>
-          </div>
-
-          <div class="subcard">
-            <h3>🧔 Vlasy jako maskování &amp; Zvyky</h3>
-            <ul>
-              <li><strong>Přirozené krytí mimo Thay:</strong> V Thay si svobodní Rashemiové i Thayan Knights holí hlavu dohola po vzoru Mulanů. Rashemiové mají ale od přírody extrémně husté černé vlasy a plnovous – cestou na západ si je Vladislak nechal narůst, takže zakrývají cíp tetování na zátylku a pro cizince vypadá jako poutník na tradiční cestě <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Dajemma" target="_blank" rel="noopener noreferrer">dajemma</a>.</li>
-              <li><strong>Pověrčivé gesto proti smůle:</strong> Nerad si nechává věštit vlastní osud; zlou moc odvrací tradičním rashemijským gestem – <em>plivnout na prsty, sevřít v pěst a třikrát prudce švihnout prsty do vzduchu</em>.</li>
-              <li><strong>Úsloví:</strong> <em>„Vlk zůstane vždycky vlkem.“</em> / <em>„Jsou tací, kteří myslí, a tací, kteří jen sní.“</em></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 7 -->
-    <section id="pribeh">
-      <div class="card story-prose">
-        <h2 class="section-title"><span><span class="section-num">7.</span> Příběh postavy: Vladislak Ulmokina</span></h2>
-
-        <p style="font-size:0.92rem; color:var(--text-muted); background:var(--bg-elevated); padding:0.75rem 1rem; border-radius:8px; border:1px solid var(--border);">
-          <strong>Věk:</strong> ~25–26 let (vrstevník svého Rudého čaroděje) &nbsp;•&nbsp;
-          <strong>Domov:</strong> <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Eltabbar" target="_blank" rel="noopener noreferrer">Eltabbar</a>, <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thay" target="_blank" rel="noopener noreferrer">Thay</a> &nbsp;•&nbsp;
-          <strong>Rodina v Thay:</strong> matka <strong>Hulmarra Ulmokina</strong> a mladší sestra <strong>Yuldra Ulmokina</strong>
-        </p>
-
-        <h3 class="story-chapter">Stín chrámu a věží Eltabbaru</h3>
-        <p>
-          Vladislak se narodil ve spodních čtvrtích <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Eltabbar" target="_blank" rel="noopener noreferrer">Eltabbaru</a> do chudé, ale svobodné rashemijské rodiny. V dnešním Thay pod vládou liche <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Szass_Tam" target="_blank" rel="noopener noreferrer">Szass Tama</a>, kde živí občané bez urozené mulanské krve balancují jen krok nad otroky a nemrtvými sluhy, znamenal život v chudobě neustálý boj o přežití. Jako chlapce ho matka <strong>Hulmarra</strong> odevzdala do služby v eltabbarském chrámu <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Azuth" target="_blank" rel="noopener noreferrer">Azutha</a>, Pána kouzel.
-        </p>
-        <p>
-          Kněží Azutha ve Vladislakovi brzy objevili vzácnou kombinaci vlastností: železnou kázeň, tichý krok, vrozený cit pro záchvěvy <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Weave" target="_blank" rel="noopener noreferrer">Tkaniva</a> a bystrou, analytickou mysl. Nebyl vychováván jako kazatel, ale jako chrámový <strong>vyšetřovatel a strážce pořádku</strong> – učil se odhalovat magické sabotáže, hledat skryté pasti a poznávat desítky alchymistických jedů, kterými si znepřátelené čarodějské rody v Eltabbaru vyřizovaly účty.
-        </p>
-        <p>
-          Právě tehdy si mladého akolyty všiml <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Mulan" target="_blank" rel="noopener noreferrer">mulanský</a> rod jeho budoucího <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Red_Wizards_of_Thay" target="_blank" rel="noopener noreferrer">Rudého čaroděje</a>. Nabídli dohodu, která se v Thay neodmítá: rod vezme Vladislakovu matku <strong>Hulmarru</strong> a mladší sestru <strong>Yuldru</strong> pod svou trvalou patronaci (zajistí jim v Eltabbaru bezpečný dům, jídlo a nedotknutelnost) a Vladislak zasvětí svůj život ochraně jejich stejně starého dědice. Vyrůstali od té doby bok po boku – jeden ve věžích nad svitky vysoké magie, druhý o krok za ním ve stínech chodeb, na cvičištích a v chrámu. Vladislak zná každý jeho zvyk, tón hlasu i tajemství, a pod neproniknutelnou maskou protokolu je pro něj čaroděj jedinou skutečnou blízkostí, kterou v životě má.
-        </p>
-
-        <h3 class="story-chapter">Noc zkoušky a rituál žhavého inkoustu</h3>
-        <p>
-          Zlom přišel v předvečer čarodějovy klíčové učednické zkoušky v Eltabbaru. V sázce bylo vše – neúspěch znamenal pád v hierarchii nebo smrt. Vladislak při rutinní kontrole odhalil v čarodějově poháru bezbarvý, pomalu působící thayský jed nastražený ambiciózním rivalem, který měl čaroději uprostřed rituálu ochromit mysl i jazyk.
-        </p>
-        <p>
-          Kdyby Vladislak spustil otevřený poplach, zkouška by byla odložena a rod by vypadal slabě. Jednal proto tiše a bez jakýchkoliv rytířských skrupulí: část otrávené směsi otestoval na sobě, aby přesně určil její složení a namíchal protilátku (<em>Poisoner's Kit</em>), a téže noci se beze zvuku protáhl do komnat viníka (<em>Stealth</em>, <em>Investigation</em>). Ráno byla cesta ke zkoušce čistá – a rival se ke zkoušce už nikdy nedostavil.
-        </p>
-        <p>
-          Odměnou i pečetí tohoto činu bylo Vladislakovo přijetí mezi <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thayan_knight" target="_blank" rel="noopener noreferrer">Thayan Knights</a>. Během hodin trvajícího bolestivého obřadu mu kněží a mágové rodu vyryli přes <strong>celá záda a podél páteře až k zátylku</strong> spletité magické tetování propojující vztyčenou ruku Azutha s rodovou pečetí jeho pána. Od té noci jsou spojeni krví i magií: kdykoliv Vladislak vyvolá ochrannou bariéru (<a class="spell" href="https://www.aidedd.org/spell/shield" target="_blank" rel="noopener noreferrer">Shield</a>), převezme pánovy rány (<a class="spell" href="https://www.aidedd.org/spell/warding-bond" target="_blank" rel="noopener noreferrer">Warding Bond</a>) nebo se čaroděj ocitne ve smrtelném ohrožení, jizvy pod zbrojí se rozpálí jako žhavé železo.
-        </p>
-
-        <h3 class="story-chapter">Mise do Waterdeepu</h3>
-        <p>
-          Nyní byli oba vysláni z Thaye daleko na západ, do hlučného a nepředvídatelného <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Waterdeep" target="_blank" rel="noopener noreferrer">Waterdeepu</a>, aby splnili delikátní úkol. Pro Vladislaka je Město nádhery chaotickým mraveništěm plným změkčilých lidí, kteří nechápou skutečný Řád – ale jako chladný pragmatik pohrdá zbytečnou krutostí, která by přitáhla pozornost městské hlídky či mágů. Má jediný zákon: <strong>mise musí uspět a jeho čaroděj se musí vrátit živý.</strong> Protože dobře ví, že pokud selže tady na západě, zaplatí za to nejen on, ale i <strong>Hulmarra a Yuldra</strong> čekající doma v Eltabbaru.
-        </p>
-
-        <div class="trait-grid">
-          <div class="trait-card">
-            <strong>Osobnostní rys</strong>
-            Mluvím málo, tiše a věcně. Než si v cizí hospodě sedneme, automaticky zkontroluji východy, stíny u stropu i pohár svého pána.
-          </div>
-          <div class="trait-card">
-            <strong>Ideál (Řád a Služba – LN)</strong>
-            Magie je nejvyšší řád světa. Čaroděj je mysl, která jí vládne; já jsem štít, který nedovolí chaosu a čepelím přerušit jeho dílo.
-          </div>
-          <div class="trait-card">
-            <strong>Pouto (Bond)</strong>
-            Dvě přísahy mě drží při životě – můj Rudý čaroděj, se kterým jsem vyrostl ve stínech Eltabbaru, a má matka Hulmarra se sestrou Yuldrou v Thay.
-          </div>
-          <div class="trait-card">
-            <strong>Slabina (Flaw)</strong>
-            Můj vlastní život nemá žádnou cenu v porovnání s bezpečím mého čaroděje – pro jeho ochranu skočím do smrtelné rány a bez výčitek použiju jed i lež.
-          </div>
-        </div>
-
-        <div id="session0" class="dm-callout" style="margin-top:1.5rem; margin-bottom:0;">
-          <h3>🤝 Otevřené body ke společnému dotažení s DM a spoluhráčem (Session 0)</h3>
-          <ol style="margin:0.4rem 0 0; padding-left:1.3rem; font-size:0.94rem;">
-            <li style="margin-bottom:0.35rem;"><strong>Společné krytí ve Waterdeepu:</strong> Pod jakou identitou ve městě vystupujeme (např. učenec/kupec z východu a jeho zarostlý rashemijský osobní strážce, nebo oficiální vyslanci <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thayan_enclave" target="_blank" rel="noopener noreferrer">thayské enklávy</a>)?</li>
-            <li style="margin-bottom:0.35rem;"><strong>Jméno rodu a mrtvého rivala:</strong> Jak se jmenuje mulanský rod (či patron / <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Zulkir" target="_blank" rel="noopener noreferrer">Zulkir</a>) mého Rudého čaroděje, jehož pečeť nosím vytetovanou na zádech, a čí příbuzní v Eltabbaru nám případně nezapomněli onu noc před zkouškou?</li>
-            <li><strong>Konkrétní cíl mise:</strong> Co přesně máme ve Waterdeepu pro Thay získat či zařídit – a zná Vladislak celé zadání do posledního detailu stejně jako čaroděj?</li>
-          </ol>
-        </div>
-      </div>
-    </section>
+    <!-- Bottom Page Pager -->
+    <nav class="page-pager" aria-label="Přechod mezi sekcemi">
+      <a class="pager-link next" href="background.html">
+        <span class="pager-dir">Další sekce &rarr;</span>
+        <span class="pager-title">02. Původ, Tetování &amp; Roleplay</span>
+      </a>
+    </nav>
 
     <footer>
       Vladislak Ulmokina • D&amp;D 5.5 (2024 Rules) Character Dossier • Postaveno s využitím <a class="rule" href="https://rpgbot.net/2024-dnd/classes/cleric/" target="_blank" rel="noopener noreferrer">RPGBOT.net</a> &amp; <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Main_Page" target="_blank" rel="noopener noreferrer">Forgotten Realms Wiki</a>
     </footer>
-
   </main>
 
-  <script>
-    function toggleTheme() {
-      const html = document.documentElement;
-      const btn = document.getElementById('themeBtn');
-      if (html.getAttribute('data-theme') === 'dark') {
-        html.setAttribute('data-theme', 'light');
-        btn.textContent = '🌙 Temný Thayský režim';
-      } else {
-        html.setAttribute('data-theme', 'dark');
-        btn.textContent = '☀️ Světlý pergamen';
-      }
-    }
-
-    function setArmorMode(mode) {
-      const acVal = document.getElementById('acVal');
-      const acNote = document.getElementById('acNote');
-      const btnStealth = document.getElementById('modeStealth');
-      const btnBattle = document.getElementById('modeBattle');
-      if (mode === 'stealth') {
-        acVal.textContent = '18 (23 se Shield)';
-        acNote.textContent = 'Breastplate + Štít (Chain Shirt 17/22 na startu • plný Stealth!)';
-        btnStealth.classList.add('active');
-        btnBattle.classList.remove('active');
-      } else {
-        acVal.textContent = '19 (24 se Shield)';
-        acNote.textContent = 'Half Plate + Štít (Scale Mail 18/23 na startu • nevýhoda na Stealth)';
-        btnBattle.classList.add('active');
-        btnStealth.classList.remove('active');
-      }
-    }
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>

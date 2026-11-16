@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="cs" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Vladislak Ulmokina — 03. Taktika &amp; Leveling (DnD 5.5 Dossier)</title>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('vladislak-theme');
+        document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Přeskočit na obsah</a>
+
+  <!-- Sticky Top Navigation -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html" aria-label="Vladislak Ulmokina – Domů">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="32,4 58,19 58,45 32,60 6,45 6,19" stroke="var(--crimson)" stroke-width="3.5" fill="var(--crimson-soft)"/>
+            <path d="M32 15C28 22 24 27 24 33C24 37.5 27.6 41 32 41C36.4 41 40 37.5 40 33C40 27 36 22 32 15Z" stroke="var(--gold)" stroke-width="3" fill="var(--gold-soft)"/>
+            <path d="M32 24V48M25 44H39" stroke="var(--heading)" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">Vladislak Ulmokina</span>
+          <span class="brand-sub">Thayan Knight • DnD 5.5</span>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Hlavní navigace">
+        <a href="index.html"><span class="nav-idx">01</span>Přehled &amp; Staty</a>
+        <a href="background.html"><span class="nav-idx">02</span>Původ &amp; Roleplay</a>
+        <a href="tactics.html" aria-current="page"><span class="nav-idx">03</span>Taktika &amp; Levely</a>
+        <a href="lore.html"><span class="nav-idx">04</span>Lore</a>
+        <a href="dm.html"><span class="nav-idx">05</span>Pro DM</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <button class="btn-theme" id="themeBtn" type="button" aria-label="Přepnout barevný režim">
+          <span aria-hidden="true">☀️</span><span>Ayu<span class="theme-label-full"> Light</span></span>
+        </button>
+        <button class="hamburger-btn" id="hamburgerBtn" type="button" aria-label="Otevřít menu sekcí" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Slide-Out Hamburger Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobilní navigace" aria-hidden="true">
+    <div class="drawer-header">
+      <span class="drawer-title">Navigace Dossieru</span>
+      <button class="drawer-close" id="drawerCloseBtn" type="button" aria-label="Zavřít menu">&times;</button>
+    </div>
+    <nav class="drawer-nav" aria-label="Sekce postavy">
+      <a href="index.html">
+        <span class="drawer-link-top"><span class="drawer-link-idx">01</span> Přehled &amp; Staty</span>
+        <span class="drawer-link-desc">Koncept, vlastnosti, dovednosti, tichá zbroj a zbraně</span>
+      </a>
+      <a href="background.html">
+        <span class="drawer-link-top"><span class="drawer-link-idx">02</span> Původ &amp; Roleplay</span>
+        <span class="drawer-link-desc">Příběh z Eltabbaru, rituální tetování a etnikum Rashemi</span>
+      </a>
+      <a href="tactics.html" aria-current="page">
+        <span class="drawer-link-top"><span class="drawer-link-idx">03</span> Taktika &amp; Leveling</span>
+        <span class="drawer-link-desc">Bojová synergie s Rudým čarodějem a postup po úrovních 1–12</span>
+      </a>
+      <a href="lore.html">
+        <span class="drawer-link-top"><span class="drawer-link-idx">04</span> Znalosti světa (Lore)</span>
+        <span class="drawer-link-desc">Božstva a náboženství v Thay očima klerika Azutha</span>
+      </a>
+      <a href="dm.html">
+        <span class="drawer-link-top"><span class="drawer-link-idx">05</span> Otevřené body pro DM</span>
+        <span class="drawer-link-desc">Shrnutí pravidel 5.5e, Session 0 otázky a háčky do kampaně</span>
+      </a>
+    </nav>
+    <div class="drawer-footer" id="drawerThemeStatus">Aktivní paleta: Srcery Dark</div>
+  </aside>
+
+  <main class="container" id="main-content">
+
+    <!-- Compact Subpage Banner -->
+    <div class="page-header">
+      <span class="eyebrow">03 • Taktika &amp; Postup po úrovních</span>
+      <h1>Taktická synergie &amp; Leveling Guide (1–12)</h1>
+      <p>
+        Jak v praxi chránit svého <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Red_Wizards_of_Thay" target="_blank" rel="noopener noreferrer">Rudého čaroděje</a> v boji i v ulicích <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Waterdeep" target="_blank" rel="noopener noreferrer">Waterdeepu</a> a jak stavět klerika domény Arcana od 1. do 12. úrovně dle pravidel D&amp;D 5.5.
+      </p>
+    </div>
+
+    <!-- Legend for Clickable Links -->
+    <div class="legend-bar">
+      <strong style="color:var(--heading);">Legenda prokliků:</strong>
+      <span><a class="spell" href="https://www.aidedd.org/spell/shield" target="_blank" rel="noopener noreferrer">Kouzla &amp; Featy (5.5e karty)</a></span>
+      <span><a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thay" target="_blank" rel="noopener noreferrer">Reálie Forgotten Realms (Wiki)</a></span>
+      <span><a class="rule" href="https://rpgbot.net/2024-dnd/classes/cleric/" target="_blank" rel="noopener noreferrer">Pravidla DnD 5.5 &amp; RPGBOT</a></span>
+    </div>
+
+    <!-- SECTION 3.1: Tactical Synergies -->
+    <section id="synergie">
+      <div class="card">
+        <h2 class="section-title"><span><span class="section-num">3.1</span> Taktická synergie s Rudým čarodějem</span></h2>
+        <div class="grid-2">
+          <div class="subcard">
+            <h3>⚡ 1. Prohození iniciativy (<a class="spell" href="https://www.aidedd.org/feat/alert" target="_blank" rel="noopener noreferrer">Alert</a>)</h3>
+            <p>
+              V DnD 5.5 dovoluje feat <em>Alert</em> hned po hodu na iniciativu (<code>DEX +2 + PB</code>) <strong>vyměnit si pořadí s ochotným spojencem</strong>:
+            </p>
+            <ul>
+              <li><strong>Skupina nepřátel u sebe:</strong> Vladislak hodí vysoko, prohodí si tah s čarodějem &rarr; čaroděj pálí plošné kontrolní/útočné kouzlo dřív, než se nepřátelé rozprchnou a zamíchají.</li>
+              <li><strong>Jeden nebezpečný boss:</strong> Vladislak jde první, sešle <a class="spell" href="https://www.aidedd.org/spell/mind-sliver" target="_blank" rel="noopener noreferrer">Mind Sliver</a> (INT save &rarr; <strong><code>-1d4</code> na další záchranný hod</strong>) a připraví bosse na nejsilnější <em>save-or-suck</em> kouzlo svého čaroděje.</li>
+            </ul>
+          </div>
+
+          <div class="subcard">
+            <h3>🎭 2. Krytí magie a stop ve Waterdeepu</h3>
+            <p>
+              Ve <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Waterdeep" target="_blank" rel="noopener noreferrer">Waterdeepu</a> (pod bedlivým dohledem <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Watchful_Order_of_Magists_and_Protectors" target="_blank" rel="noopener noreferrer">Watchful Order</a>, <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Harpers" target="_blank" rel="noopener noreferrer">Harperů</a> a <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Laeral_Silverhand" target="_blank" rel="noopener noreferrer">Laeral Silverhand</a>) má Vladislak od 3. úrovně trvale připravenou <a class="spell" href="https://www.aidedd.org/spell/nystuls-magic-aura" target="_blank" rel="noopener noreferrer">Nystul's Magic Aura</a> – skryje aury rituálních tetování, předmětů i nekromancie před <a class="spell" href="https://www.aidedd.org/spell/detect-magic" target="_blank" rel="noopener noreferrer">Detect Magic</a> a věštěním, zatímco tichý <em>Breastplate</em> neruší <em>Stealth</em>.
+            </p>
+          </div>
+
+          <div class="subcard">
+            <h3>🛡️ 3. Živý štít v první linii</h3>
+            <p>
+              Stojí v úzkém průchodu před čarodějem se štítem a okovanou holí Azutha, zapne <a class="spell" href="https://www.aidedd.org/spell/spirit-guardians" target="_blank" rel="noopener noreferrer">Spirit Guardians</a> (zpomalení nepřátel v okruhu 15 stop na polovinu + plošné Radiant zranění) a útoky odráží přes <strong>AC 18 / 23 se <a class="spell" href="https://www.aidedd.org/spell/shield" target="_blank" rel="noopener noreferrer">Shieldem</a></strong>. Přes Channel Divinity <strong>Fortifying Spell</strong> hází čaroději při kouzlení <code>2d8 + Cleric level</code> dočasných HP bez akce.
+            </p>
+          </div>
+
+          <div class="subcard">
+            <h3>🚫 4. Anti-mág a okamžité čištění</h3>
+            <p>
+              Od 5. úrovně má vždy připravený <a class="spell" href="https://www.aidedd.org/spell/counterspell" target="_blank" rel="noopener noreferrer">Counterspell</a> a <a class="spell" href="https://www.aidedd.org/spell/dispel-magic" target="_blank" rel="noopener noreferrer">Dispel Magic</a>, čímž šetří sloty i reakci svému pánovi. Od 6. úrovně (<strong>Dispelling Recovery</strong>) může po jakémkoliv léčivém kouzle za slot seslat na cíl jako <strong>Bonus Action zdarma bez slotu Dispel Magic</strong> (100% legální v jednom tahu dle pravidel 5.5e!).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3.2: Leveling Timeline -->
+    <section id="levely">
+      <div class="card">
+        <h2 class="section-title">
+          <span><span class="section-num">3.2</span> Postup po úrovních (Level 1 – 12)</span>
+          <a class="rule" href="https://rpgbot.net/2024-dnd/classes/cleric/" target="_blank" rel="noopener noreferrer" style="font-size:0.84rem;">RPGBOT 2024 Cleric Guide &nearr;</a>
+        </h2>
+
+        <div class="timeline">
+          <div class="level-item">
+            <div class="level-tag">1. úroveň<span>Thaumaturge &amp; Origin</span></div>
+            <div class="level-body">
+              <ul>
+                <li><strong>Tichá zbroj &amp; ikonické zbraně:</strong> Startovní <em>Chain Shirt + Štít se symbolem Azutha</em> (<strong>AC 17 / 22 se Shield</strong>, bez postihu na Stealth) &rarr; prioritní nákup <em>Breastplate</em> za 400 GP (<strong>AC 18 / 23 se Shield</strong>). K tomu <strong>Okovaná poutnická hůl Azutha</strong> (<em>Quarterstaff / Arcane Staff</em>), skrytá <strong>thayská rituální dýka</strong> (<em>Dagger</em>) u pasu a <em>Poisoner's Kit</em> (50 GP z Backgroundu).</li>
+                <li><strong>Cleric Cantripy (4):</strong> <a class="spell" href="https://www.aidedd.org/spell/toll-the-dead" target="_blank" rel="noopener noreferrer">Toll the Dead</a>, <a class="spell" href="https://www.aidedd.org/spell/sacred-flame" target="_blank" rel="noopener noreferrer">Sacred Flame</a>, <a class="spell" href="https://www.aidedd.org/spell/guidance" target="_blank" rel="noopener noreferrer">Guidance</a>, <a class="spell" href="https://www.aidedd.org/spell/thaumaturgy" target="_blank" rel="noopener noreferrer">Thaumaturgy</a> <em>(+ <a class="spell" href="https://www.aidedd.org/spell/message" target="_blank" rel="noopener noreferrer">Message</a> a <a class="spell" href="https://www.aidedd.org/spell/blade-ward" target="_blank" rel="noopener noreferrer">Blade Ward</a> z Magic Initiate)</em>.</li>
+                <li><strong>Základní kouzla 1. úrovně:</strong> <a class="spell" href="https://www.aidedd.org/spell/bless" target="_blank" rel="noopener noreferrer">Bless</a>, <a class="spell" href="https://www.aidedd.org/spell/healing-word" target="_blank" rel="noopener noreferrer">Healing Word</a>, <a class="spell" href="https://www.aidedd.org/spell/command" target="_blank" rel="noopener noreferrer">Command</a>, <a class="spell" href="https://www.aidedd.org/spell/shield-of-faith" target="_blank" rel="noopener noreferrer">Shield of Faith</a> (+ <a class="spell" href="https://www.aidedd.org/spell/shield" target="_blank" rel="noopener noreferrer">Shield</a> z featu; na 1.–3. úr. nechává pravou ruku v boji volnou pro somatické složky Shieldu).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="level-item">
+            <div class="level-tag">2. úroveň<span>Channel Divinity</span></div>
+            <div class="level-body">
+              <ul>
+                <li><strong>Channel Divinity (2 použití; +1 za Short Rest, všechna za Long Rest):</strong> <em>Divine Spark</em> (spolehlivé léčení nebo Radiant/Necrotic zranění na 30 ft. bez slotu) a <em>Turn Undead</em> (v 5.5e cílí výhradně na <em>„undead of your choice“</em> – <strong>nikdy nezasáhne případné nemrtvé sluhy tvého Rudého čaroděje!</strong>).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="level-item">
+            <div class="level-tag">3. úroveň<span>Arcana Domain (AU)</span></div>
+            <div class="level-body">
+              <ul>
+                <li><strong>Domain Spells (vždy připravená):</strong> <a class="spell" href="https://www.aidedd.org/spell/detect-magic" target="_blank" rel="noopener noreferrer">Detect Magic</a>, <a class="spell" href="https://www.aidedd.org/spell/magic-missile" target="_blank" rel="noopener noreferrer">Magic Missile</a>, <a class="spell" href="https://www.aidedd.org/spell/magic-weapon" target="_blank" rel="noopener noreferrer">Magic Weapon</a>, <a class="spell" href="https://www.aidedd.org/spell/nystuls-magic-aura" target="_blank" rel="noopener noreferrer">Nystul's Magic Aura</a>.</li>
+                <li><strong>Student of Arcana:</strong> Zdatnost a <strong>Expertise v Arcana</strong> (odemyká i výrobu <em>Spell Scrolls</em>) + 2 Wizard cantripy počítané jako Cleric cantripy přes Wisdom: <a class="spell" href="https://www.aidedd.org/spell/mind-sliver" target="_blank" rel="noopener noreferrer">Mind Sliver</a> a <a class="spell" href="https://www.aidedd.org/spell/mage-hand" target="_blank" rel="noopener noreferrer">Mage Hand</a>.</li>
+                <li><strong>Modify Magic (Channel Divinity):</strong> <em>Fortifying Spell</em> (<code>2d8 + Cleric level</code> THP cíli kouzla) a <em>Tenacious Spell</em> (<code>-1d6</code> k záchraně cíle proti tvému kouzlu – drtivé s <em>Command</em> nebo <em>Hold Person</em>).</li>
+                <li><strong>Doporučená kouzla 2. úrovně:</strong> <a class="spell" href="https://www.aidedd.org/spell/warding-bond" target="_blank" rel="noopener noreferrer">Warding Bond</a>, <a class="spell" href="https://www.aidedd.org/spell/aid" target="_blank" rel="noopener noreferrer">Aid</a> (8h navýšení max HP bez koncentrace), <a class="spell" href="https://www.aidedd.org/spell/hold-person" target="_blank" rel="noopener noreferrer">Hold Person</a>, <a class="spell" href="https://www.aidedd.org/spell/silence" target="_blank" rel="noopener noreferrer">Silence</a>, <a class="spell" href="https://www.aidedd.org/spell/lesser-restoration" target="_blank" rel="noopener noreferrer">Lesser Restoration</a>.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="level-item">
+            <div class="level-tag">4. úroveň<span>Klíčový Feat</span></div>
+            <div class="level-body">
+              <ul>
+                <li><strong><a class="spell" href="https://www.aidedd.org/feat/war-caster" target="_blank" rel="noopener noreferrer">War Caster</a></strong> <span class="badge badge-blue">Blue</span>: Zvyšuje <strong>Wisdom na 18 (+4)</strong>, dává <strong>Advantage</strong> na CON záchrany pro koncentraci, umožňuje somatické složky (<a class="spell" href="https://www.aidedd.org/spell/shield" target="_blank" rel="noopener noreferrer">Shield</a>, <a class="spell" href="https://www.aidedd.org/spell/counterspell" target="_blank" rel="noopener noreferrer">Counterspell</a>) i s <strong>holí Azutha a štítem v obou rukách</strong> a nahrazuje Opportunity Attack kouzlem (<em>Command / Hold Person / Mind Sliver</em>).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="level-item">
+            <div class="level-tag">5. úroveň<span>Power Spike</span></div>
+            <div class="level-body">
+              <ul>
+                <li><strong>Domain Spells:</strong> <a class="spell" href="https://www.aidedd.org/spell/counterspell" target="_blank" rel="noopener noreferrer">Counterspell</a>, <a class="spell" href="https://www.aidedd.org/spell/dispel-magic" target="_blank" rel="noopener noreferrer">Dispel Magic</a>.</li>
+                <li><strong>Hlavní kouzla 3. úrovně:</strong> <a class="spell" href="https://www.aidedd.org/spell/spirit-guardians" target="_blank" rel="noopener noreferrer">Spirit Guardians</a> a <a class="spell" href="https://www.aidedd.org/spell/revivify" target="_blank" rel="noopener noreferrer">Revivify</a> (pořiď ve Waterdeepu diamanty za 300 GP!) + <strong>Sear Undead</strong> (<code>4d8</code> Radiant při neúspěšném Turn Undead).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="level-item">
+            <div class="level-tag">6. – 12. úr.<span>Vyšší úrovně</span></div>
+            <div class="level-body">
+              <ul>
+                <li><strong>6. úroveň:</strong> <strong>Dispelling Recovery</strong> (Bonus Action <a class="spell" href="https://www.aidedd.org/spell/dispel-magic" target="_blank" rel="noopener noreferrer">Dispel Magic</a> zdarma po léčení/zrušení stavu) + 3. použití Channel Divinity.</li>
+                <li><strong>7. úroveň:</strong> <strong>Blessed Strikes: Potent Cantrips</strong> <span class="badge badge-blue">Blue</span> (+WIS ke zranění Cleric cantripů vč. <em>Mind Sliver</em> a <em>Toll the Dead</em>) + Domain Spells (<a class="spell" href="https://www.aidedd.org/spell/arcane-eye" target="_blank" rel="noopener noreferrer">Arcane Eye</a>, <a class="spell" href="https://www.aidedd.org/spell/leomund-s-secret-chest" target="_blank" rel="noopener noreferrer">Leomund's Secret Chest</a>) + <a class="spell" href="https://www.aidedd.org/spell/death-ward" target="_blank" rel="noopener noreferrer">Death Ward</a> (každodenní 8h pojistka pro čaroděje bez koncentrace) a <a class="spell" href="https://www.aidedd.org/spell/banishment" target="_blank" rel="noopener noreferrer">Banishment</a>.</li>
+                <li><strong>8. – 12. úroveň:</strong> Na 8. úr. <strong>+2 Wisdom &rarr; 20 (+5)</strong> (příp. <a class="spell" href="https://www.aidedd.org/feat/inspiring-leader" target="_blank" rel="noopener noreferrer">Inspiring Leader</a> + <a class="spell" href="https://www.aidedd.org/feat/telekinetic" target="_blank" rel="noopener noreferrer">Telekinetic</a>), na 9. úr. <a class="spell" href="https://www.aidedd.org/spell/bigby-s-hand" target="_blank" rel="noopener noreferrer">Bigby's Hand</a> &amp; <a class="spell" href="https://www.aidedd.org/spell/teleportation-circle" target="_blank" rel="noopener noreferrer">Teleportation Circle</a>, na 12. úr. <a class="spell" href="https://www.aidedd.org/feat/resilient" target="_blank" rel="noopener noreferrer">Resilient (Constitution)</a> <span class="badge badge-blue">Blue</span>.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Page Pager -->
+    <nav class="page-pager" aria-label="Přechod mezi sekcemi">
+      <a class="pager-link prev" href="background.html">
+        <span class="pager-dir">&larr; Předchozí sekce</span>
+        <span class="pager-title">02. Původ &amp; Roleplay</span>
+      </a>
+      <a class="pager-link next" href="lore.html">
+        <span class="pager-dir">Další sekce &rarr;</span>
+        <span class="pager-title">04. Znalosti světa (Lore)</span>
+      </a>
+    </nav>
+
+    <footer>
+      Vladislak Ulmokina • D&amp;D 5.5 (2024 Rules) Character Dossier • Postaveno s využitím <a class="rule" href="https://rpgbot.net/2024-dnd/classes/cleric/" target="_blank" rel="noopener noreferrer">RPGBOT.net</a> &amp; <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Main_Page" target="_blank" rel="noopener noreferrer">Forgotten Realms Wiki</a>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

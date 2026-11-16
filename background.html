@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="cs" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Vladislak Ulmokina — 02. Původ &amp; Roleplay (DnD 5.5 Dossier)</title>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('vladislak-theme');
+        document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Přeskočit na obsah</a>
+
+  <!-- Sticky Top Navigation -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html" aria-label="Vladislak Ulmokina – Domů">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="32,4 58,19 58,45 32,60 6,45 6,19" stroke="var(--crimson)" stroke-width="3.5" fill="var(--crimson-soft)"/>
+            <path d="M32 15C28 22 24 27 24 33C24 37.5 27.6 41 32 41C36.4 41 40 37.5 40 33C40 27 36 22 32 15Z" stroke="var(--gold)" stroke-width="3" fill="var(--gold-soft)"/>
+            <path d="M32 24V48M25 44H39" stroke="var(--heading)" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">Vladislak Ulmokina</span>
+          <span class="brand-sub">Thayan Knight • DnD 5.5</span>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Hlavní navigace">
+        <a href="index.html"><span class="nav-idx">01</span>Přehled &amp; Staty</a>
+        <a href="background.html" aria-current="page"><span class="nav-idx">02</span>Původ &amp; Roleplay</a>
+        <a href="tactics.html"><span class="nav-idx">03</span>Taktika &amp; Levely</a>
+        <a href="lore.html"><span class="nav-idx">04</span>Lore</a>
+        <a href="dm.html"><span class="nav-idx">05</span>Pro DM</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <button class="btn-theme" id="themeBtn" type="button" aria-label="Přepnout barevný režim">
+          <span aria-hidden="true">☀️</span><span>Ayu<span class="theme-label-full"> Light</span></span>
+        </button>
+        <button class="hamburger-btn" id="hamburgerBtn" type="button" aria-label="Otevřít menu sekcí" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Slide-Out Hamburger Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobilní navigace" aria-hidden="true">
+    <div class="drawer-header">
+      <span class="drawer-title">Navigace Dossieru</span>
+      <button class="drawer-close" id="drawerCloseBtn" type="button" aria-label="Zavřít menu">&times;</button>
+    </div>
+    <nav class="drawer-nav" aria-label="Sekce postavy">
+      <a href="index.html">
+        <span class="drawer-link-top"><span class="drawer-link-idx">01</span> Přehled &amp; Staty</span>
+        <span class="drawer-link-desc">Koncept, vlastnosti, dovednosti, tichá zbroj a zbraně</span>
+      </a>
+      <a href="background.html" aria-current="page">
+        <span class="drawer-link-top"><span class="drawer-link-idx">02</span> Původ &amp; Roleplay</span>
+        <span class="drawer-link-desc">Příběh z Eltabbaru, rituální tetování a etnikum Rashemi</span>
+      </a>
+      <a href="tactics.html">
+        <span class="drawer-link-top"><span class="drawer-link-idx">03</span> Taktika &amp; Leveling</span>
+        <span class="drawer-link-desc">Bojová synergie s Rudým čarodějem a postup po úrovních 1–12</span>
+      </a>
+      <a href="lore.html">
+        <span class="drawer-link-top"><span class="drawer-link-idx">04</span> Znalosti světa (Lore)</span>
+        <span class="drawer-link-desc">Božstva a náboženství v Thay očima klerika Azutha</span>
+      </a>
+      <a href="dm.html">
+        <span class="drawer-link-top"><span class="drawer-link-idx">05</span> Otevřené body pro DM</span>
+        <span class="drawer-link-desc">Shrnutí pravidel 5.5e, Session 0 otázky a háčky do kampaně</span>
+      </a>
+    </nav>
+    <div class="drawer-footer" id="drawerThemeStatus">Aktivní paleta: Srcery Dark</div>
+  </aside>
+
+  <main class="container" id="main-content">
+
+    <!-- Compact Subpage Banner -->
+    <div class="page-header">
+      <span class="eyebrow">02 • Příběh, Tetování &amp; Roleplay</span>
+      <h1>Původ v Eltabbaru &amp; Duše Thayan Knighta</h1>
+      <p>
+        Osobní historie Vladislaka Ulmokiny, převedení krvavého rituálního tetování do pravidel D&amp;D 5.5 a kulturní detaily thayských <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Rashemaar" target="_blank" rel="noopener noreferrer">Rashemiů</a> pro autentický roleplay u stolu.
+      </p>
+    </div>
+
+    <!-- Legend for Clickable Links -->
+    <div class="legend-bar">
+      <strong style="color:var(--heading);">Legenda prokliků:</strong>
+      <span><a class="spell" href="https://www.aidedd.org/spell/shield" target="_blank" rel="noopener noreferrer">Kouzla &amp; Featy (5.5e karty)</a></span>
+      <span><a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thay" target="_blank" rel="noopener noreferrer">Reálie Forgotten Realms (Wiki)</a></span>
+      <span><a class="rule" href="https://rpgbot.net/2024-dnd/classes/cleric/" target="_blank" rel="noopener noreferrer">Pravidla DnD 5.5 &amp; RPGBOT</a></span>
+    </div>
+
+    <!-- SECTION 2.1: Backstory -->
+    <section id="pribeh">
+      <div class="card story-prose">
+        <h2 class="section-title"><span><span class="section-num">2.1</span> Příběh postavy: Vladislak Ulmokina</span></h2>
+
+        <div class="story-meta-bar">
+          <strong>Věk:</strong> ~25–26 let (vrstevník svého Rudého čaroděje) &nbsp;•&nbsp;
+          <strong>Domov:</strong> <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Eltabbar" target="_blank" rel="noopener noreferrer">Eltabbar</a>, <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thay" target="_blank" rel="noopener noreferrer">Thay</a> &nbsp;•&nbsp;
+          <strong>Rodina v Thay:</strong> matka <strong>Hulmarra Ulmokina</strong> a mladší sestra <strong>Yuldra Ulmokina</strong>
+        </div>
+
+        <h3 class="story-chapter">Stín chrámu a věží Eltabbaru</h3>
+        <p>
+          Vladislak se narodil ve spodních čtvrtích <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Eltabbar" target="_blank" rel="noopener noreferrer">Eltabbaru</a> do chudé, ale svobodné rashemijské rodiny. V dnešním Thay pod vládou liche <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Szass_Tam" target="_blank" rel="noopener noreferrer">Szass Tama</a>, kde živí občané bez urozené mulanské krve balancují jen krok nad otroky a nemrtvými sluhy, znamenal život v chudobě neustálý boj o přežití. Jako chlapce ho matka <strong>Hulmarra</strong> odevzdala do služby v eltabbarském chrámu <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Azuth" target="_blank" rel="noopener noreferrer">Azutha</a>, Pána kouzel.
+        </p>
+        <p>
+          Kněží Azutha ve Vladislakovi brzy objevili vzácnou kombinaci vlastností: železnou kázeň, tichý krok, vrozený cit pro záchvěvy <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Weave" target="_blank" rel="noopener noreferrer">Tkaniva</a> a bystrou, analytickou mysl. Nebyl vychováván jako kazatel, ale s <strong>okovanou chrámovou holí</strong> v ruce jako <strong>vyšetřovatel a strážce pořádku</strong> – učil se odhalovat magické sabotáže, hledat skryté pasti a poznávat desítky alchymistických jedů, kterými si znepřátelené čarodějské rody v Eltabbaru vyřizovaly účty.
+        </p>
+        <p>
+          Právě tehdy si mladého akolyty všiml <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Mulan" target="_blank" rel="noopener noreferrer">mulanský</a> rod jeho budoucího <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Red_Wizards_of_Thay" target="_blank" rel="noopener noreferrer">Rudého čaroděje</a>. Nabídli dohodu, která se v Thay neodmítá: rod vezme Vladislakovu matku <strong>Hulmarru</strong> a mladší sestru <strong>Yuldru</strong> pod svou trvalou patronaci (zajistí jim v Eltabbaru bezpečný dům, jídlo a nedotknutelnost) a Vladislak zasvětí svůj život ochraně jejich stejně starého dědice. Vyrůstali od té doby bok po boku – jeden ve věžích nad svitky vysoké magie, druhý o krok za ním ve stínech chodeb, na cvičištích a v chrámu. Vladislak zná každý jeho zvyk, tón hlasu i tajemství, a pod neproniknutelnou maskou protokolu je pro něj čaroděj jedinou skutečnou blízkostí, kterou v životě má.
+        </p>
+
+        <h3 class="story-chapter">Noc zkoušky a rituál žhavého inkoustu</h3>
+        <p>
+          Zlom přišel v předvečer čarodějovy klíčové učednické zkoušky v Eltabbaru. V sázce bylo vše – neúspěch znamenal pád v hierarchii nebo smrt. Vladislak při rutinní kontrole odhalil v čarodějově poháru bezbarvý, pomalu působící thayský jed nastražený ambiciózním rivalem, který měl čaroději uprostřed rituálu ochromit mysl i jazyk.
+        </p>
+        <p>
+          Kdyby Vladislak spustil otevřený poplach, zkouška by byla odložena a rod by vypadal slabě. Jednal proto tiše a bez jakýchkoliv rytířských skrupulí: špičkou rituální dýky odebral vzorek, část otrávené směsi otestoval na sobě, aby přesně určil její složení a namíchal protilátku (<em>Poisoner's Kit</em>), a téže noci se s temnou čepelí v ruce beze zvuku protáhl do komnat viníka (<em>Stealth</em>, <em>Investigation</em>). Ráno byla cesta ke zkoušce čistá – a rival se ke zkoušce už nikdy nedostavil.
+        </p>
+        <p>
+          Odměnou i pečetí tohoto činu bylo Vladislakovo přijetí mezi <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thayan_knight" target="_blank" rel="noopener noreferrer">Thayan Knights</a>. Během hodin trvajícího bolestivého obřadu mu kněží a mágové rodu vyryli přes <strong>celá záda a podél páteře až k zátylku</strong> spletité magické tetování propojující vztyčenou ruku Azutha s rodovou pečetí jeho pána. Od té noci jsou spojeni krví i magií: kdykoliv Vladislak vyvolá ochrannou bariéru (<a class="spell" href="https://www.aidedd.org/spell/shield" target="_blank" rel="noopener noreferrer">Shield</a>), převezme pánovy rány (<a class="spell" href="https://www.aidedd.org/spell/warding-bond" target="_blank" rel="noopener noreferrer">Warding Bond</a>) nebo se čaroděj ocitne ve smrtelném ohrožení, jizvy pod zbrojí se rozpálí jako žhavé železo.
+        </p>
+
+        <h3 class="story-chapter">Mise do Waterdeepu</h3>
+        <p style="margin-bottom:0;">
+          Nyní byli oba vysláni z Thaye daleko na západ, do hlučného a nepředvídatelného <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Waterdeep" target="_blank" rel="noopener noreferrer">Waterdeepu</a>, aby splnili delikátní úkol. Pro Vladislaka je Město nádhery chaotickým mraveništěm plným změkčilých lidí, kteří nechápou skutečný Řád – ale jako chladný pragmatik pohrdá zbytečnou krutostí, která by přitáhla pozornost městské hlídky či mágů. Má jediný zákon: <strong>mise musí uspět a jeho čaroděj se musí vrátit živý.</strong> Protože dobře ví, že pokud selže tady na západě, zaplatí za to nejen on, ale i <strong>Hulmarra a Yuldra</strong> čekající doma v Eltabbaru.
+        </p>
+
+        <div class="trait-grid">
+          <div class="trait-card">
+            <strong>Osobnostní rys</strong>
+            Mluvím málo, tiše a věcně. Než si v cizí hospodě sedneme, opřu hůl Azutha u dveří a automaticky zkontroluji východy, stíny u stropu i pohár svého pána.
+          </div>
+          <div class="trait-card">
+            <strong>Ideál (Řád a Služba – LN)</strong>
+            Magie je nejvyšší řád světa. Čaroděj je mysl, která jí vládne; já jsem štít, který nedovolí chaosu a čepelím přerušit jeho dílo.
+          </div>
+          <div class="trait-card">
+            <strong>Pouto (Bond)</strong>
+            Dvě přísahy mě drží při životě – můj Rudý čaroděj, se kterým jsem vyrostl ve stínech Eltabbaru, a má matka Hulmarra se sestrou Yuldrou v Thay.
+          </div>
+          <div class="trait-card">
+            <strong>Slabina (Flaw)</strong>
+            Můj vlastní život nemá žádnou cenu v porovnání s bezpečím mého čaroděje – pro jeho ochranu skočím do smrtelné rány a bez výčitek použiju jed i lež.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2.2: Ritual Tattoo Mechanics -->
+    <section id="tetovani">
+      <div class="card">
+        <h2 class="section-title"><span><span class="section-num">2.2</span> Rituální Thayské tetování v mechanikách DnD 5.5</span></h2>
+        <p style="margin-top:0;">
+          Podle kánonu procházejí <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thayan_knight" target="_blank" rel="noopener noreferrer">Thayan Knights</a> bolestivým rituálem, při kterém získávají magické tetování svazující jejich život s <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Red_Wizards_of_Thay" target="_blank" rel="noopener noreferrer">Rudými čaroději</a> (včetně schopnosti absorbovat zranění určená jejich pánovi). Vladislak nosí tento obrazec přes <strong>celá záda a páteř až k zátylku</strong>:
+        </p>
+        <div class="grid-2">
+          <div class="subcard">
+            <h3>🔥 1. úroveň: Ochranná pečeť (Magic Initiate: Wizard)</h3>
+            <ul>
+              <li>Sesílací vlastnost: <strong>Wisdom</strong>.</li>
+              <li><strong><a class="spell" href="https://www.aidedd.org/spell/shield" target="_blank" rel="noopener noreferrer">Shield</a> (1. úroveň):</strong> 1× za Long Rest zdarma a <strong>dále kdykoliv za běžné klerické spell sloty</strong>. Tetování na zádech rudě vzplane a reakcí zvedne AC o <strong>+5</strong> do příštího tahu (v Breastplate se štítem <strong>AC 23</strong> a imunita na <a class="spell" href="https://www.aidedd.org/spell/magic-missile" target="_blank" rel="noopener noreferrer">Magic Missile</a>).</li>
+              <li><strong><a class="spell" href="https://www.aidedd.org/spell/message" target="_blank" rel="noopener noreferrer">Message</a> (Cantrip):</strong> Tichá komunikace s Rudým čarodějem během jednání ve Waterdeepu či na hlídce.</li>
+              <li><strong><a class="spell" href="https://www.aidedd.org/spell/blade-ward" target="_blank" rel="noopener noreferrer">Blade Ward</a> / <a class="spell" href="https://www.aidedd.org/spell/ray-of-frost" target="_blank" rel="noopener noreferrer">Ray of Frost</a> (Cantrip):</strong> Ochranná bariéra před bojem (<code>-1d4</code> k útokům nepřátel) nebo zpomalení útočníka běžícího k čaroději o 10 stop.</li>
+            </ul>
+          </div>
+          <div class="subcard">
+            <h3>🩸 3. úroveň: Sdílení ran (Warding Bond) &amp; Krevní dýka</h3>
+            <ul>
+              <li><strong><a class="spell" href="https://www.aidedd.org/spell/warding-bond" target="_blank" rel="noopener noreferrer">Warding Bond</a> (2. úroveň klerika, 1 h, bez koncentrace!):</strong> Při rituálu se Vladislak dotkne platiny a špičkou své <em>thayské rituální dýky</em> probudí pečeť na zádech – Rudý čaroděj získá <strong>+1 AC, +1 na všechny záchrany a Resistance na všechna zranění</strong>, zatímco druhou polovinu zranění přebírá tetování přímo do Vladislakova těla.</li>
+              <li><strong>Rozvoj v kampani (<em>Heroes of Faerûn</em>):</strong> Oficiální 5.5e předmět <em>Thayan Spell Tattoo</em> (Uncommon wondrous item frakce Red Wizards) může v budoucnu představovat probuzení vyšší vrstvy tetování za splněné úkoly.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2.3: Rashemi Ethnicity & Roleplay -->
+    <section id="rashemi">
+      <div class="card">
+        <h2 class="section-title"><span><span class="section-num">2.3</span> Etnikum Rashemi v Thay &amp; Roleplay detaily</span></h2>
+        <div class="grid-2">
+          <div class="subcard">
+            <h3>🌍 Thayští Rashemi vs. Rashemaar</h3>
+            <ul>
+              <li>Zatímco svobodní <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Rashemaar" target="_blank" rel="noopener noreferrer">Rashemaar</a> ze severního <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Rashemen" target="_blank" rel="noopener noreferrer">Rashemenu</a> slouží čarodějkám <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Wychlaran" target="_blank" rel="noopener noreferrer">Wychlaran</a> a Thay nenávidí, <strong>Rashemi</strong> na náhorní plošině <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Priador" target="_blank" rel="noopener noreferrer">Priador</a> (potomci prastarého <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Raumathar" target="_blank" rel="noopener noreferrer">Raumatharu</a>) tvoří <strong>nejpočetnější lidské etnikum v samotném <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thay" target="_blank" rel="noopener noreferrer">Thay</a></strong>.</li>
+              <li>Považují se především za občany Thaye a chovají hluboký respekt k <strong>projevům magické moci a nezlomné vůli</strong>. Na rozdíl od vysoké, štíhlé šlechty <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Mulan" target="_blank" rel="noopener noreferrer">Mulanů</a> je Vladislak nižší (~168 cm), podsaditý a svalnatý, se snědou pletí a tmavýma očima. Pro svobodného Rashemiho je přijetí mezi <em>Thayan Knights</em> (kam otroci nesmějí) vrcholným vzestupem.</li>
+            </ul>
+          </div>
+
+          <div class="subcard">
+            <h3>🧔 Vlasy, hůl poutníka &amp; Zvyky</h3>
+            <ul>
+              <li><strong>Přirozené krytí mimo Thay:</strong> V Thay si svobodní Rashemiové i Thayan Knights holí hlavu dohola po vzoru Mulanů. Rashemiové mají ale od přírody extrémně husté černé vlasy a plnovous – cestou na západ si je Vladislak nechal narůst, takže zakrývají cíp tetování na zátylku. S <strong>okovanou poutnickou holí Azutha</strong> vypadá pro cizince ve Waterdeepu jako poutník z východu na tradiční cestě <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Dajemma" target="_blank" rel="noopener noreferrer">dajemma</a>.</li>
+              <li><strong>Pověrčivé gesto proti smůle:</strong> Nerad si nechává věštit vlastní osud; zlou moc odvrací tradičním rashemijským gestem – <em>plivnout na prsty, sevřít v pěst a třikrát prudce švihnout prsty do vzduchu</em>.</li>
+              <li><strong>Úsloví:</strong> <em>„Vlk zůstane vždycky vlkem.“</em> / <em>„Jsou tací, kteří myslí, a tací, kteří jen sní.“</em></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Page Pager -->
+    <nav class="page-pager" aria-label="Přechod mezi sekcemi">
+      <a class="pager-link prev" href="index.html">
+        <span class="pager-dir">&larr; Předchozí sekce</span>
+        <span class="pager-title">01. Přehled &amp; Staty</span>
+      </a>
+      <a class="pager-link next" href="tactics.html">
+        <span class="pager-dir">Další sekce &rarr;</span>
+        <span class="pager-title">03. Taktika &amp; Leveling</span>
+      </a>
+    </nav>
+
+    <footer>
+      Vladislak Ulmokina • D&amp;D 5.5 (2024 Rules) Character Dossier • Postaveno s využitím <a class="rule" href="https://rpgbot.net/2024-dnd/classes/cleric/" target="_blank" rel="noopener noreferrer">RPGBOT.net</a> &amp; <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Main_Page" target="_blank" rel="noopener noreferrer">Forgotten Realms Wiki</a>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
