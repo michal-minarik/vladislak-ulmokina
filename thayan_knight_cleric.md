@@ -244,6 +244,100 @@ Nyní byli oba vysláni z Thaye daleko na západ, do hlučného a nepředvídate
 * **Pouto (Bond):** Dvě přísahy mě drží při životě – můj Rudý čaroděj, se kterým jsem vyrostl ve stínech Eltabbaru, a má matka **Hulmarra** se sestrou **Yuldrou** v Thay, jejichž bezpečí visí na mé bezchybné službě.
 * **Slabina (Flaw):** Můj vlastní život pro mě nemá žádnou hodnotu v porovnání s bezpečím mého čaroděje – bez zaváhání skočím do smrtelné rány, otestuji neznámý jed na vlastním těle a pro jeho ochranu použiju jakoukoliv špinavost bez výčitek svědomí.
 
+---
+
+## 9. Rituály, Zvyky & Protokoly u stolu (Playbook 20 mikro-rituálů)
+
+Soubor **20 krátkých zvyků a protokolů (5–20 vteřin u stolu)** navržených tak, aby nikdy nezdržovaly tempo hry, neopakovaly se a fungovaly **hned od 1. úrovně s nulovou spotřebou spell slotů** (s volitelným napojením na vyšší kouzla od 3.+ úrovně).
+
+* **Kontrast služby a soukromí:** Ve službě a po boku Rudého čaroděje vládne chladná geometrie chrámu **Azutha** a železný protokol **Thayan Knighta** (na ulici ve Waterdeepu maskovaný jako zvyky prostého východního poutníka/sluhy, za zavřenými dveřmi odhalující *Kris*, páteřní pečeť a společné dospívání v Eltabbaru). V naprostém soukromí probleskují syrové **rashemijské pověry** a tichá starost o matku **Hulmarru** a sestru **Yuldru**.
+* **Drobné osobní relikvie (0 GP, čistý flavour):**
+  1. **Splétaná šňůrka z Eltabbaru** – pletenec černých vlasů matky Hulmarry a sestry Yuldry se železným korálkem z Priadoru, uvázaný zevnitř k řemení štítu.
+  2. **Olověná ampulka popela a křídy** – špetka šedého chrámového popela z Eltabbaru a křída z archivu Azutha u opasku.
+  3. **Železno-platinové spony rodu** – kroužek s vnitřní rytinou rodové pečeti pod rukavicí (připravený pro *Warding Bond* na 3. úrovni).
+
+### I. Po Long Restu & Úsvit (4 varianty)
+1. **Probuzení páteřní pečeti** *(🤝 S čarodějem • 🔒 V soukromí)*
+   * **Provedení & Mechanika:** Před oblečením zbroje poklekne zády k čaroději, plochou *Krisu* přetře horní cíp tetování zrnkem eltabbarského popela a nechá pána přiložit dva prsty na rodovou pečeť (*Heroic Inspiration* z *Human*; od 3.+ úr. *Warding Bond* / *Aid* / *Death Ward*).
+   * **💬 U stolu:** *„Než zapnu přezky zbroje, skloním šíji před čarodějem, abych mu odkryl rodový znak na páteři: ‚Inkoust drží, můj pane. Tkanivo je v klidu.‘“*
+   * **🤝 Ozvěna čaroděje:** Přiložení dvou prstů na jizvu a stručné určení priority dne (*„Ať drží i ocel, Vladislaku.“*).
+2. **Závoj šedého poutníka** *(🤝 S čarodějem • 🎭 Veřejné krytí)*
+   * **Provedení & Mechanika:** Přetáhne husté vlasy přes zátylek, jako pokorný sluha opráší plášť čaroděje, okovanou holí opíše u prahu trojúhelník a přes *Message* pošle denní krycí heslo pro ústup (od 3. úr. *Nystul's Magic Aura*).
+   * **💬 U stolu:** *„Upravím čaroději sponu pláště jako nosič z východu a přes Message mu pošlu do mysli: ‚Venku mlha. Krytí: kupci ze Sembie. Slovo pro zradu je Popel.‘“*
+   * **🤝 Ozvěna čaroděje:** Přezíravé kývnutí navenek a tichá odpověď zpět do *Message*.
+3. **Tři uzly pro Hulmarru a Yuldru** *(👤 Sám • 🔒 Před úsvitem)*
+   * **Provedení & Mechanika:** Vstává o čtvrt hodiny dřív než družina, v šeru přejede palcem černou šňůrku zevnitř štítu směrem na východ a dýchne na železný korálek (*Heroic Inspiration*).
+   * **💬 U stolu:** *„Když se ostatní probouzejí, sedím už v plné zbroji u dveří; jen krátce přejedu palcem černou šňůrku zevnitř štítu směrem na východ a dotáhnu řemen.“*
+4. **Prstoklad Levé ruky** *(👤 Sám • 🎭 Veřejné krytí)*
+   * **Provedení & Mechanika:** Opřený o hůl Azutha složí prsty levé ruky do sedmi chrámových poloh; přes *Thaumaturgy* mu mezi klouby blikne nepatrná modrá jiskra a zhasne v pěsti (ranní příprava kouzel; navenek vypadá jako protahování prstů).
+   * **💬 U stolu:** *„Opřený o poutnickou hůl projedu prsty levé ruky sedm přesných geometrických poloh; v dlani mi na zlomek vteřiny modře blikne jiskra a zmizí v pěsti.“*
+
+### II. Po vyhraném boji (4 varianty)
+5. **Protokol neporušeného roucha** *(🤝 S čarodějem • 🎭 Veřejné krytí)*
+   * **Provedení & Mechanika:** Vlastní rány ignoruje – během tří vteřin stojí u čaroděje se zvednutým štítem a kontroluje rukávy a lem roucha kvůli škrábancům od otrávených zbraní (*Perception + Poisoner's Kit* s *Advantage*).
+   * **💬 U stolu:** *„Vlastní krev na zbroji ignoruju, okamžitě zakročím k čaroději se zvednutým štítem a zkontroluju mu rukávy: ‚Krev na plášti – cizí, nebo tvá?‘“*
+   * **🤝 Ozvěna čaroděje:** Stručné *„Cizí. Zabezpeč prostor.“* nebo tiché nastavení zápěstí ke kontrole.
+6. **Zchlazení rudého inkoustu** *(🤝 S čarodějem • 🔒 Mimo cizí oči)*
+   * **Provedení & Mechanika:** Po boji, v němž vzplál *Shield* (či *Warding Bond*), sálá zpod límce žár a pach ozónu. Povolí přezku u krku a ohlásí stav v jazyce *Rashemi*.
+   * **💬 U stolu:** *„Povolím přezku u krku, odkud sálá horko rozpáleného tetování, a tiše v rashemijštině utrousím jen pro čaroděje: ‚Pečeť zrudla, ale nepraskla.‘“*
+   * **🤝 Ozvěna čaroděje:** Krátká odpověď v *Rashemi* (*„Kolik ještě sneseš?“* / *„Dobře jsi stál.“*).
+7. **Tři odklepnutí železem** *(👤 Sám • 🎭 Veřejné krytí)*
+   * **Provedení & Mechanika:** Nikdy nerabuje mrtvoly jako první – třikrát odměřeně klepne okovanou patkou hole Azutha o dlažbu na znamení uzavření vzorce v Tkanivu a postaví se čelem do neprozkoumané chodby (*Alert*, volitelně *Guidance* pro spojence).
+   * **💬 U stolu:** *„Než začne kdokoliv obracet kapsy padlých, třikrát přesně klepnu okovanou patkou hole o dlažbu: ‚Vzorec je uzavřen. Kryju chodbu.‘“*
+8. **Tři švihnutí proti zlé krvi** *(👤 Sám • 🔒 Stranou v šeru)*
+   * **Provedení & Mechanika:** Po boji s divokými nemrtvými, běsy či kletbou poodejde do stínu, zlehka si plivne na prsty, sevře pěst a třikrát prudce švihne k zemi (stará rashemijská pověra).
+   * **💬 U stolu:** *„Otočím se na vteřinu ke zdi mimo pohled čaroděje, krátce si plivnu na prsty, sevřu pěst a třikrát prudce švihnu do vzduchu: ‚Vlk zůstane vlkem – a mrtví ať drží krok, nebo leží.‘“*
+
+### III. Krčmy, Jídlo & Prahy ve Waterdeepu (4 varianty)
+9. **Zkouška vnitřního okraje („Stín Němého popela“)** *(🤝 S čarodějem • 🎭 Veřejné krytí)*
+   * **Provedení & Mechanika:** Od noci s *Torporem* se čaroděj nikdy nenapije první. Vladislak zkontroluje lom světla na okraji číše, pod stolem otestuje mikroskopickou stopu na vlastní dásni (*Investigation / Perception + Poisoner's Kit* s **Advantage**; od 3. úr. i rituál *Detect Poison and Disease*) a posune pohár **uchem doprava** (čisté) nebo **doleva** (otrávené!).
+   * **💬 U stolu:** *„Vezmu čarodějovu číši dřív než on, natočím okraj proti svíčce, nepatrně si sáhnu pod ret a postavím ji před něj uchem doprava: ‚Víno je kyselé, ale čisté, pane.‘“*
+   * **🤝 Ozvěna čaroděje:** Automaticky vyčkává, dokud se ucho číše neotočí doprava (při otočení doleva předstírá přípitek nebo pohár „omylem“ převrhne).
+10. **Zlomení cizí pečeti (Protokol svitků)** *(🤝 S čarodějem • 🎭 Veřejné krytí)*
+    * **Provedení & Mechanika:** Dopisy, svitky a dary přebírá v rukavicích vždy Vladislak, špičkou nože láme vosk (ochrana před *Carrion Crawler Mucus* / *Oil of Taggit*; od 3. úr. přes *Mage Hand*) a rozevřený list drží pánovi ke čtení.
+    * **💬 U stolu:** *„Vstoupím rukou v rukavici mezi posla a čaroděje, převezmu svitek sám, špičkou nože odloubnu vosk a rozevřu pergamen před pánovy oči: ‚Pečeť je čistá. Čti, můj pane.‘“*
+    * **🤝 Ozvěna čaroděje:** Přečte list s rukama v rukávech přímo z Vladislakových dlaní (*„Uschovej to“* / *„Spal to“*).
+11. **Hůl v zárubni a čtení východů** *(👤 Sám • 🎭 Veřejné krytí)*
+    * **Provedení & Mechanika:** Vchází první, zkontroluje ochozy, zadní východ i mozoly na rukou hostů (*Perception / Insight +5*), posadí čaroděje zády ke kamenné zdi a opře hůl Azutha tak, aby jedním pohybem zablokovala uličku ke stolu.
+    * **💬 U stolu:** *„Vejdu první, přejedu pohledem ochoz a ruce u vedlejších stolů, posadím čaroděje zády ke zdi a opřu okovanou hůl na dosah uličky, abych měl výhled na dveře.“*
+12. **Křídový vlas na veřejích (Zámek spánku)** *(👤 Sám • 🔒 Za zavřenými dveřmi)*
+    * **Provedení & Mechanika:** Před spaním v hostinci označí spodní spáru dveří a okenice šedou chrámovou křídou, napne přes pant černý vlas a zaklíní pod kliku hůl Azutha (*Investigation*).
+    * **💬 U stolu:** *„Před spaním označím spodní spáru dveří i okenice šedou křídou, napnu přes pant černý vlas a zaklíním pod kliku okovanou hůl.“*
+
+### IV. Short Rest & Noční hlídka (4 varianty)
+13. **Přepočítání cizích ran** *(🤝 S čarodějem • 🔒 V soukromí tábora)*
+    * **Provedení & Mechanika:** Při ošetřování ran a popálenin od tetování (utracení *Hit Dice*, obnova *Channel Divinity*, od 3. úr. rány z *Warding Bond*) si beze stížností věcně rozeberou taktické skuliny z boje jako za mládí v Eltabbaru.
+    * **💬 U stolu:** *„Při stahování obvazu na předloktí kývnu k čaroději: ‚Ten kušník měl na tebe výhled dvě vteřiny. Příště ti budu stát blíž u levého ramene.‘“*
+    * **🤝 Ozvěna čaroděje:** Věcné taktické sladění na příští boj nebo tichá kontrola Vladislakova stavu.
+14. **Plamen v dlani (Buzení mága bez doteku)** *(🤝 S čarodějem • 🔒 Tábor / Pokoj)*
+    * **Provedení & Mechanika:** Spícího čaroděje nikdy nebudí dotekem – na krok od lůžka otevře v levé dlani přes *Thaumaturgy* tichý modrý plamínek Azutha a čeká, až pán sám otevře oči.
+    * **💬 U stolu:** *„Nedotknu se ho – jen na krok od lůžka otevřu levou dlaň s tichým modrým plamínkem a počkám, až se probere: ‚Třetí hlídka, pane. Stíny jsou čisté.‘“*
+    * **🤝 Ozvěna čaroděje:** Klidné probuzení bez sahání po zbrani (důkaz dvaceti let absolutní důvěry).
+15. **Hořký kořen a bezoár** *(👤 Sám • 🔒 Stranou u ohně)*
+    * **Provedení & Mechanika:** Místo sladkého piva ze Západu ukrojí vlnitou dýkou plátek sušeného rashemijského hořkého kořene s prachem z bezoáru z *Poisoner's Kitu* a rozžvýká ho, aby si udržel neotupené patro.
+    * **💬 U stolu:** *„Místo piva vytáhnu z alchymistického pouzdra sušený černý kořen, ukrojím plátek vlnitou dýkou a beze slova ho žvýkám: ‚Sladké pití otupuje jazyk.‘“*
+16. **Kafrové plátno a devět záhybů Krisu** *(👤 Sám • 🎭 Mimo kruh ohně)*
+    * **Provedení & Mechanika:** Na hlídce sedí vždy ve tmě mimo záři ohně (*Stealth +4*, *Perception +5*, *Alert*), odkud vidí na čaroděje, a bez jediného cinknutí čistí kafrovým plátnem devět záhybů *Krisu*.
+    * **💬 U stolu:** *„Na hlídce si sednu do tmy mimo záři táboráku, zády ke stromu s výhledem na čaroděje, a v naprostém tichu čistím kafrovým plátnem záhyby rituální dýky.“*
+
+### V. Vzácné & Hraniční momenty (4 varianty)
+17. **Sklizeň nedořčené slabiky (Nad padlým mágem)** *(🤝 S čarodějem • 🎭 Na bojišti)*
+    * **Provedení & Mechanika:** Zatlačí mrtvému sesilateli víčka, dvěma prsty levé ruky symbolicky „sejme“ ze rtů nedořčené kouzlo a po kontrole v rukavicích (*Investigation / Arcana*) podá jeho grimoár a fokus svému Rudému čaroději.
+    * **💬 U stolu:** *„Zatlačím mrtvému čaroději víčka, v rukavicích zkontroluju jeho grimoár i fokus a oběma rukama je podám svému pánovi: ‚Jeho vůle na Tkanivo nestačila. Ať jeho znalost poslouží tvé.‘“*
+    * **🤝 Ozvěna čaroděje:** Převzetí grimoáru k přepisu kouzel s rozsudkem nad poraženým rivalem.
+18. **Krvavá splátka dluhu (Když pán krvácel)** *(🤝 S čarodějem • 🔒 V soukromí)*
+    * **Provedení & Mechanika:** Klesl-li čaroděj na 0 HP nebo utrpěl těžkou ránu, v ústraní si Vladislak špičkou *Krisu* obnoví tenký vryp přes staré jizvy na předloktí a otře kapku krve do kování hole.
+    * **💬 U stolu:** *„V ústraní přejedu špičkou vlnité dýky přes starou jizvu na předloktí, otřu kapku krve do železa hole a skloním hlavu: ‚Prošlo to přes můj štít, pane. Podruhé to neprojde.‘“*
+    * **🤝 Ozvěna čaroděje:** Buď chladné thayské pokárání, nebo zadržení jeho zápěstí (*„Šetři krev, Vladislaku. Tady na západě tě potřebuju celého.“*).
+19. **Popel poslaný po východním větru** *(👤 Sám • 🔒 O samotě)*
+    * **Provedení & Mechanika:** Na vyhlídce nad Waterdeepem po důležitém milníku se otočí přesně na východ k Eltabbaru, dotkne se čela špetkou šedého chrámového popela a nechá ho sfouknout větrem z dlaně.
+    * **💬 U stolu:** *„Postavím se na okraji ochozu tváří přesně na východ, nechám vítr sfouknout z otevřené dlaně špetku šedého popela a polohlasem vyslovím jen dvě jména: ‚Hulmarra. Yuldra.‘“*
+20. **Otisk na čepeli (Zápis urážky do paměti)** *(👤 Sám • 🎭 Nenápadné)*
+    * **Provedení & Mechanika:** Když vlivné NPC veřejně poníží či ohrozí čaroděje tam, kde nelze zaútočit bez prozrazení krytí, Vladislak nehne brvou (`CHA 8`), uloží si do paměti hlas i prsten dotyčného (*Insight / Investigation*) a pod pláštěm přitiskne palec na vlnité ostří *Krisu*, dokud v mozolu nezůstane bílý otisk.
+    * **💬 U stolu:** *„Ani nemrknu a dál stojím za čarodějem jako němý sluha – jen si uložím do paměti prsten i hlas toho muže a pod pláštěm pevně přitlačím palec na vlnité ostří dýky.“*
+
+---
+
 ### Otevřené body k doladění s DM a spoluhráčem (Session 0)
 1. **Společné krytí ve Waterdeepu:** Jak vystupujete na veřejnosti (např. učenec/kupec z východu a jeho zarostlý rashemijský osobní strážce, nebo oficiální vyslanci enklávy)?
 2. **Podoba rodové pečeti a jméno rodu:** Jak se jmenuje mulanský rod (či mentor/Zulkir) tvého spoluhráče, jehož znak máš vytetovaný přes celá záda, a jak se jmenoval onen otrávený rival z Eltabbaru (kdyby jeho příbuzní pojali podezření, odkud tehdy pocházel *Němý popel*)?

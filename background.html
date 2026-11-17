@@ -71,7 +71,7 @@
       </a>
       <a href="background.html" aria-current="page">
         <span class="drawer-link-top"><span class="drawer-link-idx">02</span> Původ &amp; Roleplay</span>
-        <span class="drawer-link-desc">Příběh z Eltabbaru, rituální tetování a etnikum Rashemi</span>
+        <span class="drawer-link-desc">Příběh z Eltabbaru, tetování, Rashemi a 20 rituálů u stolu</span>
       </a>
       <a href="tactics.html">
         <span class="drawer-link-top"><span class="drawer-link-idx">03</span> Taktika &amp; Leveling</span>
@@ -94,7 +94,13 @@
     <!-- Compact Subpage Banner -->
     <div class="page-header">
       <h1>Původ v Eltabbaru &amp; Duše Thayan Knighta</h1>
-      <p>Osobní historie Vladislaka Ulmokiny, noc odhaleného atentátu jedem a rituál ochranného tetování.</p>
+      <p>Osobní historie Vladislaka Ulmokiny, noc odhaleného atentátu jedem, rituál ochranného tetování a 20 rychlých mikro-rituálů přímo ke stolu.</p>
+      <div class="chapter-jumps" role="navigation" aria-label="Kapitoly původu a roleplaye">
+        <a class="jump-pill" href="#pribeh">📜 2.1 Příběh z Eltabbaru</a>
+        <a class="jump-pill" href="#tetovani">🔥 2.2 Thayské tetování</a>
+        <a class="jump-pill" href="#rashemi">🧔 2.3 Etnikum Rashemi</a>
+        <a class="jump-pill" href="#ritualy">🕯️ 2.4 Rituály u stolu (20)</a>
+      </div>
     </div>
 
     <!-- SECTION 2.1: Backstory -->
@@ -215,7 +221,652 @@
       </div>
     </section>
 
-    </main>
+    <!-- SECTION 2.4: Tabletop Micro-Rituals Overview & Trinkets -->
+    <section id="ritualy">
+      <div class="card">
+        <h2 class="section-title">
+          <span><span class="section-num">2.4</span> Rituály, Zvyky &amp; Protokoly u stolu</span>
+          <span class="badge-book">Playbook: 20 mikro-rituálů (5–20 s)</span>
+        </h2>
+        <p style="margin-top:0;">
+          Soubor krátkých, úderných zvyků navržených přímo pro živou hru u stolu tak, aby <strong>nikdy nezdržovaly tempo sezení</strong>, neopotřebovaly se opakováním a fungovaly <strong>hned od 1. úrovně bez utrácení spell slotů</strong> (s přirozeným rozvojem při sesílání kouzel na vyšších úrovních). Rituály stojí na ostrém kontrastu mezi službou a soukromím:
+        </p>
+
+        <div class="grid-2">
+          <div class="subcard">
+            <h3>🎭 Dvojí tvář: Služba Řádu vs. Osamělé stíny</h3>
+            <ul>
+              <li><strong>Ve službě a po boku čaroděje:</strong> Chladná geometrie chrámu <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Azuth" target="_blank" rel="noopener noreferrer">Azutha</a> a neúprosný protokol <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Thayan_knight" target="_blank" rel="noopener noreferrer">Thayan Knighta</a>. Na veřejnosti ve <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Waterdeep" target="_blank" rel="noopener noreferrer">Waterdeepu</a> vypadají jako nenápadné zvyky východního poutníka či sluhy; za zavřenými dveřmi odhalují <em>Kris</em>, páteřní tetování a tichou souhru dvou vrstevníků, kteří spolu vyrostli v <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Eltabbar" target="_blank" rel="noopener noreferrer">Eltabbaru</a>.</li>
+              <li><strong>V naprostém soukromí:</strong> Jakmile Vladislak osamí na hlídce či před svítáním, maska chrámového vyšetřovatele taje – probouzejí se syrové rashemijské pověry z Priadoru a tichá starost o matku <strong>Hulmarru</strong> a sestru <strong>Yuldru</strong>.</li>
+            </ul>
+          </div>
+
+          <div class="subcard">
+            <h3>📿 Drobné osobní relikvie (0 GP • Čistý Flavour)</h3>
+            <ul>
+              <li><strong>Splétaná šňůrka z Eltabbaru:</strong> Tenký pletenec černých vlasů matky <strong>Hulmarry</strong> a sestry <strong>Yuldry</strong> se železným korálkem z <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Priador" target="_blank" rel="noopener noreferrer">Priadoru</a>, uvázaný zevnitř k řemení štítu (skrytý cizím očím, cítí ho klouby levé ruky).</li>
+              <li><strong>Olověná ampulka popela a křídy:</strong> Špetka šedého popela z eltabbarského chrámu a chrámová křída z archivu Azutha ukrytá u opasku vedle <em>Poisoner's Kitu</em>.</li>
+              <li><strong>Železno-platinové spony rodu:</strong> Kroužek s vnitřní rytinou rodové pečeti jeho pána pod rukavicí – připravený k okamžiku, kdy na 3. úrovni sepne kouzlo <a class="spell" href="https://www.aidedd.org/spell/warding-bond" target="_blank" rel="noopener noreferrer">Warding Bond</a>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Filter & Search Controls (20 Micro-Rituals) -->
+    <section id="ritualy-databaze" data-lore-section data-count-noun="rituálů" aria-label="Databáze rituálů u stolu">
+      <div class="lore-controls">
+        <div class="lore-search-row">
+          <div class="search-input-wrap">
+            <span class="search-icon" aria-hidden="true">🔎</span>
+            <input
+              type="search"
+              id="ritualSearch"
+              data-lore-search
+              class="lore-search-input"
+              placeholder="Hledat rituál, situaci, rekvizitu či kouzlo (např. pohár, Kris, Message, Hulmarra, hlídka, Shield)..."
+              aria-label="Hledat v databázi rituálů"
+            />
+          </div>
+          <span class="lore-count" id="ritualCount" data-lore-count>Zobrazeno 20 z 20 rituálů</span>
+        </div>
+
+        <div class="filter-chips" role="group" aria-label="Filtrovat rituály podle herního momentu">
+          <span class="chip-group-label">Situace:</span>
+          <button type="button" class="chip active" data-filter="all" aria-pressed="true">Všechny rituály (20)</button>
+          <button type="button" class="chip" data-filter="dawn" aria-pressed="false">🌅 Po Long Restu (4)</button>
+          <button type="button" class="chip" data-filter="combat" aria-pressed="false">⚔️ Po vyhraném boji (4)</button>
+          <button type="button" class="chip" data-filter="tavern" aria-pressed="false">🍷 Krčmy &amp; Prahy (4)</button>
+          <button type="button" class="chip" data-filter="rest" aria-pressed="false">🔥 Short Rest &amp; Hlídka (4)</button>
+          <button type="button" class="chip" data-filter="rare" aria-pressed="false">🩸 Vzácné momenty (4)</button>
+        </div>
+
+        <div class="filter-chips" role="group" aria-label="Filtrovat rituály podle zapojení a utajení">
+          <span class="chip-group-label">Režim:</span>
+          <button type="button" class="chip active" data-subfilter="all" aria-pressed="true">Všechny režimy</button>
+          <button type="button" class="chip" data-subfilter="duo" aria-pressed="false">🤝 S Rudým čarodějem (10)</button>
+          <button type="button" class="chip" data-subfilter="solo" aria-pressed="false">👤 Sám za sebe (10)</button>
+          <button type="button" class="chip" data-subfilter="covert" aria-pressed="false">🎭 Krytí na veřejnosti (10)</button>
+          <button type="button" class="chip" data-subfilter="private" aria-pressed="false">🔒 Za zavřenými dveřmi (10)</button>
+        </div>
+      </div>
+
+      <!-- 20 Micro-Ritual Cards Grid -->
+      <div class="lore-grid">
+
+        <!-- ==================== POOL 1: DAWN / LONG REST (4) ==================== -->
+
+        <!-- 1. PROBUZENI PATERNI PECETI -->
+        <article class="lore-card" data-category="dawn duo private">
+          <div class="lore-card-head">
+            <div>
+              <h3>1. Probuzení páteřní pečeti</h3>
+              <div class="lore-domain-sub">🌅 Po Long Restu • 🔒 V soukromí • Thayský protokol &amp; Azuth</div>
+            </div>
+            <div class="ritual-badges">
+              <span class="badge badge-crimson">🤝 S čarodějem</span>
+            </div>
+          </div>
+          <p>
+            Než si Vladislak v zamčeném pokoji oblékne tichou zbroj, poklekne zády ke svému Rudému čaroději s odhaleným tetováním přes páteř. Plochou rituální dýky <em>Kris</em> přetře horní cíp jizvy u zátylku zrnkem šedého eltabbarského popela a nechá čaroděje krátce přiložit dva prsty na rodovou pečeť, aby sladil svůj dech s jeho tepem.
+          </p>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5 (1. úr.+):</strong> Ranní příprava kouzel + zisk <em>Heroic Inspiration</em> (<a class="rule" href="https://www.dndbeyond.com/sources/dnd/free-rules/character-origins#Human" target="_blank" rel="noopener noreferrer">Human: Resourceful</a>). <strong>Rozvoj (3.+ úr.):</strong> Somatická aktivace <a class="spell" href="https://www.aidedd.org/spell/warding-bond" target="_blank" rel="noopener noreferrer">Warding Bond</a>, <a class="spell" href="https://www.aidedd.org/spell/aid" target="_blank" rel="noopener noreferrer">Aid</a> či <a class="spell" href="https://www.aidedd.org/spell/death-ward" target="_blank" rel="noopener noreferrer">Death Ward</a>.
+          </div>
+          <div class="ritual-script">
+            <strong>💬 Co udělat u stolu (10 s)</strong>
+            „Než zapnu přezky zbroje, skloním šíji před čarodějem, abych mu odkryl rodový znak na páteři: <em>‚Inkoust drží, můj pane. Tkanivo je v klidu.‘</em>“
+          </div>
+          <div class="vladislak-view duo-echo">
+            <strong>🤝 Ozvěna pro Rudého čaroděje</strong>
+            Krátké přiložení dvou prstů na jizvu u zátylku a stručné určení priority dne: <em>„Ať drží i ocel, Vladislaku. Dnes jdeme mezi cechy.“</em>
+          </div>
+        </article>
+
+        <!-- 2. ZAVOJ SEDEHO POUTNIKA -->
+        <article class="lore-card" data-category="dawn duo covert">
+          <div class="lore-card-head">
+            <div>
+              <h3>2. Závoj šedého poutníka</h3>
+              <div class="lore-domain-sub">🌅 Po Long Restu • 🎭 Veřejné krytí • Špionážní dril ve Waterdeepu</div>
+            </div>
+            <div class="ritual-badges">
+              <span class="badge badge-crimson">🤝 S čarodějem</span>
+            </div>
+          </div>
+          <p>
+            Těsně před vykročením do ulic <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Waterdeep" target="_blank" rel="noopener noreferrer">Waterdeepu</a> přetáhne Vladislak husté černé vlasy a límec přes zátylek, jako pokorný východní sluha opráší ramena čarodějova pláště a okovanou patkou hole opíše u prahu neviditelný trojúhelník. Zároveň přes <a class="spell" href="https://www.aidedd.org/spell/message" target="_blank" rel="noopener noreferrer">Message</a> pošle pánovi denní krycí heslo pro okamžitý ústup.
+          </p>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5 (1. úr.+):</strong> Cantrip <a class="spell" href="https://www.aidedd.org/spell/message" target="_blank" rel="noopener noreferrer">Message</a> (0 slotů, tiché smluvení signálu). <strong>Rozvoj (3.+ úr.):</strong> Každodenní seslání <a class="spell" href="https://www.aidedd.org/spell/nystuls-magic-aura" target="_blank" rel="noopener noreferrer">Nystul's Magic Aura</a> maskující thayské aury před <em>Detect Magic</em>.
+          </div>
+          <div class="ritual-script">
+            <strong>💬 Co udělat u stolu (10 s)</strong>
+            „Upravím čaroději sponu pláště jako obyčejný nosič z východu a přes <em>Message</em> mu pošlu jen do mysli: <em>‚Venku mlha. Krytí: kupci ze Sembie. Slovo pro zradu je Popel.‘</em>“
+          </div>
+          <div class="vladislak-view duo-echo">
+            <strong>🤝 Ozvěna pro Rudého čaroděje</strong>
+            Pán navenek přezíravě kývne jako bohatý kupec, ale zpět do <em>Message</em> zašeptá vlastní heslo nebo tajný pokyn pro dnešní schůzku.
+          </div>
+        </article>
+
+        <!-- 3. TRI UZLY PRO HULMARRU A YULDRU -->
+        <article class="lore-card" data-category="dawn solo private">
+          <div class="lore-card-head">
+            <div>
+              <h3>3. Tři uzly pro Hulmarru a Yuldru</h3>
+              <div class="lore-domain-sub">🌅 Před úsvitem • 🔒 O samotě • Rashemijské kořeny z Eltabbaru</div>
+            </div>
+            <div class="ritual-badges">
+              <span class="badge badge-blue">👤 Sám za sebe</span>
+            </div>
+          </div>
+          <p>
+            Vladislak vstává o čtvrt hodiny dřív než zbytek družiny. V šeru si sedne ke dveřím, bříškem palce přejede po splétané černé šňůrce z vlasů matky <strong>Hulmarry</strong> a sestry <strong>Yuldry</strong> na vnitřní straně štítu, dýchne na železný korálek a v duchu odpočítá další den služby, který jim v Eltabbaru vykupuje nedotknutelnost.
+          </p>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5 (1. úr.+):</strong> Příběhové ukotvení <em>Heroic Inspiration</em> každé ráno po <em>Long Restu</em> (0 zdrojů).
+          </div>
+          <div class="ritual-script">
+            <strong>💬 Co udělat u stolu (10 s)</strong>
+            „Když se ostatní probouzejí, sedím už v plné zbroji u dveří; jen krátce přejedu palcem černou šňůrku zevnitř štítu směrem na východ a dotáhnu řemen na předloktí.“
+          </div>
+          <div class="vladislak-view">
+            <strong>👁️ Soukromý detail</strong>
+            Jediná chvíle dne, kdy není ledovým nástrojem Řádu, ale synem a starším bratrem ze spodních čtvrtí Eltabbaru.
+          </div>
+        </article>
+
+        <!-- 4. PRSTOKLAD LEVE RUKY -->
+        <article class="lore-card" data-category="dawn solo covert">
+          <div class="lore-card-head">
+            <div>
+              <h3>4. Prstoklad Levé ruky</h3>
+              <div class="lore-domain-sub">🌅 Po Long Restu • 🎭 Veřejné krytí • Liturgie Azutha</div>
+            </div>
+            <div class="ritual-badges">
+              <span class="badge badge-blue">👤 Sám za sebe</span>
+            </div>
+          </div>
+          <p>
+            S pravicí opřenou o jasanovou <strong>hůl Azutha</strong> skládá Vladislak prsty <strong>levé ruky</strong> (posvátné ruky Pána kouzel) v ostrém geometrickém sledu sedmi chrámových poloh. Při posledním gestu přes klouby přeběhne přes <a class="spell" href="https://www.aidedd.org/spell/thaumaturgy" target="_blank" rel="noopener noreferrer">Thaumaturgy</a> nepatrná modrá jiskra velikosti špendlíkové hlavičky a zhasne v sevřené pěsti.
+          </p>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5 (1. úr.+):</strong> Cantrip <a class="spell" href="https://www.aidedd.org/spell/thaumaturgy" target="_blank" rel="noopener noreferrer">Thaumaturgy</a> při ranní přípravě klerických kouzel (0 slotů).
+          </div>
+          <div class="ritual-script">
+            <strong>💬 Co udělat u stolu (10 s)</strong>
+            „Opřený o poutnickou hůl projedu prsty levé ruky sedm přesných geometrických poloh; v dlani mi na zlomek vteřiny modře blikne jiskra a zmizí v pěsti.“
+          </div>
+          <div class="vladislak-view">
+            <strong>👁️ Soukromý detail &amp; Krytí</strong>
+            Pro nezúčastněného pozorovatele v hostinci to vypadá jen jako ranní rozhýbávání ztuhlých prstů po studené noci; znalec <em>Arcana / Religion</em> však může postřehnout chrámovou <em>mudru</em> Azutha.
+          </div>
+        </article>
+
+        <!-- ==================== POOL 2: AFTER WON COMBAT (4) ==================== -->
+
+        <!-- 5. PROTOKOL NEPORUSENEHO ROUCHA -->
+        <article class="lore-card" data-category="combat duo covert">
+          <div class="lore-card-head">
+            <div>
+              <h3>5. Protokol neporušeného roucha</h3>
+              <div class="lore-domain-sub">⚔️ Po vyhraném boji • 🎭 Veřejné krytí • Železný dril Thayan Knighta</div>
+            </div>
+            <div class="ritual-badges">
+              <span class="badge badge-crimson">🤝 S čarodějem</span>
+            </div>
+          </div>
+          <p>
+            Jakmile padne poslední nepřítel, Vladislak se na vlastní šrámy ani nepodívá. Během tří vteřin stojí na půl kroku u svého Rudého čaroděje se štítem stále v pohotovosti, očima přejede jeho dlaně, hrdlo a lem roucha (kvůli zrádným škrábancům od otrávených čepelí) a přiloží pravou pěst k hrudnímu plátu v otázném gestu stráže.
+          </p>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5 (1. úr.+):</strong> Rychlá kontrola na <em>Injury</em> jedy (<em>Perception + Poisoner's Kit</em> s <strong>Advantage</strong>); v případě zásahu plynulý přechod do <a class="spell" href="https://www.aidedd.org/spell/healing-word" target="_blank" rel="noopener noreferrer">Healing Word</a> či <a class="spell" href="https://www.aidedd.org/spell/lesser-restoration" target="_blank" rel="noopener noreferrer">Lesser Restoration</a>.
+          </div>
+          <div class="ritual-script">
+            <strong>💬 Co udělat u stolu (10 s)</strong>
+            „Vlastní krev na zbroji ignoruju, okamžitě zakročím k čaroději se zvednutým štítem a zkontroluju mu rukávy: <em>‚Krev na plášti – cizí, nebo tvá?‘</em>“
+          </div>
+          <div class="vladislak-view duo-echo">
+            <strong>🤝 Ozvěna pro Rudého čaroděje</strong>
+            Chladné <em>„Cizí. Zabezpeč prostor.“</em> – anebo tiché nastavení zápěstí ke kontrole, aniž by čaroděj před zbytkem družiny přiznal slabost.
+          </div>
+        </article>
+
+        <!-- 6. ZCHLAZENI RUDEHO INKOUSTU -->
+        <article class="lore-card" data-category="combat duo private">
+          <div class="lore-card-head">
+            <div>
+              <h3>6. Zchlazení rudého inkoustu</h3>
+              <div class="lore-domain-sub">⚔️ Po vyhraném boji • 🔒 Mimo cizí oči • Pouto rituálního tetování</div>
+            </div>
+            <div class="ritual-badges">
+              <span class="badge badge-crimson">🤝 S čarodějem</span>
+            </div>
+          </div>
+          <p>
+            Kdykoliv v boji vzplál ochranný <a class="spell" href="https://www.aidedd.org/spell/shield" target="_blank" rel="noopener noreferrer">Shield</a>, jizvy pod Vladislakovou zbrojí pálí jako rozžhavené železo a zpod límce stoupá sotva znatelný pach ozónu a popela. Vladislak po boji na vteřinu povolí přezku u krku, zhluboka vydechne nosem a v jazyce <em>Rashemi</em> pronese krátké hlášení z jejich dětských cvičišť v Eltabbaru.
+          </p>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5 (1. úr.+):</strong> Doznění reakce <a class="spell" href="https://www.aidedd.org/spell/shield" target="_blank" rel="noopener noreferrer">Shield</a> z <em>Magic Initiate (Wizard)</em>. <strong>Rozvoj (3.+ úr.):</strong> Doznění ran převzatých přes <a class="spell" href="https://www.aidedd.org/spell/warding-bond" target="_blank" rel="noopener noreferrer">Warding Bond</a>.
+          </div>
+          <div class="ritual-script">
+            <strong>💬 Co udělat u stolu (10 s)</strong>
+            „Povolím přezku u krku, odkud sálá horko rozpáleného tetování, a tiše v rashemijštině utrousím jen pro čaroděje: <em>‚Pečeť zrudla, ale nepraskla.‘</em>“
+          </div>
+          <div class="vladislak-view duo-echo">
+            <strong>🤝 Ozvěna pro Rudého čaroděje</strong>
+            Krátké ohlédnutí přes rameno v <em>Rashemi</em> (<em>„Kolik ještě sneseš?“</em> / <em>„Dobře jsi stál.“</em>), které ostatním u stolu naznačí vaše tajné pouto.
+          </div>
+        </article>
+
+        <!-- 7. TRI ODKLEPNUTI ZELEZEM -->
+        <article class="lore-card" data-category="combat solo covert">
+          <div class="lore-card-head">
+            <div>
+              <h3>7. Tři odklepnutí železem</h3>
+              <div class="lore-domain-sub">⚔️ Po vyhraném boji • 🎭 Veřejné krytí • Vyšetřovatel Azutha</div>
+            </div>
+            <div class="ritual-badges">
+              <span class="badge badge-blue">👤 Sám za sebe</span>
+            </div>
+          </div>
+          <p>
+            Rozbitá zaklínadla nechávají po šarvátce v Tkanivu neklidný šum. Vladislak nikdy nejásá ani se nevrhá k obírání mrtvol – setře krev z hrany štítu, třikrát odměřeně udeří okovaným koncem <strong>hole Azutha</strong> o kámen v přesném rytmu chrámového zvonce a postaví se zády k družině čelem do neprozkoumané chodby.
+          </p>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5 (1. úr.+):</strong> Ostražitá hlídka s <a class="spell" href="https://www.aidedd.org/feat/alert" target="_blank" rel="noopener noreferrer">Alert</a> a <em>Perception (+5)</em> + volitelný cantrip <a class="spell" href="https://www.aidedd.org/spell/guidance" target="_blank" rel="noopener noreferrer">Guidance</a> pro spojence prohledávající prostor.
+          </div>
+          <div class="ritual-script">
+            <strong>💬 Co udělat u stolu (10 s)</strong>
+            „Než začne kdokoliv obracet kapsy padlých, třikrát přesně klepnu okovanou patkou hole o dlažbu: <em>‚Vzorec je uzavřen. Kryju chodbu.‘</em>“
+          </div>
+          <div class="vladislak-view">
+            <strong>👁️ Soukromý detail &amp; Krytí</strong>
+            Zásada osobního strážce: nejvíc atentátů přichází ve chvíli, kdy se vítězové skloní ke kořisti.
+          </div>
+        </article>
+
+        <!-- 8. TRI SVIHNUTI PROTI ZLE KRVI -->
+        <article class="lore-card" data-category="combat solo private">
+          <div class="lore-card-head">
+            <div>
+              <h3>8. Tři švihnutí proti zlé krvi</h3>
+              <div class="lore-domain-sub">⚔️ Po boji s nemrtvými či kletbou • 🔒 Stranou v šeru • Rashemijská pověra</div>
+            </div>
+            <div class="ritual-badges">
+              <span class="badge badge-blue">👤 Sám za sebe</span>
+            </div>
+          </div>
+          <p>
+            Ačkoliv ve službě respektuje nekromancii svých pánů jako legitimní zbraň, po boji s cizími divokými nemrtvými, běsy či prokletou krví se v něm ozve prastará krev <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Raumathar" target="_blank" rel="noopener noreferrer">Raumatharu</a>. Poodejde o krok do stínu, zlehka si plivne na prsty pravice, sevře ji v pěst a třikrát prudce švihne prsty k zemi proti smůle.
+          </p>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5 (1. úr.+):</strong> Čistý kulturní detail (0 zdrojů; skvěle navazuje na seslání <a class="spell" href="https://www.aidedd.org/spell/toll-the-dead" target="_blank" rel="noopener noreferrer">Toll the Dead</a> nebo <em>Turn Undead</em>).
+          </div>
+          <div class="ritual-script">
+            <strong>💬 Co udělat u stolu (10 s)</strong>
+            „Otočím se na vteřinu ke zdi mimo pohled čaroděje, krátce si plivnu na prsty, sevřu pěst a třikrát prudce švihnu do vzduchu: <em>‚Vlk zůstane vlkem – a mrtví ať drží krok, nebo leží.‘</em>“
+          </div>
+          <div class="vladislak-view">
+            <strong>👁️ Soukromý detail</strong>
+            Přímé napojení na rashemijský folklor – syrový lidský moment kontrastující s jeho jinak strojovou disciplínou.
+          </div>
+        </article>
+
+        <!-- ==================== POOL 3: TAVERNS, MEALS & THRESHOLDS (4) ==================== -->
+
+        <!-- 9. ZKOUSKA VNITRNIHO OKRAJE -->
+        <article class="lore-card patron-highlight" data-category="tavern duo covert">
+          <div class="lore-card-head">
+            <div>
+              <h3>9. Zkouška vnitřního okraje („Stín Němého popela“)</h3>
+              <div class="lore-domain-sub">🍷 Krčmy &amp; Hostiny • 🎭 Veřejné krytí • Protokol proti <a class="rule" href="lore.html#torpor-card">Torporu</a></div>
+            </div>
+            <div class="ritual-badges">
+              <span class="badge badge-crimson">🤝 S čarodějem</span>
+            </div>
+          </div>
+          <p>
+            Od noci atentátu v Eltabbaru se čaroděj nikdy nedotkne cizí číše jako první. Vladislak v rukavici zdánlivě posune jeho pohár proti světlu svíce (kontroluje olejovitý lom na vnitřním okraji), pod stolem nehtem či špičkou <em>Krisu</em> otestuje mikroskopickou stopu na vlastní dásni a teprve poté posune číši k pánově pravici <strong>uchem doprava</strong>.
+          </p>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5 (1. úr.+):</strong> <em>Investigation / Perception + Poisoner's Kit</em> &rarr; <strong>automatická Advantage</strong> dle <em>PHB 2024</em>! <strong>Rozvoj (3.+ úr.):</strong> Před banketem či před půlnocí tichý rituál <a class="spell" href="https://www.aidedd.org/spell/detect-poison-and-disease" target="_blank" rel="noopener noreferrer">Detect Poison and Disease</a> (proti <em>Midnight Tears</em>).
+          </div>
+          <div class="ritual-script">
+            <strong>💬 Co udělat u stolu (10 s)</strong>
+            „Vezmu čarodějovu číši dřív než on, natočím okraj proti svíčce, nepatrně si sáhnu pod ret a postavím ji před něj uchem doprava: <em>‚Víno je kyselé, ale čisté, pane.‘</em>“
+          </div>
+          <div class="vladislak-view duo-echo">
+            <strong>🤝 Ozvěna pro Rudého čaroděje</strong>
+            Čaroděj automaticky čeká, dokud se pohár neotočí uchem doprava. <em>(Tajný kód: pokud ho Vladislak postaví <strong>uchem doleva</strong>, v poháru je jed – čaroděj předstírá přípitek nebo pohár „omylem“ převrhne!)</em>
+          </div>
+        </article>
+
+        <!-- 10. ZLOMENI CIZI PECETI -->
+        <article class="lore-card" data-category="tavern duo covert">
+          <div class="lore-card-head">
+            <div>
+              <h3>10. Zlomení cizí pečeti (Protokol svitků)</h3>
+              <div class="lore-domain-sub">🍷 Jednání &amp; Poslové • 🎭 Veřejné krytí • Ochrana před kontaktními jedy</div>
+            </div>
+            <div class="ritual-badges">
+              <span class="badge badge-crimson">🤝 S čarodějem</span>
+            </div>
+          </div>
+          <p>
+            V Thay zabíjí <a class="rule" href="lore.html#crawler-card">Carrion Crawler Mucus</a> a <em>Oil of Taggit</em> natřený na pečetní vosk či přezky truhliček. Kdykoliv kurýr podává dopis či svitek Rudému čaroději, Vladislak bez ptaní natáhne ruku v kožené rukavici jako první, špičkou dýky rozlomí vosk, ověří, zda ze zlomu neuniká plyn, a rozevřený list podrží pánovi ke čtení.
+          </p>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5 (1. úr.+):</strong> <em>Investigation + Poisoner's Kit</em> s <strong>Advantage</strong> (kryje čaroděje před kontaktní paralýzou). <strong>Rozvoj (3.+ úr.):</strong> Otevírání podezřelých zásilek na 30 stop přes <a class="spell" href="https://www.aidedd.org/spell/mage-hand" target="_blank" rel="noopener noreferrer">Mage Hand</a>.
+          </div>
+          <div class="ritual-script">
+            <strong>💬 Co udělat u stolu (10 s)</strong>
+            „Vstoupím rukou v rukavici mezi posla a čaroděje, převezmu svitek sám, špičkou nože odloubnu vosk a rozevřu pergamen před pánovy oči: <em>‚Pečeť je čistá. Čti, můj pane.‘</em>“
+          </div>
+          <div class="vladislak-view duo-echo">
+            <strong>🤝 Ozvěna pro Rudého čaroděje</strong>
+            Čaroděj si s rukama složenýma v rukávech přečte list přímo z Vladislakových dlaní jako pravý mulanský urozenec – a buď si ho vezme, nebo kývne: <em>„Spal to.“</em>
+          </div>
+        </article>
+
+        <!-- 11. HUL V ZARUBNI A CTENI VYCHODU -->
+        <article class="lore-card" data-category="tavern solo covert">
+          <div class="lore-card-head">
+            <div>
+              <h3>11. Hůl v zárubni a čtení východů</h3>
+              <div class="lore-domain-sub">🍷 Vstup do krčmy či sálu • 🎭 Veřejné krytí • Taktika osobního strážce</div>
+            </div>
+            <div class="ritual-badges">
+              <span class="badge badge-blue">👤 Sám za sebe</span>
+            </div>
+          </div>
+          <p>
+            Při vstupu do cizího podniku ve Waterdeepu vchází Vladislak vždy první: jedním pohledem zkontroluje galerii u stropu, únikovou cestu přes kuchyni i mozoly na rukou hostů, vybere čaroději místo <strong>zády k pevné kamenné zdi</strong> a svou <strong>okovanou hůl Azutha</strong> opře přesně tak, aby jediným pohybem zablokovala průchod ke stolu.
+          </p>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5 (1. úr.+):</strong> Aktivní/pasivní <em>Perception (+5)</em> a <em>Insight (+5)</em> + okamžitá připravenost vyměnit Iniciativu přes <a class="spell" href="https://www.aidedd.org/feat/alert" target="_blank" rel="noopener noreferrer">Alert</a>.
+          </div>
+          <div class="ritual-script">
+            <strong>💬 Co udělat u stolu (10 s)</strong>
+            „Vejdu první, přejedu pohledem ochoz a ruce u vedlejších stolů, posadím čaroděje zády ke zdi a opřu okovanou hůl na dosah uličky, abych měl výhled na dveře.“
+          </div>
+          <div class="vladislak-view">
+            <strong>👁️ Soukromý detail &amp; Krytí</strong>
+            Okamžitě dává DM najevo, že Vladislaka v hospodě jen tak něco nepřekvapí, aniž by musel zdržovat scénu dlouhým vyptáváním.
+          </div>
+        </article>
+
+        <!-- 12. KRIDOVY VLAS NA VEREJICH -->
+        <article class="lore-card" data-category="tavern solo private">
+          <div class="lore-card-head">
+            <div>
+              <h3>12. Křídový vlas na veřejích (Zámek spánku)</h3>
+              <div class="lore-domain-sub">🍷 Nocleh v cizím městě • 🔒 Za zavřenými dveřmi • Praxe vyšetřovatele</div>
+            </div>
+            <div class="ritual-badges">
+              <span class="badge badge-blue">👤 Sám za sebe</span>
+            </div>
+          </div>
+          <p>
+            Než v hostinci zhasne svíce, vytáhne Vladislak z olověné ampulky úlomek šedé chrámové křídy z Eltabbaru, u spodního pantu dveří a okenice udělá vlasově tenkou značku a přes spáru přilepí jediný svůj černý vlas. Hůl Azutha pak zaklíní pod kliku – kdo v noci vezme za dveře, prozradí se dřív, než vstoupí.
+          </p>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5 (1. úr.+):</strong> Bezpečnostní rutina přes <em>Investigation (+2)</em> bez utrácení kouzel (0 slotů).
+          </div>
+          <div class="ritual-script">
+            <strong>💬 Co udělat u stolu (10 s)</strong>
+            „Před spaním označím spodní spáru dveří i okenice šedou křídou, napnu přes pant černý vlas a zaklíním pod kliku okovanou hůl.“
+          </div>
+          <div class="vladislak-view">
+            <strong>👁️ Soukromý detail</strong>
+            Ráno mu stačí jediný pohled ke dveřím, aby poznal, zda v noci kolem pokoje slídil zvěd Zhentarimu či hostinský.
+          </div>
+        </article>
+
+        <!-- ==================== POOL 4: SHORT REST & NIGHT WATCH (4) ==================== -->
+
+        <!-- 13. PREPOCITANI CIZICH RAN -->
+        <article class="lore-card" data-category="rest duo private">
+          <div class="lore-card-head">
+            <div>
+              <h3>13. Přepočítání cizích ran</h3>
+              <div class="lore-domain-sub">🔥 Short Rest • 🔒 V soukromí tábora • Dospívání ve věžích Eltabbaru</div>
+            </div>
+            <div class="ritual-badges">
+              <span class="badge badge-crimson">🤝 S čarodějem</span>
+            </div>
+          </div>
+          <p>
+            Během <em>Short Restu</em> po tvrdém střetu si Vladislak sedne o krok stranou se svým Rudým čarodějem, zatímco si šalvějovou mastí ošetřuje podlitiny a popálené linie tetování na zádech. Žádné stížnosti na bolest – v tichém rozhovoru pouze věcně rozeberou skuliny v obraně, přesně jako kdysi jako chlapci na nádvořích Eltabbaru.
+          </p>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5 (1. úr.+):</strong> Utracení <em>Hit Dice</em> za <em>Short Rest</em> + obnova 1 použití <em>Channel Divinity</em> (od 2. úr.). <strong>Rozvoj (3.+ úr.):</strong> Ošetření polovičního zranění převzatého přes <a class="spell" href="https://www.aidedd.org/spell/warding-bond" target="_blank" rel="noopener noreferrer">Warding Bond</a>.
+          </div>
+          <div class="ritual-script">
+            <strong>💬 Co udělat u stolu (10 s)</strong>
+            „Při stahování obvazu na předloktí kývnu k čaroději: <em>‚Ten kušník měl na tebe výhled dvě vteřiny. Příště ti budu stát blíž u levého ramene.‘</em>“
+          </div>
+          <div class="vladislak-view duo-echo">
+            <strong>🤝 Ozvěna pro Rudého čaroděje</strong>
+            Tichá taktická korekce zaklínadel na příští střet – nebo vzácný náznak lidskosti, kdy čaroděj zkontroluje, zda Vladislak nekrvácí víc, než přiznává.
+          </div>
+        </article>
+
+        <!-- 14. PLAMEN V DLANI -->
+        <article class="lore-card" data-category="rest duo private">
+          <div class="lore-card-head">
+            <div>
+              <h3>14. Plamen v dlani (Buzení mága bez doteku)</h3>
+              <div class="lore-domain-sub">🔥 Noční hlídka • 🔒 Tábor / Pokoj • Zvyk z nočních studií v Thay</div>
+            </div>
+            <div class="ritual-badges">
+              <span class="badge badge-crimson">🤝 S čarodějem</span>
+            </div>
+          </div>
+          <p>
+            V Thay se spící čaroděj nikdy nebudí prudkým sáhnutím na rameno – vytržený ze snu by mohl reflexivně seslat smrtící zaklínadlo. Vladislak proto při střídání hlídek dřepne na krok od lůžka, v otevřené levé dlani nechá přes <a class="spell" href="https://www.aidedd.org/spell/thaumaturgy" target="_blank" rel="noopener noreferrer">Thaumaturgy</a> tiše zaplápolat chladný modrý plamínek Azutha a čeká, dokud pán sám neotevře oči.
+          </p>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5 (1. úr.+):</strong> Cantrip <a class="spell" href="https://www.aidedd.org/spell/thaumaturgy" target="_blank" rel="noopener noreferrer">Thaumaturgy</a> (0 slotů, tiché modré světlo při předání hlídky).
+          </div>
+          <div class="ritual-script">
+            <strong>💬 Co udělat u stolu (10 s)</strong>
+            „Nedotknu se ho – jen na krok od lůžka otevřu levou dlaň s tichým modrým plamínkem a počkám, až se probere: <em>‚Třetí hlídka, pane. Stíny jsou čisté.‘</em>“
+          </div>
+          <div class="vladislak-view duo-echo">
+            <strong>🤝 Ozvěna pro Rudého čaroděje</strong>
+            Okamžité, klidné probuzení bez sahání po zbrani – důkaz absolutní vzájemné důvěry vybudované za dvacet let v Eltabbaru.
+          </div>
+        </article>
+
+        <!-- 15. HORKY KOREN A BEZOAR -->
+        <article class="lore-card" data-category="rest solo private">
+          <div class="lore-card-head">
+            <div>
+              <h3>15. Hořký kořen a bezoár</h3>
+              <div class="lore-domain-sub">🔥 Short Rest • 🔒 Stranou u ohně • Alchymistická disciplína</div>
+            </div>
+            <div class="ritual-badges">
+              <span class="badge badge-blue">👤 Sám za sebe</span>
+            </div>
+          </div>
+          <p>
+            Zatímco družina u ohně jí teplé jídlo nebo pije sladké pivo ze Západního pobřeží, Vladislak otevře pouzdro <a class="rule" href="https://www.dndbeyond.com/sources/dnd/br-2024/equipment#PoisonersKit50GP" target="_blank" rel="noopener noreferrer">Poisoner's Kitu</a>, špičkou <em>Krisu</em> odkrojí tenký plátek černého rashemijského hořkého kořene s prachem z bezoáru a s kamennou tváří ho rozžvýká. Udržuje si tak ostré patro pro testování cizích pohárů.
+          </p>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5 (1. úr.+):</strong> Údržba <em>Poisoner's Kitu</em> během odpočinku (příprava na výrobu <a class="rule" href="https://www.dndbeyond.com/sources/dnd/br-2024/equipment#Antitoxin50GP" target="_blank" rel="noopener noreferrer">Antitoxinu</a> či <em>Basic Poison</em>).
+          </div>
+          <div class="ritual-script">
+            <strong>💬 Co udělat u stolu (10 s)</strong>
+            „Místo piva vytáhnu z alchymistického pouzdra sušený černý kořen, ukrojím plátek vlnitou dýkou a beze slova ho žvýkám: <em>‚Sladké pití otupuje jazyk.‘</em>“
+          </div>
+          <div class="vladislak-view">
+            <strong>👁️ Soukromý detail</strong>
+            Skvělý drobný háček pro konverzaci s ostatními hráči u táboráku – kdo kořen ze zvědavosti ochutná, tomu na půl hodiny zhořkne a zdřevění pusa.
+          </div>
+        </article>
+
+        <!-- 16. KAFROVE PLATNO A DEVET ZAHYBU KRISU -->
+        <article class="lore-card" data-category="rest solo covert">
+          <div class="lore-card-head">
+            <div>
+              <h3>16. Kafrové plátno a devět záhybů Krisu</h3>
+              <div class="lore-domain-sub">🔥 Noční hlídka • 🎭 Mimo kruh ohně • Tichá ostražitost</div>
+            </div>
+            <div class="ritual-badges">
+              <span class="badge badge-blue">👤 Sám za sebe</span>
+            </div>
+          </div>
+          <p>
+            Na hlídce Vladislak zásadně nesedí u ohně (plameny oslepují noční vidění a dělají ze strážce terč). Usadí se ve tmě o deset stop dál, odkud vidí na spícího čaroděje i okraj tábora, a plátnem napuštěným kafrovým olejem bez jediného kovového cinknutí čistí devět záhybů vlnité čepele <em>Krisu</em> a železné kování své hole.
+          </p>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5 (1. úr.+):</strong> Hlídka kombinující <em>Stealth (+4)</em>, <em>Perception (+5)</em> a feat <a class="spell" href="https://www.aidedd.org/feat/alert" target="_blank" rel="noopener noreferrer">Alert</a>.
+          </div>
+          <div class="ritual-script">
+            <strong>💬 Co udělat u stolu (10 s)</strong>
+            „Na hlídce si sednu do tmy mimo záři táboráku, zády ke stromu s výhledem na čaroděje, a v naprostém tichu čistím kafrovým plátnem záhyby rituální dýky.“
+          </div>
+          <div class="vladislak-view">
+            <strong>👁️ Soukromý detail &amp; Krytí</strong>
+            Praktický detail pro DM při nočním přepadení: nepřátelé mířící ke světlu ohně Vladislaka ve stínu snadno přehlédnou.
+          </div>
+        </article>
+
+        <!-- ==================== POOL 5: RARE & HIGH-STAKES MOMENTS (4) ==================== -->
+
+        <!-- 17. SKLIZEN NEDORCENE SLABIKY -->
+        <article class="lore-card" data-category="rare duo covert">
+          <div class="lore-card-head">
+            <div>
+              <h3>17. Sklizeň nedořčené slabiky (Nad padlým mágem)</h3>
+              <div class="lore-domain-sub">🩸 Zabití nepřátelského sesilatele • 🎭 Na bojišti • Ortodoxie Azutha</div>
+            </div>
+            <div class="ritual-badges">
+              <span class="badge badge-crimson">🤝 S čarodějem</span>
+            </div>
+          </div>
+          <p>
+            Usmrtit jiného sesilatele kouzel znamená pro kněze Azutha uhasit nádobu Tkaniva. Vladislak poklekne k mrtvému mágovi, zatlačí mu oči, dvěma prsty levé ruky mu ze rtů symbolicky „sejme“ nedořčené zaklínadlo a jeho <em>Arcane Focus</em> či grimoár po rychlé kontrole v rukavicích obřadně podá rukojetí napřed svému Rudému čaroději.
+          </p>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5 (1. úr.+):</strong> <em>Investigation / Arcana (Expertise od 3. úr.)</em> prohlídka ukořistěného grimoáru a magických předmětů.
+          </div>
+          <div class="ritual-script">
+            <strong>💬 Co udělat u stolu (10 s)</strong>
+            „Zatlačím mrtvému čaroději víčka, v rukavicích zkontroluju jeho grimoár i fokus a oběma rukama je podám svému pánovi: <em>‚Jeho vůle na Tkanivo nestačila. Ať jeho znalost poslouží tvé.‘</em>“
+          </div>
+          <div class="vladislak-view duo-echo">
+            <strong>🤝 Ozvěna pro Rudého čaroděje</strong>
+            Převzetí ukořistěného <em>Spellbooku</em> k přepsání kouzel s chladným zhodnocením kvality mrtvého soupeře.
+          </div>
+        </article>
+
+        <!-- 18. KRVAVA SPLATKA DLUHU -->
+        <article class="lore-card" data-category="rare duo private">
+          <div class="lore-card-head">
+            <div>
+              <h3>18. Krvavá splátka dluhu (Když pán krvácel)</h3>
+              <div class="lore-domain-sub">🩸 Po pádu čaroděje na 0 HP či těžké ráně • 🔒 V soukromí • Slabina Thayan Knighta</div>
+            </div>
+            <div class="ritual-badges">
+              <span class="badge badge-crimson">🤝 S čarodějem</span>
+            </div>
+          </div>
+          <p>
+            Pokud Rudý čaroděj v boji klesl k zemi nebo utrpěl vážné zranění, bere to Vladislak jako své neodpustitelné selhání – a přímé ohrožení Hulmarry a Yuldry v Thay. Jakmile osamí, vytáhne <em>Kris</em>, bez mrknutí oka si špičkou obnoví tenký vryp přes staré jizvy na předloktí a otře kapku krve do železného kování své hole.
+          </p>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5 (1. úr.+):</strong> Silný příběhový moment po záchraně čaroděje přes <a class="spell" href="https://www.aidedd.org/spell/healing-word" target="_blank" rel="noopener noreferrer">Healing Word</a>, <em>Cure Wounds</em> či na 5.+ úr. <a class="spell" href="https://www.aidedd.org/spell/revivify" target="_blank" rel="noopener noreferrer">Revivify</a>.
+          </div>
+          <div class="ritual-script">
+            <strong>💬 Co udělat u stolu (10 s)</strong>
+            „V ústraní přejedu špičkou vlnité dýky přes starou jizvu na předloktí, otřu kapku krve do železa hole a skloním hlavu: <em>‚Prošlo to přes můj štít, pane. Podruhé to neprojde.‘</em>“
+          </div>
+          <div class="vladislak-view duo-echo">
+            <strong>🤝 Ozvěna pro Rudého čaroděje</strong>
+            Silná dramatická volba: čaroděj může buď uplatnit tvrdou thayskou nadřazenost, nebo mu nečekaně zadržet zápěstí: <em>„Šetři krev, Vladislaku. Tady na západě tě potřebuju celého.“</em>
+          </div>
+        </article>
+
+        <!-- 19. POPEL POSLANY PO VYCHODNIM VETRU -->
+        <article class="lore-card" data-category="rare solo private">
+          <div class="lore-card-head">
+            <div>
+              <h3>19. Popel poslaný po východním větru</h3>
+              <div class="lore-domain-sub">🩸 Milník mise / Vyhlídka nad městem • 🔒 O samotě • Pouto k rodině</div>
+            </div>
+            <div class="ritual-badges">
+              <span class="badge badge-blue">👤 Sám za sebe</span>
+            </div>
+          </div>
+          <p>
+            Když po těžkém úkolu stojí vysoko nad střechami Waterdeepu či na mořském útesu, otočí se Vladislak přesně k východu – tisíce mil směrem k <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Eltabbar" target="_blank" rel="noopener noreferrer">Eltabbaru</a>. Nabere z ampulky špetku šedého chrámového popela, dotkne se jím vlastního čela a nechá vítr, ať popel odnese ze dlaně jako tichou připomínku, že svůj díl smlouvy plní.
+          </p>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5 (1. úr.+):</strong> Čistý roleplay ukotvující Vladislakovo osobní <em>Pouto (Bond)</em>.
+          </div>
+          <div class="ritual-script">
+            <strong>💬 Co udělat u stolu (10 s)</strong>
+            „Postavím se na okraji ochozu tváří přesně na východ, nechám vítr sfouknout z otevřené dlaně špetku šedého popela a polohlasem vyslovím jen dvě jména: <em>‚Hulmarra. Yuldra.‘</em>“
+          </div>
+          <div class="vladislak-view">
+            <strong>👁️ Soukromý detail</strong>
+            Ideální scéna pro chvíli, kdy jiný člen družiny zrovna prochází kolem a poprvé zaslechne jména žen, kvůli nimž tento mlčenlivý strážce nikdy neustoupí.
+          </div>
+        </article>
+
+        <!-- 20. OTISK NA CEPELI -->
+        <article class="lore-card" data-category="rare solo covert">
+          <div class="lore-card-head">
+            <div>
+              <h3>20. Otisk na čepeli (Zápis urážky do paměti)</h3>
+              <div class="lore-domain-sub">🩸 Veřejná urážka či hrozba čaroději • 🎭 Nenápadné • Chladná msta Eltabbaru</div>
+            </div>
+            <div class="ritual-badges">
+              <span class="badge badge-blue">👤 Sám za sebe</span>
+            </div>
+          </div>
+          <p>
+            Když arogantní šlechtic, cechmistr či kapitán hlídky ve Waterdeepu veřejně poníží nebo ohrozí Rudého čaroděje tam, kde nelze tasit zbraň bez prozrazení mise, Vladislak nehne ani brvou (<code>CHA 8</code>). Jako vyšetřovatel si vryje do paměti hlas, chůzi i pečetní prsten dotyčného, zatímco pod pláštěm přitiskne palec na vlnitou hranu <em>Krisu</em>, dokud v mozolu nezůstane bílý otisk.
+          </p>
+          <div class="poison-mech">
+            <strong>Mechanika 5.5 (1. úr.+):</strong> Tiché zapamatování detailů přes <em>Insight (+5) / Investigation (+2)</em> bez vyvolání konfliktu na veřejnosti.
+          </div>
+          <div class="ritual-script">
+            <strong>💬 Co udělat u stolu (10 s)</strong>
+            „Ani nemrknu a dál stojím za čarodějem jako němý sluha – jen si uložím do paměti prsten i hlas toho muže a pod pláštěm pevně přitlačím palec na vlnité ostří dýky.“
+          </div>
+          <div class="vladislak-view">
+            <strong>👁️ Soukromý detail &amp; Krytí</strong>
+            V Eltabbaru se urážka neodplácí hospodským křikem – odplácí se potichu v noci, přesně jako o zkoušce s <em>Němým popelem</em>.
+          </div>
+        </article>
+
+      </div>
+
+      <div class="lore-empty" id="ritualEmpty" data-lore-empty hidden>
+        Žádný rituál neodpovídá zadanému filtru nebo hledanému výrazu. Zkus přepnout kategorii na „Všechny rituály“.
+      </div>
+    </section>
+
+    <!-- Bottom Page Pager -->
+    <nav class="page-pager" aria-label="Přechod mezi sekcemi">
+      <a class="pager-link prev" href="index.html">
+        <span class="pager-dir">&larr; Předchozí sekce</span>
+        <span class="pager-title">01. Přehled &amp; Staty</span>
+      </a>
+      <a class="pager-link next" href="tactics.html">
+        <span class="pager-dir">Další sekce &rarr;</span>
+        <span class="pager-title">03. Taktika &amp; Leveling</span>
+      </a>
+    </nav>
+
+    <footer>
+      Vladislak Ulmokina • D&amp;D 5.5 (2024 Rules) Character Dossier • Postaveno s využitím <a class="rule" href="https://rpgbot.net/2024-dnd/classes/cleric/" target="_blank" rel="noopener noreferrer">RPGBOT.net</a> &amp; <a class="lore" href="https://forgottenrealms.fandom.com/wiki/Main_Page" target="_blank" rel="noopener noreferrer">Forgotten Realms Wiki</a>
+    </footer>
+  </main>
 
   <script src="js/main.js"></script>
 </body>

@@ -39,7 +39,7 @@ Za odměnu byl vybrán do řad **Thayanských rytířů** a podstoupil bolestiv�
 Web je rozdělen do 5 responzivních stránek optimalizovaných pro **iPhone 16 Pro**, **iPad (landscape)** i **MacBook 14"** s přepínáním barevných palet **Srcery Dark** a **Ayu Light**:
 
 - **[`index.html`](./index.html)** — **01. Přehled & Staty:** Koncept postavy, vlastnosti, dovednosti, tichá zbroj (*Breastplate + Štít*) a ikonické zbraně (*Hůl Azutha + Rituální dýka*).
-- **[`background.html`](./background.html)** — **02. Původ & Roleplay:** Příběh z Eltabbaru (včetně otravy *Němým popelem*), mechaniky rituálního thayského tetování a kulturní detaily etnika *Rashemi* v Thay.
+- **[`background.html`](./background.html)** — **02. Původ & Roleplay:** Příběh z Eltabbaru (včetně otravy *Němým popelem*), mechaniky rituálního thayského tetování, kulturní detaily etnika *Rashemi* v Thay a filtrovatelný playbook **20 rychlých mikro-rituálů a protokolů u stolu**.
 - **[`tactics.html`](./tactics.html)** — **03. Taktika & Leveling:** Bojová i sociální synergie s Rudým čarodějem a průvodce postupem po úrovních 1–12.
 - **[`lore.html`](./lore.html)** — **04. Znalosti světa (Lore):** Interaktivní filtrovatelná databáze thayských božstev a **Vademecum jedů** (17 běžných, neobvyklých i nejvzácnějších jedů DnD 5.5 & Forgotten Realms) s osobním pohledem Vladislaka.
 - **[`dm.html`](./dm.html)** — **05. Pro DM (Session 0):** Kontrola souladu s pravidly DnD 5.5, otevřené otázky pro Session 0 a příběhové háčky.

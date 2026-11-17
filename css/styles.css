@@ -1314,6 +1314,41 @@ table.responsive-table tr:last-child td {
   filter: brightness(1.12);
 }
 
+.ritual-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.ritual-script {
+  background: var(--cyan-soft);
+  border-left: 3px solid var(--cyan);
+  border-radius: 0 8px 8px 0;
+  padding: 0.68rem 0.9rem;
+  font-size: 0.89rem;
+  line-height: 1.52;
+}
+
+.ritual-script strong {
+  display: block;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--cyan);
+  margin-bottom: 0.2rem;
+}
+
+.vladislak-view.duo-echo {
+  border-left-color: var(--crimson);
+  background: var(--crimson-soft);
+}
+
+.vladislak-view.duo-echo strong {
+  color: var(--crimson);
+}
+
 /* ==========================================================================
    Bottom Page-to-Page Navigation (Prev / Next) & Footer
    ========================================================================== */
@@ -1442,6 +1477,11 @@ footer {
   .lore-grid,
   .trait-grid {
     grid-template-columns: 1fr;
+  }
+
+  .chip {
+    min-height: 44px;
+    padding: 0.5rem 0.82rem;
   }
 
   .level-item {
